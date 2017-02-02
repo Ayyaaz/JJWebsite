@@ -1,0 +1,63 @@
+// Helper classes, for all your hacky class needs and floaty goodness
+
+// Modern clearfix hack http://css-tricks.com/snippets/css/clear-fix/ for IE8+
+.cf-group:after {
+	content:"";
+	display:table;
+	clear:both;
+}
+
+.larger {
+	font-size: 2.6rem;
+}
+
+.smaller {
+	font-size: 1.8rem;
+}
+
+.small {
+	font-size: 10px;
+}
+
+.fb-like {
+	display: block !important;
+}
+
+.hide {
+	display:none;
+}
+
+.center-text {
+	text-align:center;
+}
+
+.center-elem {
+	margin:0 auto;
+}
+
+.pull-left {
+	float:left;
+}
+
+.pull-right {
+	float:right;
+}
+
+.hide-scroll {
+	overflow: hidden;
+}
+
+.platformiOS, .platformAndroid {
+	.mobile-show {
+		display: inline-block;
+	}
+	.mobile-hide {
+		display: none;
+	}
+}
+
+.platformGeneral{
+	.mobile-show {
+		display: none;
+	}
+}

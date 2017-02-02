@@ -1,0 +1,59 @@
+
+.btn {
+	position: relative;
+	cursor: pointer;
+	display:inline-block;
+	padding:10px 30px;
+	text-transform: uppercase;
+	text-align:center;
+	text-decoration:none;
+	font-weight: 700;
+	font-size: 15px;
+	letter-spacing: 2px;
+	color: $black;
+	border:2px solid $yellow;
+	border-radius: 40px;
+	outline: 0;
+	overflow:hidden;
+	background: none;
+	z-index: 1;
+	cursor: pointer;
+	@include transition(all 0.3s ease-in-out);
+
+	&:hover{
+		color:white;
+		background:$yellow;//lighten($yellow,45%);
+	}
+	&.btn-alt{
+		color:white;
+		&:hover{
+			background:rgba(0,0,0,0.2);//darken($green-dark,5%);
+		}
+	}
+	&.green{
+		border-color:$green;
+		&:hover{
+			background:$green;
+		}
+	}
+	&.fill{
+		&:hover {
+			color: whitesmoke;
+			background:none;
+		}
+		&:before {
+			content: "";
+			position: absolute;
+			background: darken($green,5%);
+			bottom: 0;
+			left: 0;
+			right: 0;
+			top: 100%;
+			z-index: -1;
+			@include transition(all 0.3s ease-in-out);
+		}
+		&:hover:before {
+			top: 0;
+		}
+	}
+}

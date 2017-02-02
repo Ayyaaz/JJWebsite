@@ -1,0 +1,93 @@
+
+.icon {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-smooth: auto;
+}
+
+.wrapper {
+	//display: inline-block;
+	//position: relative;
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 0.8rem;
+}
+
+.social-icons{
+	.disc{
+		color:white;
+		display: inline-block;
+		width: 32px;
+		height: 32px;
+		background: $spot-color;
+		border-radius: 50%;
+		text-align: center;
+		line-height: 36px;
+		font-size: 14px;
+		margin-right: 4px;
+		&:last-of-type{
+			margin-right:0;
+		}
+	}
+}
+
+.pin{
+	width: 45px;
+	height: 45px;
+	border-radius: 50% 50% 50% 0;
+	background: $green-light;
+	position: relative;
+	transform: rotate(-45deg);
+	&:after{
+		content: '';
+		width: 20px;
+		height: 20px;
+		margin: 12px 0 0 -10px;
+		background: white;
+		position: absolute;
+		border-radius: 50%;
+	}
+}
+
+.counter{
+	width:55px;
+	border-top:6px solid $yellow;
+	&.green{
+		border-color:$green;
+	}
+}
+
+.flag-hr{
+	background: linear-gradient(to bottom, white 0%,white 55%,white 55%,$green 55%,$green 100%);
+	text-align:center;
+}
+
+.bg-scroll-img{
+	// Need 'background-image:url(/img/...jpg);' on elements that use this
+	position: relative;
+	//background-attachment:fixed;
+	background-repeat:no-repeat;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	background-size:cover;
+	background-position:center;
+	&:before {
+			content: '';
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: black;
+			opacity: 0.4;
+		}
+}
+
+.platformGeneral{
+	.bg-scroll-img{
+		background-attachment:fixed;
+	}
+}

@@ -1,0 +1,149 @@
+@import "vendor/slick";
+
+.slider {
+	margin: 0 auto;
+	max-width: 790px;
+	padding: 0 40px;
+	color: white;
+
+	blockquote {
+		display: none;
+		margin: 20px 10px;
+		line-height: 1.45;
+		position: relative;
+		padding-left: 30px;
+
+		p{
+			text-shadow: 0 2px 2px #000;
+		}
+
+	}
+
+	blockquote:before {
+		content: "\201C";
+		display: block;
+		position: absolute;
+		z-index: -1;
+		left: -20px;
+		top: -50px;
+		padding-left: 10px;
+		font-size: 140px;
+		font-family: Georgia, serif;
+		color: rgba(255,255,255,0.4);
+	}
+
+	.slick-prev, .slick-next {
+		position: absolute;
+		background: transparent;
+		top:15px;
+		bottom:15px;
+		width:40px;
+		overflow: hidden;
+		color: $green;
+		@include transition(all 0.3s ease-in-out);
+
+		&:hover{
+			color:$yellow;
+		}
+		.material-icons {
+			font-size: 78px;
+			position: absolute;
+			top:50%;
+			right:0;
+			margin-top:-24px;
+			cursor: pointer;
+		}
+	}
+
+	.slick-prev {
+		left:0;
+
+		.material-icons {
+			right:-12px;
+		}
+
+	}
+
+	.slick-next {
+		right:0;
+
+		.material-icons {
+			right:auto;
+			left:-12px;
+		}
+
+	}
+
+	.slick-dots {
+		position: absolute;
+		bottom: -30px;
+		left: 0;
+		right: 0;
+		display: block;
+		width: 100%;
+		padding: 0;
+		list-style: none;
+		text-align: center;
+
+		li {
+			position: relative;
+			display: inline-block;
+			width: 20px;
+			height: 20px;
+			margin: 0 5px;
+			padding: 0;
+			cursor: pointer;
+			@include transition(all 0.3s ease-in-out);
+
+			button {
+				position: relative;
+				font-size: 0;
+				line-height: 0;
+				display: block;
+				width: 20px;
+				height: 20px;
+				padding: 5px;
+				cursor: pointer;
+				color: transparent;
+				border: 0;
+				outline: none;
+				background: transparent;
+
+				&:before {
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					margin-left: -4px;
+					margin-top: -4px;
+					width: 8px;
+					height: 8px;
+					content: '\2022';
+					opacity: .5;
+					background: white;
+					border-radius: 50%;
+				}
+
+			}
+
+		}
+
+		li.slick-active {
+
+			button:before {
+				opacity:1;
+				background: $link-color;
+			}
+
+		}
+
+	}
+
+}
+
+.slick-slide {
+
+	blockquote {
+		display: block;
+	}
+
+}

@@ -1,0 +1,502 @@
+
+.hero {
+	color:white;
+	text-align: center;
+	//text-shadow: 0 2px 3px #555;
+	padding-bottom: 6.4rem;
+	height:900px;
+
+	&.bg-scroll-img{
+		//background-attachment: initial;
+		background-image:url(/img/hero-imgs/parade-bg.png);
+		&:before{
+			background:none;
+		}
+	}
+
+
+	.parade{
+
+		position: absolute;
+		bottom:-258px;
+		right: -100px;//-1500px;
+		height: 970px;
+
+		&.e-award {
+			right: -1500px;
+			@include transition(all 1.4s ease-out);
+			//-webkit-transition-delay: 800ms; /* Safari */
+			//transition-delay: 800ms;
+		}
+		&.confetti {
+			right: -1500px;
+			@include transition(all 1.2s ease-out);
+			//-webkit-transition-delay: 1s; /* Safari */
+			//transition-delay: 1s;
+		}
+		&.ele {
+			@include transition(all 1s ease-out);
+			-webkit-transition-delay: 1s; /* Safari */
+			transition-delay: 1s;
+			bottom:-252px;
+		}
+		&.band {
+			@include transition(all 1s ease-out);
+			-webkit-transition-delay: 1.2s; /* Safari */
+			transition-delay: 1.2s;
+		}
+		&.handstand {
+			@include transition(all 1.4s ease-out);
+			-webkit-transition-delay: 1.4s; /* Safari */
+			transition-delay: 1.4s;
+		}
+		&.trolley {
+			@include transition(all 1.6s ease-out);
+			-webkit-transition-delay: 1s; /* Safari */
+			transition-delay: 1s;
+		}
+		&.afroman {
+			@include transition(all 1s ease-out);
+			-webkit-transition-delay: 1s; /* Safari */
+			transition-delay: 1s;
+		}
+		&.giraffe {
+			@include transition(all 2s ease-out);
+			-webkit-transition-delay: 1s; /* Safari */
+			transition-delay: 1s;
+		}
+
+
+		&.come-in,
+		&.already-visible {
+			right:0;
+		}
+
+	}
+
+
+}
+
+.vital-stats {
+	padding: 5rem 0 8rem 0;
+	background: $green-dark;
+	color: white;
+
+	h2{
+		margin-top:1rem;
+		margin-bottom:2rem;
+	}
+	p {
+		font-size: 2.5rem;
+		margin-top:1rem;
+	}
+	.stat{
+		text-shadow: 6px 6px 0px rgba(0, 0, 0, 0.3);
+		font-size: 13rem;
+		line-height:initial;
+		font-weight: 600;
+		font-family: $font-lato;
+		.stat-small{
+			font-size: 6rem;
+			color: $yellow;
+		}
+	}
+	.vital-stat-timestamp{
+		opacity: 0.3;
+		font-size: 1.5rem;
+	}
+	.slick-dots{
+		bottom:-55px;
+		li{
+			width:55px;
+			border-top:6px solid $yellow;
+			opacity: .4;
+			margin:0 1.2rem;
+			&.slick-active{
+				opacity: 1;
+			}
+			button{
+				display: none;
+			}
+		}
+	}
+	.btn{
+		margin-top:5rem;
+		width:270px;
+	}
+}
+
+
+.four-pillars{
+	h3{
+		margin-bottom:0;
+	}
+	.wrapper {
+		position: relative;
+		max-width:1000px;
+		padding:5rem 0 3rem 0;
+	}
+	.copy-container{
+		position: absolute;
+		width:100%;
+		padding: 0 16px;
+	}
+	.copy-block{
+		@extend .cf-group;
+		margin-top:150px;
+	}
+	.copy{
+		float:right;
+		max-width:280px;
+		&:nth-child(even){
+			float:left;
+		}
+		h3{
+			color: $green;//#2f8b26;
+		}
+	}
+	.bird-man{
+		text-align: center;
+		background:url(/img/bird-man.png) no-repeat center center;
+		background-size: contain;
+		height: 750px;
+		.bird {
+			position: absolute;
+			left:50%;
+			margin-top:-11px;
+			@include transition(all 2s ease-in-out);
+			-webkit-transition-delay: 500ms; /* Safari */
+			transition-delay: 500ms;
+			&.bird-L1{
+				margin-left:-220px;
+				&.come-in,
+				&.already-visible {
+					margin-left: -260px;
+				}
+			}
+			&.bird-R1{
+				margin-left:-260px;
+				&.come-in,
+				&.already-visible {
+					margin-left: -220px;
+				}
+			}
+		}
+		.bird-man-caption{
+			margin: 0 auto;
+			padding-top:28.5rem;
+			h1,h2{
+				margin:0;
+				line-height: 0.9em;
+			}
+			h1{
+				font-size: 13rem;
+			}
+			h2{
+				color: $yellow;
+				font-size: 5rem;
+				&:first-child{
+					color: $black;
+					font-size: 7rem;
+				}
+			}
+		}
+	}
+}
+
+
+.unforgettable{
+	text-align:center;
+	background-color:$green;
+	color:white;
+	position: relative;
+	overflow:hidden;
+	.wrapper{
+		display: inline-block;
+		max-width: 800px;
+		padding-bottom: 6rem;
+	}
+	h2{
+		margin-top:3rem;
+		margin-bottom: 3.2rem;
+	}
+	.elle{
+		@include transition(all 1.5s ease-out);
+		-webkit-transition-delay: 500ms; /* Safari */
+		transition-delay: 500ms;
+
+		position: absolute;
+		bottom:0;
+		&.elle-left{
+			left:-50px;
+			&.come-in,
+			&.already-visible {
+				left:0;
+			}
+		}
+		&.elle-right{
+			right:-50px;
+			&.come-in,
+			&.already-visible {
+				right:0;
+			}
+		}
+	}
+}
+
+
+.clients-panel{
+	text-align:center;
+	h3{
+		display: inline-block;
+		width:400px;
+	}
+	.wrapper{
+		display: inline-block;
+		margin-top:2rem;
+		margin-bottom:8rem;
+	}
+	.logos,
+	.awards{
+		padding-left:0;
+		//padding-top:5rem;
+		li{
+			list-style-type: none;
+			display: inline-block;
+		}
+		img{
+			width: 170px;
+			vertical-align: middle;
+			&:hover{
+			}
+		}
+	}
+	.logos{
+		li{
+			padding: 0 10px;
+		}
+	}
+	.awards{
+		li{
+			padding:20px;
+			img{
+				width: 100%;
+			}
+		}
+	}
+}
+
+.locations{
+	text-align:center;
+	background-color:$grey-light;
+	overflow:hidden;
+	.wrapper{
+		display: inline-block;
+		padding-bottom:6rem;
+	}
+
+	.map {
+		position: relative;
+		img {
+			width: 100%;
+		}
+	}
+
+	// map location pin
+	.map-location{
+		display: inline-block;
+		$map-pin:lighten($green,5%);
+
+		.popover{
+			@include transition(opacity 0.25s ease-in-out, transform 0.25s ease-in-out);
+			@include transform(scale(0.9));
+			opacity: 0;
+			position: absolute;
+			bottom:46px;
+			min-width:250px;
+			margin-left: -125px;
+
+			top:-9999px;
+			right:-9999px;
+
+			&.correct-pos{
+				top:auto;
+				right:auto;
+			}
+		}
+		.outer{
+			@include transition(all 0.25s ease-in-out);
+			border: 2px solid $map-pin;
+			width: 22px;
+			height: 22px;
+			display: block;
+			border: 2px solid $map-pin;
+			border-radius: 50%;
+			cursor: help;
+		}
+		.inner{
+			@include transition(all 0.25s ease-in-out);
+			width: 12px;
+			height: 12px;
+			display: block;
+			margin: 3px;
+			border-radius: 50%;
+			background-color: white;//$map-pin;
+			cursor: help;
+
+			&:before{
+				content: '+';
+				font-weight: bold;
+				color: $map-pin;
+				position: absolute;
+				margin-top: -5px;
+				margin-left: -5px;
+				font-size:1.8rem;
+			}
+		}
+		&:hover {
+			.popover{
+				@include transform(scale(1));
+				opacity: 1;
+			}
+			.outer{
+				@include transform(scale(1.1));
+			}
+			.inner{
+				@include transform(scale(1.1));
+			}
+		}
+
+
+		&.big{
+			.outer{
+				border-width:3px;
+				width:40px;
+				height: 40px;
+			}
+			.inner{
+				width:28px;
+				height:28px;
+				&:before{
+					margin-top:2px;
+					margin-left:-9px;
+					font-size: 3.2rem;
+				}
+			}
+			.popover{
+				bottom:66px;
+			}
+		}
+		&.medium{
+			.outer{
+				border-width:3px;
+				width:30px;
+				height: 30px;
+			}
+			.inner{
+				width:18px;
+				height: 18px;
+				&:before{
+					margin-top:-3px;
+					margin-left:-7px;
+					font-size: 2.5rem;
+				}
+			}
+			.popover{
+				bottom:56px;
+			}
+		}
+
+		&.usa, &.nz, &.uk {
+			position: absolute;
+		}
+		&.usa {
+			left: 19.6%;
+			top: 20.6%;
+		}
+		&.uk {
+			left: 42.5%;
+			top: 17.8%;
+		}
+		&.nz {
+			left: 87.6%;
+			top: 79.6%;
+		}
+	}
+	// end: map location pin
+}
+
+
+
+
+// global art direction
+
+.contact-panel{
+	text-align:center;
+	.wrapper{
+		max-width: 900px;
+		padding-bottom: 50px;
+	}
+	.submit-input{
+		input[type=email]{
+			display: inline-block;
+		}
+		input[type=submit]{
+			display: inline-block;
+		}
+	}
+	.contact-form{
+		white-space: nowrap;
+		input.email{
+			box-sizing: border-box;
+			display:inline-block;
+			padding: 16px 32px;
+			border-radius: 40px 0 0 40px;
+			width:calc(100% - 200px);
+		}
+		button{
+			border-radius: 0 40px 40px 0;
+			padding: 16px 32px;
+			color: white;
+			background: $green-light;
+			border:none;
+			margin-left: -4px;
+			width:200px;
+
+			&:hover{
+				background: $green;
+			}
+		}
+	}
+}
+
+.real-time-info{
+	background-color:$green-dark;
+	width:100%;
+	color:white;
+	text-transform: uppercase;
+	padding:12px 0;
+	font-size: .9em;
+	.icon{
+		vertical-align: bottom;
+		color: $yellow;
+		font-size: 2.1rem;
+	}
+	.alignleft {
+		float: left;
+		width:100px;
+		text-align:left;
+	}
+	.aligncenter {
+		float: left;
+		width:calc(100% - 200px);
+		text-align:center;
+	}
+	.alignright {
+		float: right;
+		width:100px;
+		text-align:right;
+	}
+}
+
+// end: global art direction

@@ -1,0 +1,39 @@
+
+.main-footer {
+	background:$grey;
+	.wrapper{
+		padding-top:3rem;
+		padding-bottom:3rem;
+	}
+	.copy-block{
+		width:25%;
+		float:left;
+		padding-right:16px;
+		padding-left:16px;
+
+		h5{
+			font-size:2rem;
+			margin:0;
+		}
+		p{
+			font-size:1.3rem;
+		}
+	}
+	.brand {
+		img{
+			width:100%;
+			vertical-align: top;
+		}
+	}
+	.social-icons{
+		margin-top:2rem;
+	}
+	.copyright-notice{
+		background:white;
+		text-align: center;
+		text-transform:uppercase;
+		padding: 2rem;
+		-webkit-box-shadow: 0 1px 3px 3px rgba(0,0,0,0.1);
+		box-shadow: 0 1px 3px 3px rgba(0,0,0,0.1);
+	}
+}
