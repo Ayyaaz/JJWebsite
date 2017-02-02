@@ -8,7 +8,7 @@
 
 	&.bg-scroll-img{
 		//background-attachment: initial;
-		background-image:url(img/hero-imgs/parade-bg.png);
+		background-image:url(../img/hero-imgs/parade-bg.png);
 		&:before{
 			background:none;
 		}
@@ -157,7 +157,7 @@
 	}
 	.bird-man{
 		text-align: center;
-		background:url(img/bird-man.png) no-repeat center center;
+		background:url(../img/bird-man.png) no-repeat center center;
 		background-size: contain;
 		height: 750px;
 		.bird {
