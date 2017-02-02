@@ -120,6 +120,7 @@ $(function() {
 
 
 
+	// map tooltips
 	$('.map-location').hover(
 		function() { // mouse enter
 			$(this).find('.popover').addClass('correct-pos');
@@ -130,12 +131,7 @@ $(function() {
 			);
 		}
 	);
-
-
-
-
-
-
+	// end: map tooltips
 
 
 
