@@ -305,7 +305,7 @@
 	// map location pin
 	.map-location{
 		display: inline-block;
-		$map-pin:lighten($green,5%);
+		cursor: help;
 
 		.popover{
 			@include transition(opacity 0.25s ease-in-out, transform 0.25s ease-in-out);
@@ -326,13 +326,12 @@
 		}
 		.outer{
 			@include transition(all 0.25s ease-in-out);
-			border: 2px solid $map-pin;
+			border: 2px solid $green-light;
 			width: 22px;
 			height: 22px;
 			display: block;
-			border: 2px solid $map-pin;
+			border: 2px solid $green-light;
 			border-radius: 50%;
-			cursor: help;
 		}
 		.inner{
 			@include transition(all 0.25s ease-in-out);
@@ -341,13 +340,12 @@
 			display: block;
 			margin: 3px;
 			border-radius: 50%;
-			background-color: white;//$map-pin;
-			cursor: help;
+			background-color: white;
 
 			&:before{
 				content: '+';
 				font-weight: bold;
-				color: $map-pin;
+				color: $green-light;
 				position: absolute;
 				margin-top: -5px;
 				margin-left: -5px;
