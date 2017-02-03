@@ -1,4 +1,8 @@
 
+.hero-container{
+	overflow:hidden;
+}
+
 .hero {
 	color:white;
 	text-align: center;
@@ -14,9 +18,7 @@
 		}
 	}
 
-
 	.parade{
-
 		position: absolute;
 		bottom:-258px;
 		right: -100px;//-1500px;
@@ -66,15 +68,11 @@
 			transition-delay: 1s;
 		}
 
-
 		&.come-in,
 		&.already-visible {
 			right:0;
 		}
-
 	}
-
-
 }
 
 .vital-stats {
