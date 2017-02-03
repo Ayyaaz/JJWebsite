@@ -12,7 +12,9 @@ $font-cantata: 'Cantata One', serif;
 
 @font-face {
 	font-family: reis_font;
-	src: local(reis_font), url('font/REIS-Regular.ttf') format('opentype');
+	src: local(reis_font),
+         url('font/REIS-Regular.ttf') format('truetype'),
+         url('font/REIS-Regular.otf') format('opentype');
 }
 
 $grey:#ececec;
