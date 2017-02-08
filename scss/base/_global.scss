@@ -5,15 +5,6 @@
 	font-smooth: auto;
 }
 
-.wrapper {
-	//display: inline-block;
-	//position: relative;
-	width: 100%;
-	max-width: 1200px;
-	margin: 0 auto;
-	padding: 0 0.8rem;
-}
-
 .social-icons{
 	.disc{
 		color:white;
@@ -90,4 +81,8 @@
 	.bg-scroll-img{
 		background-attachment:fixed;
 	}
+}
+
+.green{
+	color: $green;
 }

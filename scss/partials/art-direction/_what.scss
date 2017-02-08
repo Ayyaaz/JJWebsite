@@ -1,0 +1,106 @@
+
+.what{
+	h2{
+		//font-size: 8rem;
+	}
+	.hero-container{
+		overflow: hidden;
+	}
+	.hero {
+		color:white;
+		text-align: center;
+		padding-bottom: 6.4rem;
+
+		&.bg-scroll-img{
+			//background-attachment: initial;
+			background-color: #45781f;
+			background-image:url(../img/hero-imgs/WHAT-hero-bg.png);
+			&:before{
+				background:none;
+			}
+		}
+
+		h1{
+			font-size: 18rem;
+			line-height: 16rem;
+			@include transform(rotate(-10deg));
+		}
+
+		.parade{
+			position: absolute;
+			top:134px;
+			left:50%;
+			margin-left:-740px;
+
+			&.afroman {
+				@include transition(all 1s ease-out);
+				-webkit-transition-delay: 1s; /* Safari */
+				transition-delay: 1s;
+				margin-left:800px;
+			}
+
+			&.confetti {
+				@include transition(all 1s ease-out);
+				-webkit-transition-delay: 1s; /* Safari */
+				transition-delay: 1s;
+				top:400px;
+			}
+
+			&.come-in,
+			&.already-visible {
+				top:134px;
+				margin-left:-740px;
+			}
+		}
+	}
+
+
+
+	.four-pillars{
+		h3{
+			margin:0;
+		}
+		.wrapper {
+			padding-top:5rem;
+			padding-bottom:3rem;
+		}
+		.image-container{
+			float:left;
+			width:30%;
+			img{
+				max-width: 360px;
+			}
+		}
+		.copy-container{
+			float:left;
+			width:70%;
+		}
+		.copy{
+			display: inline-block;
+			float: left;
+			width:50%;
+			padding-right:16px;
+
+			&:nth-child(even){
+				padding-right:0;
+			}
+			h3{
+				color: $green;
+			}
+		}
+
+	}
+
+	.icon-card{
+		width:25%;
+		float:left;
+		padding:0 0.8rem;
+		h5{
+			white-space: nowrap;
+			margin:1rem 0 1.6rem 0;
+		}
+		p{
+			line-height: 2.8rem
+		}
+	}
+}

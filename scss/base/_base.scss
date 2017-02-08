@@ -63,6 +63,8 @@ h1 {
 h2 {
 	font-family: reis_font;
 	font-size:6rem;
+	margin-bottom: 3.5rem;
+	margin-top:0;
 }
 
 h3 {
@@ -80,7 +82,8 @@ h5 {
 }
 
 p{
-	font-size: 1.6rem;
+	font-size: 1.4rem;
+	line-height: 2.4rem;
 }
 
 textarea, input {outline:none;} // remove webkit glow
