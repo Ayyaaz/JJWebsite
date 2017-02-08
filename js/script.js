@@ -111,7 +111,12 @@ $(function() {
 		allMods.each(function(i, el) {
 			var el = $(el);
 			if (el.visible(true)) {
-				el.addClass("come-in");
+				el.addClass("come-in")
+				/** Code to detect current visibility:
+				el.addClass("visible").removeClass("not-visible");
+			}else{
+				el.addClass("not-visible").removeClass("visible");
+				*/
 			}
 		});
 

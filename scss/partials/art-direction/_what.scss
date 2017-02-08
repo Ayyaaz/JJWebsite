@@ -103,4 +103,61 @@
 			line-height: 2.8rem
 		}
 	}
+
+	.testimonial-slider{
+		text-align: center;
+		background:$grey-light;
+		.testimonial-card{
+
+		}
+	}
+
+	.balloons-anim{
+		position: absolute;
+		width:100%;
+		margin-top:-72px;
+		img{
+			-webkit-transition-delay: 1s; /* Safari */
+			transition-delay: 1s;
+			position: absolute;
+		}
+		.R1 {
+			@include transition(all 1.5s ease-in-out);
+			right:0;
+			margin-top:150px;
+		}
+		.R2 {
+			@include transition(all 1.2s ease-in-out);
+			right:0;
+			margin-top:250px;
+		}
+		.R3 {
+			@include transition(all 1s ease-in-out);
+			right:0;
+			margin-top:200px;
+		}
+
+		.L1 {
+			@include transition(all 1.5s ease-in-out);
+			left:0;
+			margin-top:150px;
+		}
+		.L2 {
+			@include transition(all 1.2s ease-in-out);
+			left:0;
+			margin-top:250px;
+		}
+		.L3 {
+			@include transition(all 1s ease-in-out);
+			left:0;
+			margin-top:200px;
+		}
+
+		&.come-in,
+		&.already-visible {
+			.R1, .R2, .R3, .L1, .L2, .L3 {
+				margin-top:0px;
+			}
+		}
+	}
 }

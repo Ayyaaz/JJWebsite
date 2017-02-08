@@ -49,13 +49,13 @@
 			border-radius: 0 40px 40px 0;
 			padding: 16px 32px;
 			color: white;
-			background: $green-light;
+			background: $green;
 			border:none;
 			margin-left: -6px;
 			width:200px;
 
 			&:hover{
-				background: $green;
+				background: $yellow;
 			}
 		}
 	}
