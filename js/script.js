@@ -16,13 +16,16 @@ $(function() {
 
 	// killer carousel
     $('.kc-wrap').KillerCarousel({
-        width: 800  // Width of carousel.
-        ,spacing3d: 300  // Item spacing in 3D (modern browsers) modes.
-        ,spacing2d: 300  // Item spacing in 2D (old browsers) modes.
+        width: 800  // Width of carousel
+        ,spacing3d: 300  // Item spacing in 3D (modern browsers) modes
+        ,spacing2d: 300  // Item spacing in 2D (old browsers) modes
         ,showShadow:true
-        ,showReflection: true
-		,infiniteLoop: true  // Looping mode.
-		,autoScale: 75  // Scale at 75% of parent element.
+        //,showReflection: true
+		,infiniteLoop: true  // Looping mode
+		,autoScale: 75  // Scale at 75% of parent element
+		,showNavigation: true
+		,navigationVerticalPos:'bottom:0px'
+		,navigationHorizontalPos:'middle'
     });
 
 
