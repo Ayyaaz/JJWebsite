@@ -108,9 +108,12 @@
 		text-align: center;
 		background:$grey-light;
 
+		.wrapper{
+			padding-bottom: 8rem;
+		}
 		// carousel
 		.kc-wrap{
-			padding-bottom: 45%;
+			padding-bottom: 40%;
 			.cc-decoration{
 				opacity: .2;
 				&.kc-shadow-left{
