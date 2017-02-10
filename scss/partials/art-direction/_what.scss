@@ -113,6 +113,7 @@
 		}
 		// carousel
 		.kc-wrap{
+			overflow: visible;
 			padding-bottom: 40%;
 			.cc-decoration{
 				opacity: .2;
@@ -146,6 +147,8 @@
 		text-align: center;
 		background:white;
 		width:600px;
+		min-width:600px;
+		max-width:600px;
 		border-radius:1rem;
 		padding: 2rem;
 		margin-top:-24px;

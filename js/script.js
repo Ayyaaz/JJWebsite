@@ -18,7 +18,7 @@ $(function() {
     $('.kc-wrap').KillerCarousel({
         width: 800  // Width of carousel
         ,spacing3d: 300  // Item spacing in 3D (modern browsers) modes
-        ,spacing2d: 300  // Item spacing in 2D (old browsers) modes
+        ,spacing2d: 400  // Item spacing in 2D (old browsers) modes
         ,showShadow:true
         //,showReflection: true
 		,infiniteLoop: true  // Looping mode
@@ -26,6 +26,7 @@ $(function() {
 		,showNavigation: true
 		,navigationVerticalPos:'bottom:0px'
 		,navigationHorizontalPos:'middle'
+		//,renderer3d: null
     });
 
 
