@@ -8,17 +8,19 @@
 	padding: 5rem 0.8rem;
 }
 
-.section-dark{
+.section-spot-dark{
 	background: $green-dark;
 	color: white;
 }
 
-
-.section-light{
+.section-spot-light{
 	background-color:$green;
 	color:white;
 }
 
+.section-light{
+	background-color:$grey-light;
+}
 
 .contact-panel{
 	text-align:center;

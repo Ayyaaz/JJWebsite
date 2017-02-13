@@ -8,6 +8,7 @@
 @import "base/mixins";
 @import "base/base";
 @import "base/global";
+@import "base/layout";
 
 // Components
 @import "partials/header-nav";
@@ -17,6 +18,7 @@
 @import "partials/button";
 @import "partials/popover";
 @import "partials/containers";
+@import "partials/testimonial-slider";
 
 // Helper classes
 @import "partials/utilities";
