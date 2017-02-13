@@ -28,26 +28,31 @@
 			position: absolute;
 			bottom:0;
 			left:50%;
-			margin-left:-740px;
 
 			&.afroman {
 				@include transition(all 1s ease-out);
 				-webkit-transition-delay: 1s; /* Safari */
 				transition-delay: 1s;
-				margin-left:800px;
+				z-index: 3;
+				margin-left:-500px;
 			}
-
 			&.confetti {
-				@include transition(all 1s ease-out);
+				@include transition(all 2s ease-out);
 				-webkit-transition-delay: 1s; /* Safari */
 				transition-delay: 1s;
-				bottom:-300px;
+				margin-left:-720px;
+				transform-origin: 50% 100%;
+				@include transform(scale(.8,.8));
 			}
 
 			&.come-in,
 			&.already-visible {
-				bottom:0;
-				margin-left:-740px;
+				&.afroman {
+					margin-left:-720px;
+				}
+				&.confetti {
+					@include transform(scale(1,1));
+				}
 			}
 		}
 	}

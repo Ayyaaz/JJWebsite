@@ -52,7 +52,7 @@
 				@include transition(all 2s ease-out);
 				-webkit-transition-delay: 1s; /* Safari */
 				transition-delay: 1s;
-				bottom:0;//-200px;
+				bottom:0;
 				left:50%;
 				margin-left:-720px;
 				transform-origin: 50% 100%;
@@ -65,10 +65,9 @@
 					margin-left:-450px;
 				}
 				&.hand-stand {
-					margin-left:-390px;
+					margin-left:-360px;
 				}
 				&.confetti {
-					bottom:0;
 					@include transform(scale(1,1));
 				}
 			}
