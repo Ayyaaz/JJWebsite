@@ -36,6 +36,7 @@
 				@include transition(all 2s ease-out);
 				-webkit-transition-delay: 1s; /* Safari */
 				transition-delay: 1s;
+				z-index: 0;
 				bottom:0;
 				left:50%;
 				margin-left:-720px;
@@ -47,16 +48,16 @@
 				-webkit-transition-delay: 1s; /* Safari */
 				transition-delay: 1s;
 
-				animation: balloon infinite 4s;
+				animation: balloon infinite 5s;
 				@keyframes balloon {
 					0% {
-						@include transform(translate(0, 10px));
+						@include transform(translate(0, 15px));
 					}
 					50% {
 						@include transform(translate(0, 0));
 					}
 					100% {
-						@include transform(translate(0, 10px));
+						@include transform(translate(0, 15px));
 					}
 				}
 			}
@@ -64,40 +65,36 @@
 				@include transition(all 1s ease-out);
 				-webkit-transition-delay: 1s; /* Safari */
 				transition-delay: 1s;
-				transform-origin: 70% 72%;
+				transform-origin: 70% 74%;
 				@include transform(scale(.9));
 			}
 			&.butterfly {
-				@include transition(all 2s ease-out);
-				-webkit-transition-delay: 1s; /* Safari */
-				transition-delay: 1s;
+			-webkit-animation: butterfly-floater 14s linear infinite;
+			   -moz-animation: butterfly-floater 14s linear infinite;
+				 -o-animation: butterfly-floater 14s linear infinite;
+					animation: butterfly-floater 14s linear infinite;
 
-				animation: float infinite 8s;
-				@keyframes float {
-					0% {
-						@include transform(translate(0px, 10px));
-					}
-					25% {
-						@include transform(translate(10px, 10px));
-					}
-					50% {
-						@include transform(translate(20px, 20px));
-					}
-					75% {
-						@include transform(translate(10px, 20px));
-					}
-					100% {
-						@include transform(translate(0px, 10px));
-					}
+				@-webkit-keyframes butterfly-floater {
+					from { -webkit-transform: rotate(0deg) translateX(20px) rotate(0deg); }
+					to   { -webkit-transform: rotate(360deg) translateX(20px) rotate(-360deg); }
+				}
+				@-moz-keyframes butterfly-floater {
+					from { -moz-transform: rotate(0deg) translateX(20px) rotate(0deg); }
+					to   { -moz-transform: rotate(360deg) translateX(20px) rotate(-360deg); }
+				}
+				@-o-keyframes butterfly-floater {
+					from { -o-transform: rotate(0deg) translateX(20px) rotate(0deg); }
+					to   { -o-transform: rotate(360deg) translateX(20px) rotate(-360deg); }
+				}
+				@keyframes butterfly-floater {
+					from { transform: rotate(0deg) translateX(20px) rotate(0deg); }
+					to   { transform: rotate(360deg) translateX(20px) rotate(-360deg); }
 				}
 			}
 
 			&.come-in,
 			&.already-visible {
 				&.giraffe {
-					@include transform(scale(1));
-				}
-				&.butterfly {
 					@include transform(scale(1));
 				}
 				&.confetti {
@@ -110,5 +107,35 @@
 	.flag-hr{
 		background: linear-gradient(to bottom, $off-white 0%,$off-white 55%,$off-white 55%,$green 55%,$green 100%);
 	}
+	.what-you-get{
+		.wrapper{
+			position: relative;
+			.pricing-bird{
+				position: absolute;
+				left: 70px;
 
+				-webkit-animation: bird-floater 14s linear infinite;
+				   -moz-animation: bird-floater 14s linear infinite;
+					 -o-animation: bird-floater 14s linear infinite;
+						animation: bird-floater 14s linear infinite;
+
+				@-webkit-keyframes bird-floater {
+					from { -webkit-transform: rotate(0deg) translateX(20px) rotate(0deg); }
+					to   { -webkit-transform: rotate(-360deg) translateX(20px) rotate(360deg); }
+				}
+				@-moz-keyframes bird-floater {
+					from { -moz-transform: rotate(0deg) translateX(20px) rotate(0deg); }
+					to   { -moz-transform: rotate(-360deg) translateX(20px) rotate(360deg); }
+				}
+				@-o-keyframes bird-floater {
+					from { -o-transform: rotate(0deg) translateX(20px) rotate(0deg); }
+					to   { -o-transform: rotate(-360deg) translateX(20px) rotate(360deg); }
+				}
+				@keyframes bird-floater {
+					from { transform: rotate(0deg) translateX(20px) rotate(0deg); }
+					to   { transform: rotate(-360deg) translateX(20px) rotate(360deg); }
+				}
+			}
+		}
+	}
 }
