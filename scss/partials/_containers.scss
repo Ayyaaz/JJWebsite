@@ -13,13 +13,22 @@
 	color: white;
 }
 
-.section-spot-light{
+.section-spot{
 	background-color:$green;
+	color:white;
+}
+
+.section-spot-light{
+	background-color:$green-light;
 	color:white;
 }
 
 .section-light{
 	background-color:$grey-light;
+}
+
+.section-off-white{
+	background-color:$off-white;
 }
 
 .contact-panel{
@@ -92,5 +101,18 @@
 		float: right;
 		width:100px;
 		text-align:right;
+	}
+}
+
+.icon-card{
+	width:25%;
+	float:left;
+	padding:0 0.8rem;
+	h5{
+		white-space: nowrap;
+		margin:1rem 0 1.6rem 0;
+	}
+	p{
+		line-height: 2.8rem
 	}
 }

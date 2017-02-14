@@ -27,27 +27,22 @@
 
 		.parade{
 			position: absolute;
-			bottom:-258px;
+			bottom:-240px;
 			right: -100px;//-1500px;
 			height: 970px;
 
 			&.e-award {
 				right: -1500px;
 				@include transition(all 1.4s ease-out);
-				//-webkit-transition-delay: 800ms; /* Safari */
-				//transition-delay: 800ms;
 			}
 			&.confetti {
 				right: -1500px;
 				@include transition(all 1.2s ease-out);
-				//-webkit-transition-delay: 1s; /* Safari */
-				//transition-delay: 1s;
 			}
 			&.ele {
 				@include transition(all 1s ease-out);
 				-webkit-transition-delay: 1s; /* Safari */
 				transition-delay: 1s;
-				bottom:-252px;
 			}
 			&.band {
 				@include transition(all 1s ease-out);

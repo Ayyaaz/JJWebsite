@@ -42,7 +42,7 @@
 				transition-delay: 1s;
 				margin-left:-720px;
 				transform-origin: 50% 100%;
-				@include transform(scale(.8,.8));
+				@include transform(scale(.8));
 			}
 
 			&.come-in,
@@ -51,12 +51,11 @@
 					margin-left:-720px;
 				}
 				&.confetti {
-					@include transform(scale(1,1));
+					@include transform(scale(1));
 				}
 			}
 		}
 	}
-
 
 	.four-pillars{
 		h3{
@@ -89,20 +88,6 @@
 			h3{
 				color: $green;
 			}
-		}
-	}
-
-
-	.icon-card{
-		width:25%;
-		float:left;
-		padding:0 0.8rem;
-		h5{
-			white-space: nowrap;
-			margin:1rem 0 1.6rem 0;
-		}
-		p{
-			line-height: 2.8rem
 		}
 	}
 

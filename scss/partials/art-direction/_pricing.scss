@@ -1,0 +1,114 @@
+
+.pricing{
+
+	.hero-container{
+		overflow: hidden;
+		position: relative;
+	}
+	.hero {
+		color:white;
+		text-align: center;
+		padding-bottom: 16rem;
+
+		&.bg-scroll-img{
+			//background-attachment: initial;
+			background-color: #45781f;
+			background-image:url(../img/hero-imgs/hero-bg.png);
+			&:before{
+				background:none;
+			}
+		}
+
+		h1{
+			font-size: 34rem;
+			line-height: 20rem;
+			@include transform(rotate(-10deg));
+		}
+
+		.parade{
+			position: absolute;
+			z-index: 2;
+			bottom:-215px;
+			left:50%;
+			margin-left:-770px;
+
+			&.confetti {
+				@include transition(all 2s ease-out);
+				-webkit-transition-delay: 1s; /* Safari */
+				transition-delay: 1s;
+				bottom:0;
+				left:50%;
+				margin-left:-720px;
+				transform-origin: 50% 100%;
+				@include transform(scale(.8,.8));
+			}
+			&.balloon {
+				@include transition(all 1.5s ease-in-out);
+				-webkit-transition-delay: 1s; /* Safari */
+				transition-delay: 1s;
+
+				animation: balloon infinite 4s;
+				@keyframes balloon {
+					0% {
+						@include transform(translate(0, 10px));
+					}
+					50% {
+						@include transform(translate(0, 0));
+					}
+					100% {
+						@include transform(translate(0, 10px));
+					}
+				}
+			}
+			&.giraffe {
+				@include transition(all 1s ease-out);
+				-webkit-transition-delay: 1s; /* Safari */
+				transition-delay: 1s;
+				transform-origin: 70% 72%;
+				@include transform(scale(.9));
+			}
+			&.butterfly {
+				@include transition(all 2s ease-out);
+				-webkit-transition-delay: 1s; /* Safari */
+				transition-delay: 1s;
+
+				animation: float infinite 8s;
+				@keyframes float {
+					0% {
+						@include transform(translate(0px, 10px));
+					}
+					25% {
+						@include transform(translate(10px, 10px));
+					}
+					50% {
+						@include transform(translate(20px, 20px));
+					}
+					75% {
+						@include transform(translate(10px, 20px));
+					}
+					100% {
+						@include transform(translate(0px, 10px));
+					}
+				}
+			}
+
+			&.come-in,
+			&.already-visible {
+				&.giraffe {
+					@include transform(scale(1));
+				}
+				&.butterfly {
+					@include transform(scale(1));
+				}
+				&.confetti {
+					@include transform(scale(1,1));
+				}
+			}
+		}
+	}
+
+	.flag-hr{
+		background: linear-gradient(to bottom, $off-white 0%,$off-white 55%,$off-white 55%,$green 55%,$green 100%);
+	}
+
+}
