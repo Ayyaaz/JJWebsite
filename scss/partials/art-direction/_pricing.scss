@@ -69,23 +69,23 @@
 				@include transform(scale(.9));
 			}
 			&.butterfly {
-			-webkit-animation: butterfly-floater 14s linear infinite;
-			   -moz-animation: butterfly-floater 14s linear infinite;
-				 -o-animation: butterfly-floater 14s linear infinite;
+//			-webkit-animation: butterfly-floater 14s linear infinite;
+//			   -moz-animation: butterfly-floater 14s linear infinite;
+//				 -o-animation: butterfly-floater 14s linear infinite;
 					animation: butterfly-floater 14s linear infinite;
 
-				@-webkit-keyframes butterfly-floater {
-					from { -webkit-transform: rotate(0deg) translateX(20px) rotate(0deg); }
-					to   { -webkit-transform: rotate(360deg) translateX(20px) rotate(-360deg); }
-				}
-				@-moz-keyframes butterfly-floater {
-					from { -moz-transform: rotate(0deg) translateX(20px) rotate(0deg); }
-					to   { -moz-transform: rotate(360deg) translateX(20px) rotate(-360deg); }
-				}
-				@-o-keyframes butterfly-floater {
-					from { -o-transform: rotate(0deg) translateX(20px) rotate(0deg); }
-					to   { -o-transform: rotate(360deg) translateX(20px) rotate(-360deg); }
-				}
+//				@-webkit-keyframes butterfly-floater {
+//					from { -webkit-transform: rotate(0deg) translateX(20px) rotate(0deg); }
+//					to   { -webkit-transform: rotate(360deg) translateX(20px) rotate(-360deg); }
+//				}
+//				@-moz-keyframes butterfly-floater {
+//					from { -moz-transform: rotate(0deg) translateX(20px) rotate(0deg); }
+//					to   { -moz-transform: rotate(360deg) translateX(20px) rotate(-360deg); }
+//				}
+//				@-o-keyframes butterfly-floater {
+//					from { -o-transform: rotate(0deg) translateX(20px) rotate(0deg); }
+//					to   { -o-transform: rotate(360deg) translateX(20px) rotate(-360deg); }
+//				}
 				@keyframes butterfly-floater {
 					from { transform: rotate(0deg) translateX(20px) rotate(0deg); }
 					to   { transform: rotate(360deg) translateX(20px) rotate(-360deg); }
@@ -104,9 +104,6 @@
 		}
 	}
 
-	.flag-hr{
-		background: linear-gradient(to bottom, $off-white 0%,$off-white 55%,$off-white 55%,$green 55%,$green 100%);
-	}
 	.what-you-get{
 		.wrapper{
 			position: relative;
@@ -114,23 +111,7 @@
 				position: absolute;
 				left: 70px;
 
-				-webkit-animation: bird-floater 14s linear infinite;
-				   -moz-animation: bird-floater 14s linear infinite;
-					 -o-animation: bird-floater 14s linear infinite;
-						animation: bird-floater 14s linear infinite;
-
-				@-webkit-keyframes bird-floater {
-					from { -webkit-transform: rotate(0deg) translateX(20px) rotate(0deg); }
-					to   { -webkit-transform: rotate(-360deg) translateX(20px) rotate(360deg); }
-				}
-				@-moz-keyframes bird-floater {
-					from { -moz-transform: rotate(0deg) translateX(20px) rotate(0deg); }
-					to   { -moz-transform: rotate(-360deg) translateX(20px) rotate(360deg); }
-				}
-				@-o-keyframes bird-floater {
-					from { -o-transform: rotate(0deg) translateX(20px) rotate(0deg); }
-					to   { -o-transform: rotate(-360deg) translateX(20px) rotate(360deg); }
-				}
+				animation: bird-floater 14s linear infinite;
 				@keyframes bird-floater {
 					from { transform: rotate(0deg) translateX(20px) rotate(0deg); }
 					to   { transform: rotate(-360deg) translateX(20px) rotate(360deg); }
@@ -138,4 +119,141 @@
 			}
 		}
 	}
+
+	.flag-hr{
+		background: linear-gradient(to bottom, $off-white 0%,$off-white 55%,$off-white 55%,transparent 55%,transparent 100%);
+		margin-bottom: -77px;
+	}
+
+	.how-pricing-works{
+		text-align: center;
+		.top-section{
+			padding-top:77px;
+			padding-bottom:300px;
+			color:white;
+			background-color:$green;
+			background-image:url(../img/hero-imgs/hero-light-bg.png);
+			background-size:cover;
+			.parrot{
+				@include transition(all 1.5s ease-out);
+				-webkit-transition-delay: 1s; /* Safari */
+				transition-delay: 1s;
+				position: absolute;
+				right:150px;
+
+				&.come-in,
+				&.already-visible {
+					right:300px;
+				}
+			}
+		}
+		.bottom-section{
+			position: relative;
+			background-color:$off-white;
+			.wrapper{
+				padding-bottom:8rem;
+			}
+			h3{
+				font-size: 4rem;
+				margin-top:12rem;
+			}
+			.ele{
+				@include transition(all 2.5s ease-out);
+				-webkit-transition-delay: 1s; /* Safari */
+				transition-delay: 1s;
+				position: absolute;
+				bottom:0;
+				left:-100px;
+
+				&.come-in,
+				&.already-visible {
+					left:0;
+				}
+			}
+		}
+
+		.pricing-table{
+			position: relative;
+			padding:0;
+			margin:0;
+			margin-top:-355px;
+			border-radius: 2.4rem;
+			box-shadow: 50px 50px 100px 20px rgba(0,0,0,0.15);
+			//overflow: hidden;
+			ul{
+				padding:0;
+				margin:0;
+			}
+			header{
+				padding-bottom:3rem;
+				h5{
+					margin:0;
+				}
+				.cost{
+					font-size: 14rem;
+					line-height: 13rem;
+					margin-top: -32px;
+					padding-bottom:16px;
+				}
+				.currency{
+					font-size: 4rem;
+					color: $grey-dark;
+					vertical-align: text-top;
+				}
+			}
+			.butterflies{
+				position: absolute;
+				left: -70px;
+				top:80px;
+			}
+			.left,
+			.center,
+			.right{
+				display: inline-block;
+				position: relative;
+				background: white;
+				padding:4rem 3rem 5rem 3rem;
+				width:33.33%;
+			}
+			.left{
+				border-right:1px solid $grey;
+				border-radius: 2.4rem 0 0 2.4rem;
+			}
+			.right{
+				background-color:$green-dark;
+				color: white;
+				width:33.33%;
+				margin-right:-1px;
+				border-radius: 0 2.4rem 2.4rem 0 ;
+				header{
+					h5{
+						color:$yellow;
+					}
+				}
+				.features{
+					border-top:1px solid rgba($grey,.2);
+				}
+				.btn{
+					background:rgba($yellow,0.9);
+				}
+				.star{
+					position: absolute;
+					top: -32px;
+					left: 50%;
+					margin-left: -32px;
+				}
+			}
+			.features{
+				border-top:1px solid $grey-light;
+				padding-top:3rem;
+				padding-bottom:3rem;
+				li{
+					list-style-type:none;
+					line-height: 5rem;
+				}
+			}
+		}
+	}
+
 }
+

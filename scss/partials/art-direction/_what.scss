@@ -109,6 +109,7 @@
 			@include transition(all 1.2s ease-in-out);
 			right:0;
 			margin-top:250px;
+
 		}
 		.R3 {
 			@include transition(all 1s ease-in-out);
@@ -132,11 +133,32 @@
 			margin-top:200px;
 		}
 
+		@keyframes bobbing-balloon-1 {
+			0% {@include transform(translate(0, 6px));}
+			50% {@include transform(translate(0, 0));}
+			100% {@include transform(translate(0, 6px));}
+		}
+		@keyframes bobbing-balloon-2 {
+			0% {@include transform(translate(0, -6px));}
+			50% {@include transform(translate(0, 0));}
+			100% {@include transform(translate(0, -6px));}
+		}
+
 		&.come-in,
 		&.already-visible {
 			.R1, .R2, .R3, .L1, .L2, .L3 {
 				margin-top:0px;
 			}
+			.R1, .L1 {
+				animation: bobbing-balloon-1 infinite 6s;
+			}
+			.R2, .L2, {
+				animation: bobbing-balloon-2 infinite 4s;
+			}
+			.R3, .L3 {
+				animation: bobbing-balloon-1 infinite 4s;
+			}
+
 		}
 	}
 }
