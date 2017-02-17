@@ -122,17 +122,21 @@
 	.flag-hr{
 		background: linear-gradient(to bottom, $off-white 0%,$off-white 55%,$off-white 55%,transparent 55%,transparent 100%);
 		margin-bottom: -77px;
+		margin-top:-30px;
 	}
 
 	.how-pricing-works{
 		text-align: center;
 		.top-section{
-			padding-top:77px;
+			padding-top:3rem;
 			padding-bottom:300px;
 			color:white;
 			background-color:$green;
 			background-image:url(../img/hero-imgs/hero-light-bg.png);
 			background-size:cover;
+			.wrapper{
+				padding-bottom:0;
+			}
 			.parrot{
 				@include transition(all 1.5s ease-out);
 				-webkit-transition-delay: 1s; /* Safari */
@@ -153,8 +157,8 @@
 				padding-bottom:8rem;
 			}
 			h3{
-				font-size: 4rem;
-				margin-top:12rem;
+				font-size: 3rem;
+				margin-top:8rem;
 			}
 			.ele{
 				@include transition(all 2.5s ease-out);
@@ -189,10 +193,10 @@
 					margin:0;
 				}
 				.cost{
-					font-size: 14rem;
-					line-height: 13rem;
-					margin-top: -32px;
-					padding-bottom:16px;
+					font-size: 10rem;
+					line-height: 10rem;
+					margin-top: -15px;
+					padding-bottom:10px;
 				}
 				.currency{
 					font-size: 4rem;
@@ -248,7 +252,7 @@
 				padding-bottom:3rem;
 				li{
 					list-style-type:none;
-					line-height: 5rem;
+					line-height: 4rem;
 				}
 			}
 		}
