@@ -99,7 +99,6 @@ $(function() {
 	// END: mobile OS sniffer
 
 
-
 	// animate on scroll
 	$.fn.visible = function(partial) {
 
@@ -143,7 +142,6 @@ $(function() {
 	// end: animate on scroll
 
 
-
 	// map tooltips
 	$('.map-location').hover(
 		function() { // mouse enter
@@ -157,6 +155,15 @@ $(function() {
 	);
 	// end: map tooltips
 
+
+	// home page scoll cta
+	$(".scroll-anim").click(function() {
+		var offset = -100;//20; //Offset of 20px
+		$('html, body').animate({
+			scrollTop: $(".vital-stats").offset().top + offset
+		}, 1200);
+	});
+	// end: home page scoll cta
 
 
 });

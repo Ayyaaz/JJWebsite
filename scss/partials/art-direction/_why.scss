@@ -74,9 +74,14 @@
 	.testimonial-card{
 		margin-top:5rem;
 	}
-	.promo-section .wrapper{
-		padding-top:8rem;
-		padding-bottom:8rem;
+	.promo-section{
+		.wrapper{
+			padding-top:8rem;
+			padding-bottom:8rem;
+		}
+		.promo-col:first-of-type .btn{
+			margin-top:2rem;
+		}
 	}
 	.promo-happy .promo-happy-img{
 		position: absolute;
