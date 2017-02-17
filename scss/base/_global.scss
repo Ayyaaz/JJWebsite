@@ -97,12 +97,14 @@
 }
 
 .scroll-anim{
+	$scroller-white:transparentize(whitesmoke,0.2);
 	cursor: pointer;
 	display:inline-block;
 	position: relative;
+
 	.mouse{
 		text-align: center;
-		border:2px solid whitesmoke;
+		border:2px solid $scroller-white;
 		border-radius:15px;
 		height:48px;
 		width:28px;
@@ -111,7 +113,7 @@
 			content: '';
 			display: inline-block;
 			border-radius:4px;
-			border:2px solid whitesmoke;
+			border:2px solid $scroller-white;
 			height:10px;
 		}
 	}
@@ -121,7 +123,7 @@
 		left: 4px;
 		height: 20px;
 		width: 20px;
-		border:2px solid whitesmoke;
+		border:2px solid $scroller-white;
 		border-left-color:transparent;
 		border-top-color:transparent;
 		@include transform(rotate(45deg));
