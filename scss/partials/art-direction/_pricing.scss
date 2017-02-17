@@ -1,6 +1,23 @@
 
 .pricing{
 
+//	@-webkit-keyframes float {
+//		from { -webkit-transform: rotate(0deg) translateX(20px) rotate(0deg); }
+//		to   { -webkit-transform: rotate(360deg) translateX(20px) rotate(-360deg); }
+//	}
+//	@-moz-keyframes float {
+//		from { -moz-transform: rotate(0deg) translateX(20px) rotate(0deg); }
+//		to   { -moz-transform: rotate(360deg) translateX(20px) rotate(-360deg); }
+//	}
+//	@-o-keyframes float {
+//		from { -o-transform: rotate(0deg) translateX(20px) rotate(0deg); }
+//		to   { -o-transform: rotate(360deg) translateX(20px) rotate(-360deg); }
+//	}
+	@keyframes float {
+		from { transform: rotate(0deg) translateX(20px) rotate(0deg); }
+		to   { transform: rotate(360deg) translateX(20px) rotate(-360deg); }
+	}
+
 	.hero-container{
 		overflow: hidden;
 		position: relative;
@@ -69,27 +86,10 @@
 				@include transform(scale(.9));
 			}
 			&.butterfly {
-//			-webkit-animation: butterfly-floater 14s linear infinite;
-//			   -moz-animation: butterfly-floater 14s linear infinite;
-//				 -o-animation: butterfly-floater 14s linear infinite;
-					animation: butterfly-floater 14s linear infinite;
-
-//				@-webkit-keyframes butterfly-floater {
-//					from { -webkit-transform: rotate(0deg) translateX(20px) rotate(0deg); }
-//					to   { -webkit-transform: rotate(360deg) translateX(20px) rotate(-360deg); }
-//				}
-//				@-moz-keyframes butterfly-floater {
-//					from { -moz-transform: rotate(0deg) translateX(20px) rotate(0deg); }
-//					to   { -moz-transform: rotate(360deg) translateX(20px) rotate(-360deg); }
-//				}
-//				@-o-keyframes butterfly-floater {
-//					from { -o-transform: rotate(0deg) translateX(20px) rotate(0deg); }
-//					to   { -o-transform: rotate(360deg) translateX(20px) rotate(-360deg); }
-//				}
-				@keyframes butterfly-floater {
-					from { transform: rotate(0deg) translateX(20px) rotate(0deg); }
-					to   { transform: rotate(360deg) translateX(20px) rotate(-360deg); }
-				}
+//			-webkit-animation: float 14s linear infinite;
+//			   -moz-animation: float 14s linear infinite;
+//				 -o-animation: float 14s linear infinite;
+					animation: float 14s linear infinite;
 			}
 
 			&.come-in,
@@ -111,11 +111,10 @@
 				position: absolute;
 				left: 70px;
 
-				animation: bird-floater 14s linear infinite;
-				@keyframes bird-floater {
-					from { transform: rotate(0deg) translateX(20px) rotate(0deg); }
-					to   { transform: rotate(-360deg) translateX(20px) rotate(360deg); }
-				}
+//			-webkit-animation: float 14s linear infinite;
+//			   -moz-animation: float 14s linear infinite;
+//				 -o-animation: float 14s linear infinite;
+					animation: float 14s linear infinite;
 			}
 		}
 	}

@@ -20,23 +20,26 @@
 	cursor: pointer;
 	@include transition(all 0.3s ease-in-out);
 
-	&:hover{
+	&:hover,
+	&.solid{
 		color:white;
 		background:$yellow;//lighten($yellow,45%);
 	}
 	&.btn-alt{
 		color:white;
-		&:hover{
+		&:hover,
+		&.solid{
 			background:rgba($yellow,0.9);
 		}
 	}
 	&.green{
 		border-color:$green;
-		&:hover{
+		&:hover,
+		&.solid{
 			background:$green;
 		}
 	}
-	&.fill{
+	&.fill-anim{
 		&:hover {
 			color: whitesmoke;
 			background:none;

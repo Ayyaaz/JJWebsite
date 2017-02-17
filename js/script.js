@@ -19,7 +19,7 @@ $(function() {
         width: 800  // Width of carousel
         ,spacing3d: 300  // Item spacing in 3D (modern browsers) modes
         ,spacing2d: 400  // Item spacing in 2D (old browsers) modes
-        ,showShadow:true
+        //,showShadow:true
         //,showReflection: true
 		,infiniteLoop: true  // Looping mode
 		,autoScale: 75  // Scale at 75% of parent element

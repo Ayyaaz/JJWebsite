@@ -1,0 +1,104 @@
+
+.why{
+	h2 sub{
+		font-family: $font-open;
+		bottom: .4em;
+		font-size:60%;
+	}
+	.hero-container{
+		overflow: hidden;
+		position: relative;
+	}
+	.hero {
+		color:white;
+		text-align: center;
+		padding-bottom: 6.4rem;
+
+		&.bg-scroll-img{
+			//background-attachment: initial;
+			background-color: #45781f;
+			background-image:url(../img/hero-imgs/hero-bg.png);
+			&:before{
+				background:none;
+			}
+		}
+
+		h1{
+			font-size: 34rem;
+			line-height: 40rem;
+			@include transform(rotate(-5deg));
+
+			margin-left:460px;
+			margin-top:-110px;
+		}
+
+		.parade{
+			position: absolute;
+			left:50%;
+			margin-left:-720px;
+
+			@include transition(all 2s ease-out);
+			-webkit-transition-delay: 1s; /* Safari */
+			transition-delay: 1s;
+
+			&.man{
+				bottom:0;
+			}
+			&.birds-L {
+				top:0;
+				margin-left:-650px;
+			}
+			&.birds-R {
+				top:0;
+				margin-left:-800px;
+			}
+			&.confetti {
+				bottom:0;
+				transform-origin: 50% 100%;
+				@include transform(scale(.8,.8));
+			}
+
+			&.come-in,
+			&.already-visible {
+				&.birds-L,
+				&.birds-R {
+					margin-left:-720px;
+				}
+				&.confetti {
+					@include transform(scale(1,1));
+				}
+			}
+		}
+	}
+
+	.testimonial-card{
+		margin-top:5rem;
+	}
+	.promo-section .wrapper{
+		padding-top:8rem;
+		padding-bottom:8rem;
+	}
+	.promo-happy .promo-happy-img{
+		position: absolute;
+		height: 130%;
+		top:-10%;
+		width: 112%;
+		left:-6%;
+	}
+	.promo-trophy .promo-trophy-img{
+		position: absolute;
+		top:-130px;
+		right:-10px;
+	}
+	.promo-books .promo-books-img{
+		position: absolute;
+		top:-217px;
+		right:-120px;
+	}
+	.promo-vine .promo-vine-img{
+		position: absolute;
+		top:-26px;
+		left:-26px;
+		width:108%;
+	}
+}

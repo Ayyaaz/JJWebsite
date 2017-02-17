@@ -73,3 +73,9 @@ img.grayscale:hover {
 	filter: none;
 	-webkit-filter: grayscale(0%);
 }
+
+.serif{
+	font-family:$font-cantata;
+	font-size: 2rem;
+	line-height:3rem;
+}
