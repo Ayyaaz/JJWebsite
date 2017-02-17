@@ -23,7 +23,9 @@
 			line-height: 16rem;
 			@include transform(rotate(-10deg));
 		}
-
+		.wrapper{
+			padding-top:10px;
+		}
 		.parade{
 			position: absolute;
 			bottom:0;

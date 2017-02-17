@@ -23,7 +23,7 @@ body {
 	&.fixed-nav { // Use this class to set your nav to always be at the top of the page on scroll, sets appropriate padding to the top of the hero element to account for the extra space
 
 		.hero {
-			padding-top: 135px;
+			padding-top: 125px;
 		}
 
 		.main-header {
@@ -62,28 +62,28 @@ h1 {
 
 h2 {
 	font-family: reis_font;
-	font-size:6rem;
+	font-size:5rem;
 	margin-bottom: 3.5rem;
 	margin-top:0;
 }
 
 h3 {
 	font-family: $font-cantata;
-	font-size:3rem;
+	font-size:2.5rem;
 }
 
 h4 {
-	font-size:2.5rem;
+	font-size:2.25rem;
 }
 
 h5 {
 	font-family: $font-cantata;
-	font-size:2.5rem;
+	font-size:2.25rem;
 }
 
 p{
-	font-size: 1.4rem;
-	line-height: 2.4rem;
+	font-size: 1.3rem;
+	line-height: 2.3rem;
 }
 
 textarea, input {outline:none;} // remove webkit glow
