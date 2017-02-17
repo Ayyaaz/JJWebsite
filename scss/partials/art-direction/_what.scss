@@ -58,9 +58,6 @@
 	}
 
 	.four-pillars{
-		h3{
-			margin:0;
-		}
 		.wrapper {
 			padding-top:5rem;
 			padding-bottom:3rem;
@@ -69,7 +66,8 @@
 			float:left;
 			width:30%;
 			img{
-				max-width: 360px;
+				max-width: 315px;
+				width:100%;
 			}
 		}
 		.copy-container{
@@ -85,8 +83,9 @@
 			&:nth-child(even){
 				padding-right:0;
 			}
-			h3{
+			h5{
 				color: $green;
+				margin:0;
 			}
 		}
 	}

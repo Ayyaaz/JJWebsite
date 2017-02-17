@@ -50,6 +50,10 @@
 	&.green{
 		border-color:$green;
 	}
+	+ p,
+	+ h5{
+		margin-top: 3.5rem;
+	}
 }
 
 .flag-hr{

@@ -129,7 +129,7 @@
 
 
 	.four-pillars{
-		h3{
+		h5{
 			margin-bottom:0;
 		}
 		.wrapper {
@@ -152,7 +152,7 @@
 			&:nth-child(even){
 				float:left;
 			}
-			h3{
+			h5{
 				color: $green;//#2f8b26;
 			}
 		}
@@ -247,10 +247,6 @@
 
 	.clients-panel{
 		text-align:center;
-		h3{
-			display: inline-block;
-			width:400px;
-		}
 		.wrapper{
 			display: inline-block;
 			padding-top:7rem;
