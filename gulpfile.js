@@ -13,8 +13,9 @@ var gulp = require('gulp'),
     cssnano = require('cssnano'),
     rename = require('gulp-rename'),
     notify = require('gulp-notify'),
-    del = require('del');
-    browserSync = require('browser-sync').create();
+    del = require('del'),
+    browserSync = require('browser-sync').create(),
+    imagemin = require('gulp-imagemin');
 
 // SCSS Compiling Magic
 gulp.task('styles', function () {
@@ -33,6 +34,7 @@ gulp.task('styles', function () {
         .pipe(notify({ message: 'Styles task complete' }));
 });
 
+
 gulp.task('clean', function() {
     return del(['css']);
 });
@@ -48,5 +50,11 @@ gulp.task('watch', function() {
     // Watch .scss files and reload via Browser Sync
     gulp.watch('**/*.scss', ['styles']);
     gulp.watch("./*.html").on('change', browserSync.reload);  // Exclude if you don't want to use Browser Sync (looks at html file changes)
-    
+
 });
+
+gulp.task('images', () =>
+    gulp.src('pre-img/**/*')
+        .pipe(imagemin())
+        .pipe(gulp.dest('img'))
+);

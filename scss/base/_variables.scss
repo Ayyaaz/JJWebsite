@@ -13,9 +13,9 @@ $font-cantata: 'Cantata One', serif;
 @font-face {
 	font-family: reis_font;
 	src: local(reis_font),
-         url('font/REIS-Regular.ttf') format('truetype'),
          url('font/REIS-Regular.woff') format('woff'),
-         url('font/REIS-Regular.woff2') format('woff2');
+         //url('font/REIS-Regular.ttf') format('truetype'),
+         //url('font/REIS-Regular.woff2') format('woff2');
 }
 
 $grey:#ececec;
