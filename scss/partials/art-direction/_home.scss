@@ -91,7 +91,7 @@
 		}
 		p {
 			font-size: 2.5rem;
-			margin-top:-10rem;
+			margin-top:-6rem;
 			white-space: nowrap;
 			opacity: 0;
 		}
@@ -151,12 +151,12 @@
 				@keyframes live-stat-label {
 					0% {
 						font-size: 2.5rem;
-						margin-top:-10rem;
+						margin-top:-6rem;
 						opacity: 0;
 					}
 					25% {
 						font-size: 4rem;
-						margin-top:-10rem;
+						margin-top:-6rem;
 						opacity: 1;
 					}
 					50% {

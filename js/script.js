@@ -1,20 +1,5 @@
 $(function() {
 
-	// vital stats carousel
-	$(function() {
-		$('.slider').slick({
-			dots: true
-			,adaptiveHeight: true
-			,autoplay:true
-			,autoplaySpeed:3000
-			,prevArrow: ''//<div class="slick-prev"><i class="material-icons">&#xE314;</i></div>'
-			,nextArrow: ''//<div class="slick-next"><i class="material-icons">&#xE315;</i></div>'
-			,fade:true
-		});
-	});
-	// vital stats carousel
-
-
 	// killer carousel
     $('.kc-wrap').KillerCarousel({
         width: 800  // Width of carousel
@@ -167,6 +152,21 @@ $(function() {
 	// end: home page scoll cta
 
 
+	// vital stats carousel
+	$(function() {
+		$('.slider').slick({
+			dots: true
+			,adaptiveHeight: true
+			,autoplay:true
+			,autoplaySpeed:3000
+			,prevArrow: ''//<div class="slick-prev"><i class="material-icons">&#xE314;</i></div>'
+			,nextArrow: ''//<div class="slick-next"><i class="material-icons">&#xE315;</i></div>'
+			,fade:true
+		});
+	});
+	// vital stats carousel
+
+
 	// Stats Counter
 	function countUp(){
 		$('.count').each(function () {
@@ -184,7 +184,7 @@ $(function() {
 
 	$('.slider').on('init', function(event, slick){
 		//var firstStat = $('.slick-slide:not([data-slick-index="0"])');
-		//$('.slick-slide:not([data-slick-index="0"])').find('.stat').addClass('not-visible');
+		//firstStat.find('.stat').addClass('not-visible');
 
 		countUp();
 	});
