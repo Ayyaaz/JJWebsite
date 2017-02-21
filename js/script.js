@@ -167,34 +167,8 @@ $(function() {
 	// end: home page scoll cta
 
 
-
-
 	// Stats Counter
-	$('.slider').on('init', function(event, slick){
-		var firstStat = $('.slick-slide:not([data-slick-index="0"])');
-		//$('.slick-slide:not([data-slick-index="0"])').find('.stat').addClass('not-visible');
-
-		$('.count').each(function () {
-			$(this).prop('Counter',0).animate({
-				Counter: $(this).text()
-			}, {
-				duration: 3500,
-				easing: 'swing',
-				step: function (now) {
-					$(this).text(Math.ceil(now));
-				}
-			});
-		});
-	});
-
-	$('.slider').on('afterChange', function(event, slick, currentSlide, nextSlide){
-		var elSlide = $(slick.$slides[currentSlide]);
-		var prevSlide = $(slick.$slides[currentSlide -1]);
-		var nxtSlide = $(slick.$slides[nextSlide]);
-
-		//$('.stat').addClass('not-visible');
-		//elSlide.find('.stat').removeClass('not-visible');
-
+	function countUp(){
 		$('.count').each(function () {
 			$(this).prop('Counter',0).animate({
 				Counter: $(this).text()
@@ -206,6 +180,21 @@ $(function() {
 				}
 			});
 		});
+	}
+
+	$('.slider').on('init', function(event, slick){
+		//var firstStat = $('.slick-slide:not([data-slick-index="0"])');
+		//$('.slick-slide:not([data-slick-index="0"])').find('.stat').addClass('not-visible');
+
+		countUp();
+	});
+
+	$('.slider').on('afterChange', function(event, slick, currentSlide, nextSlide){
+		//var elSlide = $(slick.$slides[currentSlide]);
+		//$('.stat').addClass('not-visible');
+		//elSlide.find('.stat').removeClass('not-visible');
+
+		countUp();
 	});
 	// end: Stats Counter
 
