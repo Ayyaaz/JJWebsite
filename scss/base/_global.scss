@@ -101,6 +101,8 @@
 	cursor: pointer;
 	display:inline-block;
 	position: relative;
+	height:70px;
+	width:40px;
 
 	.mouse{
 		text-align: center;
@@ -119,8 +121,9 @@
 	}
 	.chevron{
 		position: absolute;
-		top:40px;
-		left: 4px;
+		top:0px;
+		left:50%;
+		margin-left: -10px;
 		height: 20px;
 		width: 20px;
 		border:2px solid $scroller-white;
@@ -128,23 +131,26 @@
 		border-top-color:transparent;
 		@include transform(rotate(45deg));
 
-		animation: scroll-chevrons infinite linear 1s;
+		animation: scroll-chevrons infinite linear 1.5s;
 		@keyframes scroll-chevrons {
 			0% {
 				margin-top:0;
 				opacity: 0;
 			}
 			50% {
-				margin-top:10px;
+				margin-top:15px;
 				opacity: 1;
 			}
 			100% {
-				margin-top:20px;
+				margin-top:30px;
 				opacity: 0;
 			}
 		}
+		&:first-of-type {
+			top:-15px;
+		}
 		&:last-of-type {
-			top:55px;
+			top:15px;
 		}
 	}
 }

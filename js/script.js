@@ -1,17 +1,18 @@
 $(function() {
 
-	// Testimonial Carousel
+	// vital stats carousel
 	$(function() {
 		$('.slider').slick({
 			dots: true
 			,adaptiveHeight: true
 			,autoplay:true
-			//,autoplaySpeed:4000
+			,autoplaySpeed:3000
 			,prevArrow: ''//<div class="slick-prev"><i class="material-icons">&#xE314;</i></div>'
 			,nextArrow: ''//<div class="slick-next"><i class="material-icons">&#xE315;</i></div>'
+			,fade:true
 		});
 	});
-	// Testimonial Carousel
+	// vital stats carousel
 
 
 	// killer carousel
@@ -164,6 +165,52 @@ $(function() {
 		}, 1200);
 	});
 	// end: home page scoll cta
+
+
+
+
+	// Stats Counter
+	$('.slider').on('init', function(event, slick){
+		var firstStat = $('.slick-slide:not([data-slick-index="0"])');
+		//$('.slick-slide:not([data-slick-index="0"])').find('.stat').addClass('not-visible');
+
+		$('.count').each(function () {
+			$(this).prop('Counter',0).animate({
+				Counter: $(this).text()
+			}, {
+				duration: 3500,
+				easing: 'swing',
+				step: function (now) {
+					$(this).text(Math.ceil(now));
+				}
+			});
+		});
+	});
+
+	$('.slider').on('afterChange', function(event, slick, currentSlide, nextSlide){
+		var elSlide = $(slick.$slides[currentSlide]);
+		var prevSlide = $(slick.$slides[currentSlide -1]);
+		var nxtSlide = $(slick.$slides[nextSlide]);
+
+		//$('.stat').addClass('not-visible');
+		//elSlide.find('.stat').removeClass('not-visible');
+
+		$('.count').each(function () {
+			$(this).prop('Counter',0).animate({
+				Counter: $(this).text()
+			}, {
+				duration: 2000,
+				easing: 'swing',
+				step: function (now) {
+					$(this).text(Math.ceil(now));
+				}
+			});
+		});
+	});
+	// end: Stats Counter
+
+
+
 
 
 });
