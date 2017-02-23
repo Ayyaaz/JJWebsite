@@ -1,22 +1,8 @@
 
 .what{
 
-	.hero-container{
-		overflow: hidden;
-	}
 	.hero {
-		color:white;
-		text-align: center;
 		padding-bottom: 6.4rem;
-
-		&.bg-scroll-img{
-			//background-attachment: initial;
-			background-color: #45781f;
-			background-image:url(../img/hero-imgs/hero-bg.png);
-			&:before{
-				background:none;
-			}
-		}
 
 		h1{
 			font-size: 18rem;

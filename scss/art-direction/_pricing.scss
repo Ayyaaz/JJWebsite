@@ -18,23 +18,8 @@
 		to   { transform: rotate(360deg) translateX(20px) rotate(-360deg); }
 	}
 
-	.hero-container{
-		overflow: hidden;
-		position: relative;
-	}
 	.hero {
-		color:white;
-		text-align: center;
 		padding-bottom: 16rem;
-
-		&.bg-scroll-img{
-			//background-attachment: initial;
-			background-color: #45781f;
-			background-image:url(../img/hero-imgs/hero-bg.png);
-			&:before{
-				background:none;
-			}
-		}
 
 		h1{
 			font-size: 34rem;

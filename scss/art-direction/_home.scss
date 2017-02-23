@@ -1,12 +1,6 @@
 .home{
 
-	.hero-container{
-		overflow:hidden;
-	}
-
 	.hero {
-		color:white;
-		text-align: center;
 		//text-shadow: 0 2px 3px #555;
 	    padding-top: 150px;
 		padding-bottom: 6.4rem;
@@ -19,12 +13,7 @@
 			@include transform(rotate(-2deg));
 		}
 		&.bg-scroll-img{
-			//background-attachment: initial;
-			background-color: #45781f;
 			background-image:url(../img/hero-imgs/parade-bg.png);
-			&:before{
-				background:none;
-			}
 		}
 
 		.parade{

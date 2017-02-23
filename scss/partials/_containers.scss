@@ -137,3 +137,22 @@
 		}
 	}
 }
+
+.hero-container{
+	overflow: hidden;
+	position: relative;
+}
+
+.hero {
+	color:white;
+	text-align: center;
+
+	&.bg-scroll-img{
+		//background-attachment: initial;
+		background-color: $hero-bg-color;
+		background-image:url(../img/hero-imgs/hero-bg.png);
+		&:before{
+			background:none;
+		}
+	}
+}
