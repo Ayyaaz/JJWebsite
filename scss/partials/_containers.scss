@@ -32,6 +32,7 @@
 }
 
 .contact-panel{
+	position: relative;
 	text-align:center;
 	.wrapper{
 		max-width: 900px;
@@ -54,7 +55,8 @@
 			border-radius: 40px 0 0 40px;
 			width:calc(100% - 200px);
 			border:1px solid darken($grey-dark,10%);
-
+			height: 53px;
+			font-size: 14px;
 		}
 		button{
 			border-radius: 0 40px 40px 0;
@@ -64,7 +66,7 @@
 			border:none;
 			margin-left: -6px;
 			width:200px;
-
+			height: 53px;
 			&:hover{
 				background: $yellow;
 			}
@@ -101,6 +103,16 @@
 		float: right;
 		width:100px;
 		text-align:right;
+	}
+
+	@media only screen and (max-width:$promo-break-point) {
+		.alignleft,
+		.alignright {
+			display: none;
+		}
+		.aligncenter {
+			width:100%;
+		}
 	}
 }
 

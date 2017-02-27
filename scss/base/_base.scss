@@ -9,6 +9,10 @@ html {
 html {
 	font-size: 62.5%;
 	position: relative;
+
+	@media only screen and (max-width:$promo-break-point) {
+		font-size:52.5%;
+	}
 }
 
 body {
@@ -82,8 +86,8 @@ h5 {
 }
 
 p{
-	font-size: 1.3rem;
-	line-height: 2.3rem;
+	font-size: 13px;
+	line-height: 23px;
 }
 
 textarea, input {outline:none;} // remove webkit glow

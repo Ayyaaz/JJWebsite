@@ -13,7 +13,7 @@ $font-cantata: 'Cantata One', serif;
 @font-face {
 	font-family: reis_font;
 	src: local(reis_font),
-         url('font/REIS-Regular.woff') format('woff'),
+         url('font/REIS-Regular.woff') format('woff');
          //url('font/REIS-Regular.ttf') format('truetype'),
          //url('font/REIS-Regular.woff2') format('woff2');
 }
@@ -32,9 +32,7 @@ $off-white:#f6f6f6;
 
 $spot-color: $green;
 $link-color: $green;
-
-$promo-bg-color: none;
-$promo-content-bg-color: none;
+$hero-bg-color: #45781f;
 
 $promo-break-point: 800px;
-$hero-bg-color: #45781f;
+$mobile-break-point: 400px;
