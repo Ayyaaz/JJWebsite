@@ -126,7 +126,7 @@ $nav-break-point: 940px;
 				border-bottom: 1px solid rgba(0,0,0,0.1);
 				color: $black;
 				text-transform: uppercase;
-				font-size: 12px;
+				font-size: 14px;
 				opacity: .6;
 
 				@media only screen and (min-width:$nav-break-point) {
@@ -137,6 +137,7 @@ $nav-break-point: 940px;
 			&.active{
 				a{
 					opacity: 1;
+					font-weight: 600;
 				}
 			}
 		}

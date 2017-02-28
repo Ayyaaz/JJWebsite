@@ -12,6 +12,7 @@ $(function() {
 		,showNavigation: true
 		,navigationVerticalPos:'bottom:0px'
 		,navigationHorizontalPos:'middle'
+		,useMouseWheel: false
 		//,renderer3d: null
     });
 

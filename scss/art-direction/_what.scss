@@ -33,6 +33,16 @@
 				@include transform(scale(.8));
 			}
 
+			&.butterfly {
+				z-index: 2;
+				bottom: -180px;
+				margin-left: -820px;
+
+//			-webkit-animation: float 14s linear infinite;
+//			   -moz-animation: float 14s linear infinite;
+//				 -o-animation: float 14s linear infinite;
+					animation: float 14s linear infinite;
+			}
 			&.come-in,
 			&.already-visible {
 				&.afroman {

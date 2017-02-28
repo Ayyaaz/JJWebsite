@@ -8,6 +8,11 @@
 	padding: 5rem 1.6rem;
 }
 
+.narrow{
+	width:100%;
+	max-width:800px;
+}
+
 .section-spot-dark{
 	background: $green-dark;
 	color: white;
@@ -91,21 +96,21 @@
 	}
 	.alignleft {
 		float: left;
-		width:100px;
+		width:150px;
 		text-align:left;
 	}
 	.aligncenter {
 		float: left;
-		width:calc(100% - 200px);
+		width:calc(100% - 300px);
 		text-align:center;
 	}
 	.alignright {
 		float: right;
-		width:100px;
+		width:150px;
 		text-align:right;
 	}
 
-	@media only screen and (max-width:$promo-break-point) {
+	@media only screen and (max-width:$promo-break-point+20) {
 		.alignleft,
 		.alignright {
 			display: none;
