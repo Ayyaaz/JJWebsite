@@ -43,25 +43,14 @@
 				left:50%;
 				margin-left:-720px;
 				transform-origin: 50% 100%;
-				@include transform(scale(.8,.8));
+				@include transform(scale(.8));
 			}
 			&.balloon {
-				@include transition(all 1.5s ease-in-out);
+				@include transition(all 2s ease-in-out);
 				-webkit-transition-delay: 1s; /* Safari */
 				transition-delay: 1s;
-
-				animation: balloon infinite 5s;
-				@keyframes balloon {
-					0% {
-						@include transform(translate(0, 15px));
-					}
-					50% {
-						@include transform(translate(0, 0));
-					}
-					100% {
-						@include transform(translate(0, 15px));
-					}
-				}
+				@include transform(scale(.9));
+				z-index: 1;
 			}
 			&.giraffe {
 				@include transition(all 1s ease-out);
@@ -69,6 +58,7 @@
 				transition-delay: 1s;
 				transform-origin: 70% 74%;
 				@include transform(scale(.9));
+				z-index: 2;
 			}
 			&.butterfly {
 //			-webkit-animation: float 14s linear infinite;
@@ -83,7 +73,10 @@
 					@include transform(scale(1));
 				}
 				&.confetti {
-					@include transform(scale(1,1));
+					@include transform(scale(1));
+				}
+				&.balloon {
+					@include transform(scale(1));
 				}
 			}
 		}
@@ -139,7 +132,7 @@
 			position: relative;
 			background-color:$off-white;
 			.wrapper{
-				padding-bottom:8rem;
+				padding-bottom:12rem;
 			}
 			h3{
 				font-size: 3rem;
@@ -189,6 +182,12 @@
 					vertical-align: text-top;
 				}
 			}
+			footer{
+				position: absolute;
+				bottom:3rem;
+				left:0;
+				width:100%;
+			}
 			.butterflies{
 				position: absolute;
 				left: -70px;
@@ -197,10 +196,10 @@
 			.left,
 			.center,
 			.right{
-				display: inline-block;
+				display: table-cell;
 				position: relative;
 				background: white;
-				padding:4rem 3rem 5rem 3rem;
+				padding:4rem 3rem 8rem 3rem;
 				width:33.33%;
 			}
 			.left{
@@ -210,8 +209,6 @@
 			.right{
 				background-color:$green-dark;
 				color: white;
-				width:33.33%;
-				margin-right:-1px;
 				border-radius: 0 2.4rem 2.4rem 0 ;
 				header{
 					h5{
@@ -233,11 +230,17 @@
 			}
 			.features{
 				border-top:1px solid $grey-light;
-				padding-top:3rem;
-				padding-bottom:3rem;
+				padding-top:1.5rem;
+				padding-bottom:2rem;
 				li{
 					list-style-type:none;
-					line-height: 4rem;
+					line-height: 3rem;
+					&:first-of-type{
+						padding-bottom:0.8rem;
+						h5{
+							margin:0;
+						}
+					}
 				}
 			}
 		}
