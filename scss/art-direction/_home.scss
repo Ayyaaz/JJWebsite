@@ -8,9 +8,6 @@ $parade-img-width:1550px;
 		padding-bottom: 6.4rem;
 		height:900px;
 
-		@media only screen and (max-width:$parade-img-width) {
-			height:780px;
-		}
 		.wrapper{
 			padding-top:0;
 		}
@@ -19,6 +16,12 @@ $parade-img-width:1550px;
 		}
 		&.bg-scroll-img{
 			background-image:url(../img/hero-imgs/parade-bg.jpg);
+		}
+
+		@media only screen and (max-width:$promo-break-point) {
+			h1 {
+				font-size:7rem;
+			}
 		}
 
 		.parade{
@@ -71,8 +74,13 @@ $parade-img-width:1550px;
 			&.already-visible {
 				right:0;
 			}
+		}
+	}
 
-			@media only screen and (max-width:$parade-img-width) {
+	@media only screen and (max-width:$parade-img-width) {
+		.hero{
+			height:780px;
+			.parade{
 				max-width:100%;
 				height:auto;
 				bottom: 0%;
@@ -80,6 +88,33 @@ $parade-img-width:1550px;
 			}
 		}
 	}
+	@media only screen and (max-width:$nav-break-point) {
+		.hero{
+			height:680px;
+			.parade{
+				max-width:120%;
+				margin-bottom: -15.9%;
+			}
+		}
+	}
+	@media only screen and (max-width:$promo-break-point) {
+		.hero{
+			height:580px;
+			.parade{
+				max-width:initial;
+				width:960px;
+				margin-bottom: -127px;
+				&.ele {
+					left:-150px;
+				}
+				&.band,
+				&.handstand {
+					left:-190px;
+				}
+			}
+		}
+	}
+
 
 	.vital-stats {
 		background: $green-dark;
@@ -97,7 +132,8 @@ $parade-img-width:1550px;
 			opacity: 0;
 		}
 		.wrapper{
-			padding: 5rem 0 8rem 0;
+			display: block;
+			padding: 5rem 0 16.5rem 0;
 		}
 		.stat{
 			@include transition(all 1s ease-out);
@@ -134,10 +170,8 @@ $parade-img-width:1550px;
 			}
 		}
 		.btn{
-			margin-top:5rem;
 			width:270px;
 		}
-
 
 		.slick-slide{
 			min-height:180px;
@@ -174,6 +208,27 @@ $parade-img-width:1550px;
 				}
 			}
 		}
+		.vital-stats-cta{
+			margin-top: -13rem;
+		}
+		@media only screen and (max-width:1000px) {
+			h2{
+				font-size: 6rem;
+			}
+			.vital-stats-cta{
+				margin-top: 7rem;
+				background-color:darken($green-dark,5%);
+				padding:2rem;
+				.btn{
+					float: none;
+					margin-left: 1rem;
+					margin-right: 1rem;
+				}
+			}
+			.wrapper{
+				padding-bottom:0;
+			}
+		}
 	}
 
 
@@ -185,15 +240,27 @@ $parade-img-width:1550px;
 			position: relative;
 			max-width:1000px;
 			padding:5rem 0 3rem 0;
+			@media only screen and (max-width:$promo-break-point) {
+				padding-left:1.6rem;
+				padding-right:1.6rem;
+			}
 		}
 		.copy-container{
 			position: absolute;
+			top:140px;
 			width:100%;
 			padding: 0 16px;
+			@media only screen and (max-width:$promo-break-point) {
+				position: relative;
+				top:0;
+			}
 		}
 		.copy-block{
 			@extend .cf-group;
 			margin-top:150px;
+			@media only screen and (max-width:$promo-break-point) {
+				margin-top:0;
+			}
 		}
 		.copy{
 			float:right;
@@ -203,6 +270,9 @@ $parade-img-width:1550px;
 			}
 			h5{
 				color: $green;//#2f8b26;
+			}
+			@media only screen and (max-width:$promo-break-point) {
+				width:48%;
 			}
 		}
 		.bird-man{
@@ -251,8 +321,21 @@ $parade-img-width:1550px;
 					}
 				}
 			}
+			@media only screen and (max-width:$promo-break-point) {
+				height: 600px;
+				transform: scale(.8);
+				margin-top: -60px;
+				margin-bottom: -100px;
+				@include transform(scale(0.8));
+			}
+		}
+		@media only screen and (max-width:$promo-break-point) {
+			.btn{
+				margin-top: 40px;
+			}
 		}
 	}
+
 
 	.unforgettable{
 		position: relative;
@@ -293,6 +376,9 @@ $parade-img-width:1550px;
 					right:0;
 				}
 			}
+			@media only screen and (max-width:$promo-break-point) {
+				display: none;
+			}
 		}
 	}
 
@@ -307,34 +393,33 @@ $parade-img-width:1550px;
 		.logos,
 		.awards{
 			padding-left:0;
-			//padding-top:5rem;
 			li{
 				list-style-type: none;
 				display: inline-block;
 			}
 			img{
-				width: 170px;
-				max-width: 100%;
+				width: 100%;
 				vertical-align: middle;
 				&:hover{
 				}
 			}
 		}
-		.logos{
-			li{
-				padding: 0 10px;
-				max-width: 16%;//=100/6 logos
-			}
+		.logos li{
+			padding: 10px;
+			max-width: 145px;
 		}
-		.awards{
-			li{
-				padding:20px;
-				img{
-					width: 100%;
-				}
+		.awards li{
+			padding:20px;
+		}
+		@media only screen and (max-width:950px) {
+			.logos,
+			.awards{
+				max-width:700px;
+				margin:0 auto;
 			}
 		}
 	}
+
 
 	.locations{
 		text-align:center;
@@ -508,6 +593,12 @@ $parade-img-width:1550px;
 			}
 		}
 		// end: map location pin
+	}
+
+	@media only screen and (max-width:$promo-break-point) {
+		.flag-hr{
+			display: none;
+		}
 	}
 
 }

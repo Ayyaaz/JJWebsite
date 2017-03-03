@@ -1,6 +1,5 @@
 
 $nav-line-height: 80px;
-$nav-break-point: 940px;
 
 .main-header {
 	width: 100%;
@@ -38,6 +37,12 @@ $nav-break-point: 940px;
 			height: 45%;
 			vertical-align: middle;
 			}
+		}
+
+		@media only screen and (max-width:$nav-break-point) {
+			width: 150px;
+			height: 50px;
+			line-height: 50px;
 		}
 	}
 }
@@ -206,6 +211,50 @@ $nav-break-point: 940px;
 			-ms-transform: translate(0,0); /* IE 9 */
 			-webkit-transform: translate(0,0); /* Safari */
 			transform: translate(0,0);
+		}
+	}
+}
+
+.real-time-info{
+	background-color:$spot-color;//$green-dark;
+	width:100%;
+	color:white;
+	text-transform: uppercase;
+	padding:12px 0;
+	font-size: .9em;
+	.wrapper{
+		padding-bottom:0;
+	}
+	.icon{
+		vertical-align: bottom;
+		color: $yellow;
+		font-size: 2.1rem;
+	}
+	.alignleft {
+		float: left;
+		width:150px;
+		text-align:left;
+	}
+	.aligncenter {
+		float: left;
+		width:calc(100% - 300px);
+		text-align:center;
+	}
+	.alignright {
+		float: right;
+		width:150px;
+		text-align:right;
+	}
+	@media only screen and (max-width:$nav-break-point) {
+		padding:5px 0;
+	}
+	@media only screen and (max-width:$promo-break-point+20) {
+		.alignleft,
+		.alignright {
+			display: none;
+		}
+		.aligncenter {
+			width:100%;
 		}
 	}
 }

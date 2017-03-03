@@ -28,6 +28,10 @@ body {
 
 		.hero {
 			padding-top: 125px;
+
+			@media only screen and (max-width:$nav-break-point) {
+				padding-top: 77px;
+			}
 		}
 
 		.main-header {
@@ -36,9 +40,7 @@ body {
 			left: 0;
 			z-index: 500;
 		}
-
 	}
-
 }
 
 html.locked, body.locked {

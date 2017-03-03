@@ -79,48 +79,6 @@
 	}
 }
 
-.real-time-info{
-	background-color:$spot-color;//$green-dark;
-	width:100%;
-	color:white;
-	text-transform: uppercase;
-	padding:12px 0;
-	font-size: .9em;
-	.wrapper{
-		padding-bottom:0;
-	}
-	.icon{
-		vertical-align: bottom;
-		color: $yellow;
-		font-size: 2.1rem;
-	}
-	.alignleft {
-		float: left;
-		width:150px;
-		text-align:left;
-	}
-	.aligncenter {
-		float: left;
-		width:calc(100% - 300px);
-		text-align:center;
-	}
-	.alignright {
-		float: right;
-		width:150px;
-		text-align:right;
-	}
-
-	@media only screen and (max-width:$promo-break-point+20) {
-		.alignleft,
-		.alignright {
-			display: none;
-		}
-		.aligncenter {
-			width:100%;
-		}
-	}
-}
-
 .icon-card{
 	width:25%;
 	float:left;

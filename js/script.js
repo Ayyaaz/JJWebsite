@@ -5,6 +5,8 @@ $(function() {
         width: 800  // Width of carousel
         ,spacing3d: 300  // Item spacing in 3D (modern browsers) modes
         ,spacing2d: 400  // Item spacing in 2D (old browsers) modes
+		//,renderer2d: render2dCarousel // Options: render2dCarousel (default), render2dBasic, render2dFlow
+		//,renderer3d: null
         //,showShadow:true
         //,showReflection: true
 		,infiniteLoop: true  // Looping mode
@@ -13,7 +15,8 @@ $(function() {
 		,navigationVerticalPos:'bottom:0px'
 		,navigationHorizontalPos:'middle'
 		,useMouseWheel: false
-		//,renderer3d: null
+		,autoChangeDirection: 1
+		//,autoChangeDelay: 3000
     });
 
 
