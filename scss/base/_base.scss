@@ -24,16 +24,11 @@ body {
 	line-height: 1.5em;
 	position: relative;
 
-	&.fixed-nav { // Use this class to set your nav to always be at the top of the page on scroll, sets appropriate padding to the top of the hero element to account for the extra space
-
-		.hero {
-			padding-top: 125px;
-
-			@media only screen and (max-width:$nav-break-point) {
-				padding-top: 77px;
-			}
+	&.fixed-nav { // class to your nav to always be at the top of the page on scroll, sets appropriate padding to the top to account for the extra space
+		padding-top: 125px;
+		@media only screen and (max-width:$nav-break-point) {
+			padding-top: 77px;
 		}
-
 		.main-header {
 			position: fixed;
 			top: 0;
