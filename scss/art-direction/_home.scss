@@ -339,9 +339,14 @@ $parade-img-width:1550px;
 	.unforgettable{
 		position: relative;
 		overflow:hidden;
-		padding-top:3rem;
-		background-color:$green;
+		padding-top:6rem;
 		color:white;
+		background-color:$green;
+		background-image:url(../img/hero-imgs/parade-bg.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: 50%;
+
 		.wrapper{
 			position: relative;
 			display: inline-block;
@@ -375,8 +380,40 @@ $parade-img-width:1550px;
 					right:0;
 				}
 			}
-			@media only screen and (max-width:$promo-break-point) {
+		}
+		.parrot,
+		.elle-left-with-flag{
+			position: absolute;
+			display: none;
+		}
+		.parrot{
+			right:0;
+			top:80px;
+
+			width:100%;
+			max-width: 150px;
+		}
+		.elle-left-with-flag{
+			left:0;
+			top:-80px;
+
+			width:100%;
+			max-width: 375px;
+		}
+		@media only screen and (max-width:$promo-break-point) {
+			overflow: visible;
+			padding-top:18rem;
+			margin-top: 80px;
+			.elle{
 				display: none;
+			}
+			.elle-left-with-flag{
+				display: inline-block;
+				left:0;
+			}
+			.parrot{
+				display: inline-block;
+
 			}
 		}
 	}
@@ -599,5 +636,10 @@ $parade-img-width:1550px;
 			display: none;
 		}
 	}
-
+	.flag-hr{
+		background:transparent;
+		position: relative;
+		margin-bottom:-76px;
+		z-index: 1;
+	}
 }
