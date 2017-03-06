@@ -9,12 +9,13 @@
 		padding-bottom: 6.4rem;
 
 		h1{
-			font-size: 34rem;
-			line-height: 40rem;
+			font-size: 22rem;
+			line-height: 36rem;
 			@include transform(rotate(-5deg));
 
-			margin-left:460px;
+			margin-left:250px;
 			margin-top:-110px;
+			white-space: nowrap;
 		}
 
 		.parade{
@@ -28,14 +29,17 @@
 
 			&.man{
 				bottom:0;
+				height: 120%;
 			}
 			&.birds-L {
-				top:0;
-				margin-left:-650px;
+				top:-25px;
+				margin-left:-600px;
+				height: 130%;
 			}
 			&.birds-R {
-				top:0;
-				margin-left:-800px;
+				top:-25px;
+				margin-left:-750px;
+				height: 130%;
 			}
 			&.confetti {
 				bottom:0;
@@ -47,7 +51,7 @@
 			&.already-visible {
 				&.birds-L,
 				&.birds-R {
-					margin-left:-720px;
+					margin-left:-650px;
 				}
 				&.confetti {
 					@include transform(scale(1,1));

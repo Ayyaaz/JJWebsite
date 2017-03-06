@@ -125,7 +125,7 @@ $parade-img-width:1550px;
 			@include transform(rotate(-3degs))
 		}
 		p {
-			font-size: 2.5rem;
+			font-size: 4rem;
 			margin-top:-6rem;
 			white-space: nowrap;
 			opacity: 0;
@@ -144,9 +144,13 @@ $parade-img-width:1550px;
 			font-weight: 600;
 			font-family: $font-lato;
 			opacity: 0;
+			white-space: nowrap;
 			.stat-small{
 				font-size: 6rem;
 				color: $yellow;
+			}
+			@media only screen and (max-width:$mobile-break-point+60) {
+				font-size: 8rem;
 			}
 		}
 		.vital-stat-timestamp{
@@ -184,14 +188,14 @@ $parade-img-width:1550px;
 
 				@keyframes live-stat-label {
 					0% {
-						font-size: 2.5rem;
 						margin-top:-6rem;
 						opacity: 0;
+						@include transform(scale(0));//font-size: 2.5rem;
 					}
 					25% {
-						font-size: 4rem;
 						margin-top:-6rem;
 						opacity: 1;
+						@include transform(scale(1));//font-size: 4rem;
 					}
 					50% {
 						margin-top:1rem;
@@ -200,11 +204,25 @@ $parade-img-width:1550px;
 						opacity: 1;
 					}
 					90% {
-						font-size: 4rem;
 						margin-top:1rem;
 						opacity: 0;
+						@include transform(scale(1));//font-size: 4rem;
 					}
 				}
+			}
+
+			@media only screen and (max-width:$promo-break-point) {
+				min-height: initial;
+				height: 150px;
+			}
+			@media only screen and (max-width:$mobile-break-point+60) {
+				height: 130px;
+			}
+
+		}
+		@media only screen and (max-width:$mobile-break-point) {
+			.slider{
+				padding:0;
 			}
 		}
 		.vital-stats-cta{
@@ -239,27 +257,16 @@ $parade-img-width:1550px;
 			position: relative;
 			max-width:1000px;
 			padding:5rem 0 3rem 0;
-			@media only screen and (max-width:$promo-break-point) {
-				padding-left:1.6rem;
-				padding-right:1.6rem;
-			}
 		}
 		.copy-container{
 			position: absolute;
 			top:140px;
 			width:100%;
 			padding: 0 16px;
-			@media only screen and (max-width:$promo-break-point) {
-				position: relative;
-				top:0;
-			}
 		}
 		.copy-block{
 			@extend .cf-group;
 			margin-top:150px;
-			@media only screen and (max-width:$promo-break-point) {
-				margin-top:0;
-			}
 		}
 		.copy{
 			float:right;
@@ -270,10 +277,36 @@ $parade-img-width:1550px;
 			h5{
 				color: $green;//#2f8b26;
 			}
-			@media only screen and (max-width:$promo-break-point) {
+		}
+
+		@media only screen and (max-width:$promo-break-point) {
+			.wrapper {
+				padding-left:1.6rem;
+				padding-right:1.6rem;
+			}
+			.copy-container{
+				position: relative;
+				top:0;
+			}
+			.copy-block{
+				margin-top:0;
+			}
+			.copy{
 				width:48%;
 			}
 		}
+		@media only screen and (max-width:$mobile-break-point) {
+			.copy-container{
+				padding:0;
+			}
+			.copy{
+				float: none;
+				max-width:100%;
+				width:100%;
+				margin-right:0;
+			}
+		}
+
 		.bird-man{
 			text-align: center;
 			background:url(../img/bird-man.png) no-repeat center center;

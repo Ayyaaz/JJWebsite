@@ -77,6 +77,21 @@
 			}
 		}
 	}
+
+	@media only screen and (max-width:$mobile-break-point+100) {
+		.contact-form{
+			input.email{
+				width:100%;
+			}
+			input.email,
+			button{
+				display: block;
+				margin-left: auto;
+				margin-right:auto;
+				border-radius: 40px;
+			}
+		}
+	}
 }
 
 .icon-card{
