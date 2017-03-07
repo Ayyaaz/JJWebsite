@@ -57,6 +57,12 @@
 				}
 			}
 		}
+		@media only screen and (max-width:$promo-break-point) {
+			h1{
+				font-size: 16rem;
+				line-height: 14rem;
+			}
+		}
 	}
 
 	.who-we-are{
@@ -77,6 +83,11 @@
 			width:33.33%;
 			padding-left:1.6rem;
 			padding-right:1.6rem;
+
+			@media only screen and (max-width:$promo-break-point) {
+				float: none;
+				width:100%;
+			}
 		}
 	}
 
@@ -115,6 +126,11 @@
 				to   { transform: rotate(-360deg) translateX(50px) rotate(360deg); }
 			}
 		}
+		@media only screen and (max-width:$promo-break-point) {
+			.big-bird{
+				width:200px;
+			}
+		}
 	}
 
 	.our-clients{
@@ -143,6 +159,23 @@
 		.copy-container{
 			float: left;
 			width: 52%;
+		}
+
+		@media only screen and (max-width:$promo-break-point) {
+			.image-container,
+			.copy-container{
+				text-align: center;
+				float: none;
+				width: 100%;
+			}
+			.image-container{
+				max-width: 400px;
+				margin:0 auto;
+			}
+			.counter{
+				margin-left:auto;
+				margin-right:auto;
+			}
 		}
 	}
 

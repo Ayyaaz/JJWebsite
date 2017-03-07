@@ -108,13 +108,7 @@
 			}
 		}
 
-		.responsive-show{display:none;}
-
 		@media only screen and (max-width:$promo-break-point) {
-
-			.responsive-hide{display:none;}
-			.responsive-show{display:block;}
-
 			.wrapper{
 				padding-bottom:0;
 			}
@@ -190,24 +184,6 @@
 			.wrapper{
 				padding-top:10rem;
 			}
-		}
-	}
-
-
-
-	@media only screen and (max-width:$promo-break-point) {
-		.icon-card{
-			width:50%;
-			p{
-				min-height: 100px;
-				margin:0;
-			}
-
-		}
-	}
-	@media only screen and (max-width:500px) {
-		.icon-card{
-			width:100%;
 		}
 	}
 
