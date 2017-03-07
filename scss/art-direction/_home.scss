@@ -35,7 +35,8 @@ $parade-img-width:1550px;
 				right: -1500px;
 				@include transition(all 1.2s ease-out);
 			}
-			&.ele {
+			&.ele,
+			&.afroman {
 				@include transition(all 1s ease-out);
 				-webkit-transition-delay: 1s; /* Safari */
 				transition-delay: 1s;
@@ -50,13 +51,9 @@ $parade-img-width:1550px;
 				-webkit-transition-delay: 1.4s; /* Safari */
 				transition-delay: 1.4s;
 			}
-			&.trolley {
+			&.trolley,
+			&.bike-girl {
 				@include transition(all 1.6s ease-out);
-				-webkit-transition-delay: 1s; /* Safari */
-				transition-delay: 1s;
-			}
-			&.afroman {
-				@include transition(all 1s ease-out);
 				-webkit-transition-delay: 1s; /* Safari */
 				transition-delay: 1s;
 			}
@@ -69,6 +66,11 @@ $parade-img-width:1550px;
 			&.come-in,
 			&.already-visible {
 				right:0;
+			}
+
+			&.bike-girl.come-in,
+			&.bike-girl.already-visible {
+				right:-50px;
 			}
 		}
 	}
@@ -306,7 +308,7 @@ $parade-img-width:1550px;
 
 		.bird-man{
 			text-align: center;
-			background:url(../img/bird-man.png) no-repeat center center;
+			background:url(../img/bird-man-thomas.png) no-repeat center center;
 			background-size: contain;
 			height: 750px;
 			.bird {
@@ -340,6 +342,8 @@ $parade-img-width:1550px;
 				}
 				h1{
 					font-size: 13rem;
+					text-shadow: 1px 1px 1px rgba(255,255,255,0.6),
+								 -1px -1px 1px rgba(255,255,255,0.6);
 				}
 				h2{
 					color: $yellow;
@@ -347,6 +351,7 @@ $parade-img-width:1550px;
 					&:first-child{
 						color: $black;
 						font-size: 7rem;
+						text-shadow: 1px 1px 1px rgba(255,255,255,0.6);
 					}
 				}
 			}
