@@ -112,12 +112,15 @@
 	}
 
 	.flag-hr{
+		position: relative;
+    	z-index: 1;
 		background: linear-gradient(to bottom, $off-white 0%,$off-white 55%,$off-white 55%,transparent 55%,transparent 100%);
 		margin-bottom: -77px;
 		margin-top:-30px;
 	}
 
 	.how-pricing-works{
+		position: relative;
 		.top-section{
 			text-align: center;
 			padding-top:3rem;
