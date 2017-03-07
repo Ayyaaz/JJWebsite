@@ -239,6 +239,9 @@ $nav-line-height: 80px;
 		float: left;
 		width:calc(100% - 300px);
 		text-align:center;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+  		overflow: hidden;
 	}
 	.alignright {
 		float: right;
@@ -249,11 +252,16 @@ $nav-line-height: 80px;
 		padding:5px 0;
 	}
 	@media only screen and (max-width:$promo-break-point+20) {
+		.wrapper{
+			display: block;
+		}
 		.alignleft,
 		.alignright {
 			display: none;
 		}
 		.aligncenter {
+			display: block;
+			float: none;
 			width:100%;
 		}
 	}

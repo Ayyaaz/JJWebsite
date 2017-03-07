@@ -53,12 +53,33 @@
 				}
 			}
 		}
+
+		@media only screen and (max-width:$promo-break-point) {
+			.wrapper{
+				margin-left: -10%;
+			}
+			h1{
+				font-size: 16rem;
+				line-height: 14rem;
+			}
+			.parade.afroman {
+				right: -15%;
+				margin-left: auto;
+				height: 100%;
+			}
+
+			.parade.already-visible {
+				&.afroman {
+					margin-left:auto;
+				}
+			}
+		}
 	}
 
 	.four-pillars{
 		.wrapper {
 			padding-top:5rem;
-			padding-bottom:3rem;
+			padding-bottom:12rem;
 		}
 		.image-container{
 			float:left;
@@ -69,7 +90,7 @@
 			}
 		}
 		.copy-container{
-			float:left;
+			float:right;
 			width:70%;
 		}
 		.copy{
@@ -86,6 +107,108 @@
 				margin:0;
 			}
 		}
+
+		.responsive-show{display:none;}
+
+		@media only screen and (max-width:$promo-break-point) {
+
+			.responsive-hide{display:none;}
+			.responsive-show{display:block;}
+
+			.wrapper{
+				padding-bottom:0;
+			}
+			.counter{
+				margin-left: auto;
+				margin-right: auto;
+			}
+			.copy-container{
+				text-align: center;
+				float:none;
+				width:100%;
+				.cf-group{
+					float: left;
+					width:50%;
+					border-top:1px solid $grey;
+					margin-top:4rem;
+					padding-top:5rem;
+					min-height: 200px;
+				}
+			}
+			.copy{
+				color: $green-dark;
+				padding-right:0;
+				h5,
+				a{
+					color: $green-dark;
+				}
+				i.icon{
+					font-size: 6rem;
+				}
+				p{
+					margin: 0;
+				}
+			}
+			.image-container{
+				text-align: center;
+				float:none;
+				width:100%;
+				overflow: hidden;
+				max-height: 500px;
+				img{
+					max-width: 400px;
+					width:100%;
+				}
+			}
+		}
+
+		@media only screen and (max-width:$mobile-break-point+100) {
+			.copy-container{
+				.cf-group{
+					float: none;
+					width:100%;
+					min-height: 150px;
+					padding-bottom:5rem;
+					&:last-of-type{
+					border-top:none;
+					margin-top:0;
+					padding-top:0;
+
+					}
+				}
+			}
+		}
+	}
+
+	.flag-hr{
+		background: transparent;
+		position: relative;
+		margin-top: -94px;
+		margin-bottom: -76px;
+		z-index: 1;
+		&+section{
+			.wrapper{
+				padding-top:10rem;
+			}
+		}
+	}
+
+
+
+	@media only screen and (max-width:$promo-break-point) {
+		.icon-card{
+			width:50%;
+			p{
+				min-height: 100px;
+				margin:0;
+			}
+
+		}
+	}
+	@media only screen and (max-width:500px) {
+		.icon-card{
+			width:100%;
+		}
 	}
 
 	.balloons-anim{
@@ -96,6 +219,9 @@
 			-webkit-transition-delay: 1s; /* Safari */
 			transition-delay: 1s;
 			position: absolute;
+
+			width:50%;
+			max-width:500px;
 		}
 		.R1 {
 			@include transition(all 1.5s ease-in-out);
@@ -155,7 +281,6 @@
 			.R3, .L3 {
 				animation: bobbing-balloon-1 infinite 4s;
 			}
-
 		}
 	}
 }
