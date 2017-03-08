@@ -178,6 +178,10 @@
 			h3{
 				font-size: 3rem;
 				margin-top:8rem;
+				z-index: 1;
+				position: relative;
+				text-shadow: 1px 1px 1px $off-white,
+							 -1px -1px 1px $off-white;
 			}
 		}
 		.ele{
@@ -303,9 +307,6 @@
 			-o-background-size:cover;
 			background-size:cover;
 			background-position:center;
-			h3{
-				color:white;
-			}
 			.top-section{
 				background-color:transparent;
 				background-image:none;
@@ -314,6 +315,10 @@
 				background-color:transparent;
 				.wrapper{
 					padding-bottom:0px;
+				}
+				h3{
+					color:white;
+					text-shadow: none;
 				}
 			}
 			.ele{
