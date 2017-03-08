@@ -50,7 +50,7 @@
 				-webkit-transition-delay: 1s; /* Safari */
 				transition-delay: 1s;
 				@include transform(scale(.9));
-				z-index: 1;
+				z-index: 0;
 			}
 			&.giraffe {
 				@include transition(all 1s ease-out);
@@ -81,10 +81,25 @@
 			}
 		}
 		@media only screen and (max-width:$promo-break-point) {
+			padding-bottom:3rem;
 			h1{
-				font-size: 16rem;
+				font-size: 20rem;
 				line-height: 14rem;
 			}
+			.parade.butterfly{
+    			margin-left: -570px;
+				height: 555px;
+			}
+			.parade.balloon,
+			.parade.giraffe {
+
+				height: 425px;
+				bottom: 0;
+				margin-left: auto;
+				right: -150px;
+				margin-bottom: -111px;
+			}
+
 		}
 	}
 

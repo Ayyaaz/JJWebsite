@@ -6,6 +6,7 @@
 	max-width: 790px;
 	padding: 0 40px;
 	color: white;
+	margin-bottom:2.5rem;
 
 	blockquote {
 		display: none;
@@ -76,16 +77,11 @@
 	}
 
 	.slick-dots {
-		position: absolute;
-		bottom: -30px;
-		left: 0;
-		right: 0;
 		display: block;
-		width: 100%;
 		padding: 0;
 		list-style: none;
 		text-align: center;
-
+		margin-left: 1rem 0 0 0;
 		li {
 			position: relative;
 			display: inline-block;

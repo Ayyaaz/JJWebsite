@@ -59,8 +59,26 @@
 		}
 		@media only screen and (max-width:$promo-break-point) {
 			h1{
-				font-size: 16rem;
-				line-height: 14rem;
+				font-size: 14rem;
+				line-height: 12rem;
+				padding-top:2rem;
+			}
+			.parade.hand-stand {
+				height: 350px;
+				bottom: -45px;
+				right: -150px;
+			}
+			.parade.parrot-with-banner {
+				height: 120px;
+				top:30%;
+			    left: auto;
+			    right: 55%;
+			}
+		}
+		@media only screen and (max-width:500px) {
+			.parade.hand-stand,
+			.parade.parrot-with-banner {
+				display: none;
 			}
 		}
 	}

@@ -1,9 +1,21 @@
 
 .why{
-	h2 sub{
-		font-family: $font-open;
-		bottom: .4em;
-		font-size:60%;
+	h2{
+ 		sub{
+			font-family: $font-open;
+			bottom: .4em;
+			font-size:60%;
+		}
+		.replace-2{
+			display:inline-block;
+			&:first-letter{
+				color: transparent;
+				margin-right:-1px;
+				background-image:url(../img/2.png);
+				background-repeat: no-repeat;
+				background-position: center bottom;
+			}
+		}
 	}
 	.hero {
 		padding-bottom: 6.4rem;
@@ -17,7 +29,6 @@
 			margin-top:-110px;
 			white-space: nowrap;
 		}
-
 		.parade{
 			position: absolute;
 			left:50%;
@@ -58,8 +69,62 @@
 				}
 			}
 		}
+		@media only screen and (max-width:$promo-break-point) {
+			h1{
+				margin-left: 30%;
+			}
+			.parade{
+				&.man{
+						margin-left:-550px;
+				}
+				&.come-in,
+				&.already-visible {
+					&.birds-L,
+					&.birds-R {
+						margin-left:-500px;
+					}
+				}
+			}
+		}
+		@media only screen and (max-width:600px) {
+			padding-bottom:0;
+			.wrapper{
+				padding-top:0;
+			}
+			h1{
+				white-space: normal;
+				line-height: 80%;
+				margin-top:0;
+				margin-left: 20%;
+			}
+			.parade{
+				&.man,
+				&.birds-L,
+				&.birds-R{
+					width:auto;
+					height: 300px;
+				}
+				&.man{
+					margin-left:-75%;
+				}
+				&.come-in,
+				&.already-visible {
+					&.birds-L,
+					&.birds-R {
+						margin-left:-65%;
+					}
+				}
+			}
+		}
+		@media only screen and (max-width:500px) {
+			h1{
+				margin-left:auto;
+			}
+			.parade.man{
+				display: none;
+			}
+		}
 	}
-
 	.testimonial-card{
 		margin-top:5rem;
 	}
