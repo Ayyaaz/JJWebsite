@@ -81,6 +81,10 @@
 				&.man{
 						margin-left:-550px;
 				}
+				&.birds-L,
+				&.birds-R {
+					margin-left:-500px;
+				}
 				&.come-in,
 				&.already-visible {
 					&.birds-L,
@@ -111,18 +115,32 @@
 				&.man{
 					margin-left:-75%;
 				}
+				&.birds-L,
+				&.birds-R {
+					margin-left:-65%;
+				}
+				&.confetti {
+					@include transform(scale(0.5));
+				}
 				&.come-in,
 				&.already-visible {
 					&.birds-L,
 					&.birds-R {
 						margin-left:-65%;
 					}
+					&.confetti {
+						@include transform(scale(0.6));
+					}
 				}
 			}
 		}
-		@media only screen and (max-width:500px) {
+		@media only screen and (max-width:490px) {
+			.wrapper{
+				padding-top:2rem;
+			}
 			h1{
 				margin-left:auto;
+				font-size: 16rem;
 			}
 			.parade.man{
 				display: none;
