@@ -289,11 +289,12 @@ $parade-img-width:1550px;
 			.copy-container{
 				padding:0;
 			}
-			.copy{
+			.copy,
+			.copy:nth-child(2n){
 				float: none;
-				max-width:100%;
 				width:100%;
-				margin-right:0;
+				margin-left:auto;
+				margin-right:auto;
 				text-align: center;
 			}
 		}
@@ -481,6 +482,13 @@ $parade-img-width:1550px;
 				margin:0 auto;
 			}
 		}
+		@media only screen and (max-width:500px) {
+			.logos li,
+			.awards li{
+				width:25%;
+				padding:8px 10px;
+			}
+		}
 	}
 
 
@@ -498,6 +506,9 @@ $parade-img-width:1550px;
 			margin:0 60px;
 			img {
 				width: 100%;
+			}
+			@media only screen and (max-width:500px) {
+				margin-bottom: 40px;
 			}
 		}
 
@@ -654,6 +665,12 @@ $parade-img-width:1550px;
 			&.nz {
 				left: 87.6%;
 				top: 79.6%;
+			}
+			@media only screen and (max-width:$promo-break-point) {
+				&:hover .popover{
+					@include transform(scale(0.7));
+					bottom:10px;
+				}
 			}
 		}
 		// end: map location pin
