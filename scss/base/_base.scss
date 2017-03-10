@@ -87,8 +87,6 @@ p{
 	line-height: 23px;
 }
 
-textarea, input {outline:none;} // remove webkit glow
-
 * {
 	-moz-box-sizing:border-box;
 	box-sizing:border-box;
@@ -98,50 +96,3 @@ a {
 	color: $link-color;
 	text-decoration:none;
 }
-
-textarea, input {
-	-webkit-appearance: none; // careful if we want to use radio button or check-box!
-}
-textarea, input, select {
-	width: 100%;
-	display: block;
-	margin: 16px 0;
-	font-family: $font-open;
-	font-size: 1.4rem;
-	padding: 1.2rem 1.2rem;
-	border: 1px solid #ccc;
-	border-radius: 3px;
-	transition: border 0.3s;
-
-	&.error {
-	border-color: tomato;
-	}
-
-	&:focus {
-	border-color: $spot-color;
-	}
-
-}
-
-textarea {
-	height: 200px;
-	max-height: 200px;
-	min-height: 200px;
-	resize: none;
-}
-/* stylised chevon for select
-.select-wrapper{
-	position: relative;
-	&:after{
-	content: "\e313";
-	position: absolute;
-	z-index: 1;
-	bottom: 27px;
-	right: -564px;
-	font-family: 'Material Icons';
-	font-size: 40px;
-	background: white;
-	}
-}
-*/
-
