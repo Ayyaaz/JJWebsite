@@ -139,7 +139,7 @@ $nav-line-height: 80px;
 					line-height: $nav-line-height;
 				}
 			}
-			&.active{
+			&.current-menu-item{
 				a{
 					opacity: 1;
 					font-weight: 600;
