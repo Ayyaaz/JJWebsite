@@ -56,5 +56,5 @@ gulp.task('watch', function() {
 gulp.task('images', () =>
     gulp.src('pre-img/**/*')
         .pipe(imagemin())
-        .pipe(gulp.dest('img'))
+        .pipe(gulp.dest('css/assets/img'))
 );

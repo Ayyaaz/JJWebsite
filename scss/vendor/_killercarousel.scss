@@ -14,7 +14,7 @@
     -ms-touch-action: none;
     overflow:hidden;
     position:relative;
-    //background-image:url('../img/background.png');
+    //background-image:url('assets/img/background.png');
     background-position: center;
     width:100%;
     /* This makes wrapper scale vertically in proportion to width */
@@ -23,7 +23,7 @@
 .kc-horizon {
     visibility:hidden;
 }
-/* 
+/*
     This wraps carousel items.
 */
 .kc-item {
@@ -31,7 +31,7 @@
     /* These sizes are from the examples - change as appropriate */
     width:188px;
     height:250px;
-    -webkit-tap-highlight-color:rgba(0,0,0,0); 
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
     visibility:hidden;
 }
 
@@ -49,20 +49,20 @@
     top:100% !important;
     width:100% !important;
     height:10% !important;
-    background-image:url(../img/shadow-bottom.png);
+    background-image:url(assets/img/shadow-bottom.png);
     left:0px !important;
 }
 .kc-shadow-left,.kc-shadow-right {
     position:absolute !important;
-    top:0% !important;    
+    top:0% !important;
     width:10% !important;
     height:100% !important;
     left:-10% !important;
-    background-image:url(../img/shadow-left.png);
+    background-image:url(assets/img/shadow-left.png);
 }
 .kc-shadow-right {
     left:100% !important;
-    background-image:url(../img/shadow-right.png);
+    background-image:url(assets/img/shadow-right.png);
 }
 
 @-moz-document url-prefix() {
