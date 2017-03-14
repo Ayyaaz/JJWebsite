@@ -52,7 +52,6 @@ $parade-img-width:1550px;
 				transition-delay: 1.4s;
 			}
 			&.lift-girls {
-				right: -250px;//-1500px;
 				@include transition(all 2s ease-out);
 				-webkit-transition-delay: 1s; /* Safari */
 				transition-delay: 1s;
@@ -70,7 +69,7 @@ $parade-img-width:1550px;
 
 			&.lift-girls.come-in,
 			&.lift-girls.already-visible {
-				right:-55px;
+				right:-3%;
 			}
 		}
 	}
@@ -102,7 +101,9 @@ $parade-img-width:1550px;
 				max-width:initial;
 				width:960px;
 				margin-bottom: -127px;
-				&.ele {
+				&.ele,
+				&.lift-girls,
+				&.lift-girls {
 					left:-150px;
 				}
 				&.band,
