@@ -13,7 +13,6 @@
 		margin: 20px 10px;
 		line-height: 1.45;
 		position: relative;
-		padding-left: 30px;
 
 		p{
 			text-shadow: 0 2px 2px #000;
@@ -85,41 +84,20 @@
 		li {
 			position: relative;
 			display: inline-block;
-			width: 20px;
 			height: 20px;
-			margin: 0 5px;
+			width:55px;
+			border-top:6px solid $yellow;
+			opacity: .4;
+			margin:0 1.2rem;
 			padding: 0;
 			cursor: pointer;
 			@include transition(all 0.3s ease-in-out);
 
+			&.slick-active{
+				opacity: 1;
+			}
 			button {
-				position: relative;
-				font-size: 0;
-				line-height: 0;
-				display: block;
-				width: 20px;
-				height: 20px;
-				padding: 5px;
-				cursor: pointer;
-				color: transparent;
-				border: 0;
-				outline: none;
-				background: transparent;
-
-				&:before {
-					position: absolute;
-					top: 50%;
-					left: 50%;
-					margin-left: -4px;
-					margin-top: -4px;
-					width: 8px;
-					height: 8px;
-					content: '\2022';
-					opacity: .5;
-					background: white;
-					border-radius: 50%;
-				}
-
+				display: none;
 			}
 
 		}

@@ -258,5 +258,28 @@
 				animation: bobbing-balloon-1 infinite 4s;
 			}
 		}
+		@media only screen and (max-width:$promo-break-point) {
+			margin-top:-50px;
+		}
+	}
+
+	@media only screen and (max-width:500px) {
+		.balloons-anim{
+			&.come-in,
+			&.already-visible {
+				.R1, .R3, .L2, .L3{
+					display: none;
+				}
+				img{
+					width:100%;
+				}
+				.L1{
+					max-width:400px;
+				}
+			}
+		}
+		h2{
+			position: relative;
+		}
 	}
 }

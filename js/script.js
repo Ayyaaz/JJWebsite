@@ -1,14 +1,14 @@
 $(function() {
 
 	// killer carousel
-    $('.kc-wrap').KillerCarousel({
-        width: 800  // Width of carousel
-        ,spacing3d: 300  // Item spacing in 3D (modern browsers) modes
-        ,spacing2d: 400  // Item spacing in 2D (old browsers) modes
+	$('.kc-wrap').KillerCarousel({
+		width: 800  // Width of carousel
+		,spacing3d: 300  // Item spacing in 3D (modern browsers) modes
+		,spacing2d: 400  // Item spacing in 2D (old browsers) modes
 		//,renderer2d: render2dCarousel // Options: render2dCarousel (default), render2dBasic, render2dFlow
 		//,renderer3d: null
-        //,showShadow:true
-        //,showReflection: true
+		//,showShadow:true
+		//,showReflection: true
 		,infiniteLoop: true  // Looping mode
 		,autoScale: 75  // Scale at 75% of parent element
 		,showNavigation: true
@@ -17,7 +17,7 @@ $(function() {
 		,useMouseWheel: false
 		,autoChangeDirection: 1
 		//,autoChangeDelay: 3000
-    });
+	});
 
 
 	// killer carousel
@@ -146,19 +146,19 @@ $(function() {
 	// end: map tooltips
 
 
-	// home page scoll cta
+	// home page scroll cta
 	$(".scroll-anim").click(function() {
 		var offset = -100;//20; //Offset of 20px
 		$('html, body').animate({
 			scrollTop: $(".vital-stats").offset().top + offset
 		}, 1200);
 	});
-	// end: home page scoll cta
+	// end: home page srcoll cta
 
 
 	// vital stats carousel
 	$(function() {
-		$('.slider').slick({
+		$('.home .slider').slick({
 			dots: true
 			,adaptiveHeight: true
 			,autoplay:true
@@ -166,6 +166,16 @@ $(function() {
 			,prevArrow: ''//<div class="slick-prev"><i class="material-icons">&#xE314;</i></div>'
 			,nextArrow: ''//<div class="slick-next"><i class="material-icons">&#xE315;</i></div>'
 			,fade:true
+		});
+	});
+	$(function() {
+		$('.what .slider, .who .slider').slick({
+			dots: true
+			,adaptiveHeight: true
+			,autoplay:true
+			,autoplaySpeed:3000
+			,prevArrow: ''
+			,nextArrow: ''
 		});
 	});
 	// vital stats carousel

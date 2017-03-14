@@ -81,4 +81,53 @@
 		right: 12px;
 		bottom:-52px;
 	}
+	@media only screen and (max-width:500px) {
+		&:before, &:after {
+			font-size: 130px;
+		}
+		&:before {
+			top: 30px;
+		}
+		&:after {
+			bottom:-45px;
+		}
+	}
 }
+// testimonial card in slick slider
+.slider.testimonials{
+	.testimonial-card{
+		margin-top:50px;
+		width:100%;
+		//box-shadow:none;
+		margin-left: auto;
+		margin-right:auto;
+
+		p{
+			text-shadow:none;
+		}
+	}
+	.slick-list{
+		min-height: 400px;
+	}
+	@media only screen and (max-width:$promo-break-point) {
+		max-width:500px;
+		padding:0;
+		.testimonial-card{
+			margin-top:55px;
+		}
+		.slick-slide{
+			padding-left:36px;
+			padding-right:36px;
+			blockquote{
+				margin-top:10px;
+			}
+		}
+	}
+	@media only screen and (max-width:500px) {
+		max-width:340px;
+		.slick-slide{
+			margin-bottom:60px;
+		}
+	}
+}
+// end: testimonial card in slick slider

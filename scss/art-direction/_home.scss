@@ -51,9 +51,9 @@ $parade-img-width:1550px;
 				-webkit-transition-delay: 1.4s; /* Safari */
 				transition-delay: 1.4s;
 			}
-			&.trolley,
-			&.bike-girl {
-				@include transition(all 1.6s ease-out);
+			&.lift-girls {
+				right: -250px;//-1500px;
+				@include transition(all 2s ease-out);
 				-webkit-transition-delay: 1s; /* Safari */
 				transition-delay: 1s;
 			}
@@ -68,9 +68,9 @@ $parade-img-width:1550px;
 				right:0;
 			}
 
-			&.bike-girl.come-in,
-			&.bike-girl.already-visible {
-				right:-10px;
+			&.lift-girls.come-in,
+			&.lift-girls.already-visible {
+				right:-55px;
 			}
 		}
 	}
@@ -167,20 +167,6 @@ $parade-img-width:1550px;
 		.vital-stat-timestamp{
 			opacity: 0.3;
 			font-size: 1.5rem;
-		}
-		.slick-dots{
-			li{
-				width:55px;
-				border-top:6px solid $yellow;
-				opacity: .4;
-				margin:0 1.2rem;
-				&.slick-active{
-					opacity: 1;
-				}
-				button{
-					display: none;
-				}
-			}
 		}
 		.btn{
 			width:270px;
