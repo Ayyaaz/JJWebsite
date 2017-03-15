@@ -25,6 +25,9 @@ input[type=submit],
 		color:white;
 		background:$yellow;//lighten($yellow,45%);
 	}
+	&:hover{
+		@include shadow(2);
+	}
 	&.btn-alt{
 		color:white;
 		&:hover,

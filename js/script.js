@@ -147,7 +147,7 @@ $(function() {
 
 
 	// home page scroll cta
-	$(".scroll-anim").click(function() {
+	$(".home .scroll-anim").click(function() {
 		var offset = -100;//20; //Offset of 20px
 		$('html, body').animate({
 			scrollTop: $(".vital-stats").offset().top + offset

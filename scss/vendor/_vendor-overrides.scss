@@ -1,0 +1,35 @@
+
+// HubSpot contact form
+.hs-form{
+    fieldset{
+        max-width: 100% !important;
+        &.form-columns-1 .hs-input{
+            width:100% !important;
+        }
+    }
+    legend{
+        font-size: 1.1rem;
+    }
+    .hs-form-required{
+        color:red;
+    }
+    input,
+    select,
+    textarea{
+        margin-top:8px;
+        width: 100% !important;
+    }
+    .hs-form-field:last-of-type .input{
+        margin-right:0 !important;
+    }
+    .hs-error-msgs{
+        white-space: nowrap;
+        padding-left:0;
+        list-style:none;
+        font-size: 1.1rem;
+        color:red;
+        margin-bottom: 10px;
+        margin-top: -10px;
+    }
+}
+// end: HubSpot contact form

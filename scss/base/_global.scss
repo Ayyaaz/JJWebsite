@@ -143,4 +143,12 @@
 			top:15px;
 		}
 	}
+	&.horizontal{
+		@include transform(rotate(-90deg));
+	}
+}
+.icon-card .scroll-anim.horizontal{
+	position: absolute;
+	right: -22px;
+	top: 40px;
 }
