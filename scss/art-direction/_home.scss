@@ -75,6 +75,18 @@ $parade-img-width:1550px;
 		}
 	}
 
+	@media only screen and (min-width:$parade-img-width) {
+		.hero{
+			margin-top: -180px;
+			padding-top: 180px;
+		}
+	}
+	@media only screen and (max-width:$nav-break-point) and (min-width:$mobile-break-point) {
+		.hero{
+			margin-top: -90px;
+			padding-top: 90px;
+		}
+	}
 	@media only screen and (max-width:$parade-img-width) {
 		.hero{
 			height:650px;
@@ -172,6 +184,7 @@ $parade-img-width:1550px;
 		}
 		.btn{
 			width:270px;
+			margin-top:-200px;
 		}
 
 		.slick-slide{
@@ -227,6 +240,15 @@ $parade-img-width:1550px;
 			h2{
 				font-size: 6rem;
 			}
+
+
+			.btn{
+				display: block;
+				float:none;
+				margin:16px auto;
+
+			}
+
 		}
 	}
 
