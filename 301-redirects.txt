@@ -31,7 +31,7 @@ RewriteRule ^warehouse-software/?                               https://www.ecom
 RewriteRule ^our-fulfilment-solution/efulfilment/?              https://www.ecommercefulfilment.com/fulfilment-services/technology/e-fulfilment/
 RewriteRule ^order-fulfilment/order-picking-accuracy/?          https://www.ecommercefulfilment.com/fulfilment-services/technology/order-picking-accuracy/
 RewriteRule ^order-fulfilment/global-fulfilment/?               https://www.ecommercefulfilment.com/fulfilment-services/global-fulfilment/
-RewriteRule ^order-fulfilment/fulfilment-centre-capabilities/?  https://www.ecommercefulfilment.com/fulfilment-services/scale/capabilities/
+RewriteRule ^order-fulfilment/fulfilment-centre-capabilities/?  https://www.ecommercefulfilment.com/fulfilment-services/global-fulfilment/capabilities/
 RewriteRule ^warehouse-software/system-features/?               https://www.ecommercefulfilment.com/why-our-fulfilment-services/features/
 RewriteRule ^company/organic-warehouse/?                        https://www.ecommercefulfilment.com/why-our-fulfilment-services/organic-fulilment-warehouse/
 RewriteRule ^welcome-james-and-james/faqs/?                     https://www.ecommercefulfilment.com/why-our-fulfilment-services/faqs/
@@ -43,8 +43,8 @@ RewriteRule ^company/locations/usa-fulfilment-columbus-ohio/?   https://www.ecom
 RewriteRule ^ecommerce-fulfilment/?                         https://www.ecommercefulfilment.com/fulfilment-services/
 RewriteRule ^fulfilment-services/?                          https://www.ecommercefulfilment.com/fulfilment-services/
 RewriteRule ^order-fulfilment/?                             https://www.ecommercefulfilment.com/fulfilment-services/
-RewriteRule ^technology-and-security/?                      https://www.ecommercefulfilment.com/fulfilment-services/fulfilment-technology/
-RewriteRule ^our-fulfilment-solution/cloud-fulfilment/?     https://www.ecommercefulfilment.com/fulfilment-services/fulfilment-technology/
+RewriteRule ^technology-and-security/?                      https://www.ecommercefulfilment.com/fulfilment-services/technology/
+RewriteRule ^our-fulfilment-solution/cloud-fulfilment/?     https://www.ecommercefulfilment.com/fulfilment-services/technology/
 RewriteRule ^reporting/?                                    https://www.ecommercefulfilment.com/fulfilment-services/visability/
 RewriteRule ^inventory-alerts/?                             https://www.ecommercefulfilment.com/fulfilment-services/visability/
 RewriteRule ^customer-analysis/?                            https://www.ecommercefulfilment.com/fulfilment-services/visability/
@@ -183,7 +183,7 @@ RewriteRule ^order-fulfilment/sell-europe/?                         https://www.
 RewriteRule ^order-fulfilment/interested-us-order-fulfilment/?      https://www.ecommercefulfilment.com/landing/interested-us-order-fulfilment/
 RewriteRule ^fulfilment-software-demo/?                             https://www.ecommercefulfilment.com/landing/fulfilment-software-demo/
 RewriteRule ^order-fulfilment/demo-thanks/?                         https://www.ecommercefulfilment.com/landing/fulfilment-demo-thanks/
-RewriteRule ^order-fulfilment/thanks/?                              https://www.ecommercefulfilment.com/landing/order-fulfilment/thanks/
-RewriteRule ^order-fulfilment/hello-again/?                         https://www.ecommercefulfilment.com/landing/order-fulfilment/hello-again/
-RewriteRule ^order-fulfilment/newsletter-thank-you/?                https://www.ecommercefulfilment.com/landing/order-fulfilment/newsletter-thank-you/
-RewriteRule ^order-fulfilment/newsletter-confirmation/?             https://www.ecommercefulfilment.com/landing/order-fulfilment/newsletter-confirmation/
+RewriteRule ^order-fulfilment/thanks/?                              https://www.ecommercefulfilment.com/landing/thanks/
+RewriteRule ^order-fulfilment/hello-again/?                         https://www.ecommercefulfilment.com/landing/hello-again/
+RewriteRule ^order-fulfilment/newsletter-thank-you/?                https://www.ecommercefulfilment.com/landing/newsletter-thank-you/
+RewriteRule ^order-fulfilment/newsletter-confirmation/?             https://www.ecommercefulfilment.com/landing/newsletter-confirmation/
