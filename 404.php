@@ -5,10 +5,42 @@ $img_uri = get_stylesheet_directory_uri() . '/assets/img';
 get_header(); ?>
 
     <!-- content -->
-    <article id="post-0" <?php post_class( 'et_pb_post not_found' ); ?>>
-        <h1><?php esc_html_e('Sorry. Page Not Found','Divi'); ?></h1>
-        <p><?php esc_html_e('Whoops. Looks like the page you were looking for doesn\'t exit. Maybe try searching for something else using the search bar above', 'Divi'); ?></p>
-    </article>
+    <div <?php post_class( 'post not_found' ); ?>>
+
+        <section class="bg-scroll-img center-text">
+            <div class="wrapper">
+                <h1>
+                    Whoops!
+                </h1>
+                <h2>
+                    Sorry, Page Not Found
+                </h2>
+                <div class="counter center-elem"></div>
+                <p>
+                    Looks like the page you were looking for doesn't exit.<br>
+                    Try searching for something else using the search bar in the header.
+                </p>
+            </div>
+        </section>
+
+        <section class="contact-panel">
+            <div class="wrapper">
+                <h2>
+                    Interested? Of course you are!
+                </h2>
+                <div class="counter center-elem"></div>
+                <p>
+                    Thinking about outsourcing your eCommerce fulfilment? Our expert team can help find a package that’s right for you.
+                </p>
+                <div class="contact-form">
+                    <input type="eamil" class="email" />
+                    <button class="btn">Submit Email</button>
+                </div>
+            </div>
+        </section>
+
+    </div>
     <!-- end: content -->
+
 
 <?php get_footer(); ?>
