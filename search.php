@@ -10,7 +10,7 @@ $the_query = new WP_Query( $args );
 get_header(); ?>
 
     <!-- content -->
-    <div>
+    <div class="search-results">
 
         <section class="bg-scroll-img center-text">
             <div class="wrapper">
@@ -31,14 +31,16 @@ get_header(); ?>
             <article class="wrapper">
 
                 <?php
+                    if ( $the_query->have_posts() ) {
                         while ( $the_query->have_posts() ) {
                             $the_query->the_post();
                 ?>
-                <li class="serif">
-                    <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-                </li>
+                <a href="<?php the_permalink(); ?>" class="serif"><?php the_title(); ?></a>
+                <p>
+                    <?php the_excerpt(); ?>
+                </p>
                 <?php
-                        }
+                        } //end while
                     }else{
                 ?>
                 <p class="serif center-text">

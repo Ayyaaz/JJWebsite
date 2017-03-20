@@ -5,7 +5,7 @@ $img_uri = get_stylesheet_directory_uri() . '/assets/img';
 get_header(); ?>
 
     <!-- content -->
-    <div <?php post_class( 'post not_found' ); ?>>
+    <div <?php post_class( '404-page' ); ?>>
 
         <section class="bg-scroll-img center-text">
             <div class="wrapper">
