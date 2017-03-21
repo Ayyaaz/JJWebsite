@@ -22,6 +22,7 @@ get_header(); ?>
                 <?php
                     if ( $the_query->have_posts() ) {
                         _e('<h2>Showing results for &ldquo;'.get_query_var('s').'&rdquo;</h2>');
+                    }
                 ?>
             </div>
         </section>
