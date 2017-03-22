@@ -45,19 +45,37 @@
 					<li>
 						<a href="page-contact.html">Contact</a>
 					</li>
+
+					<li>
+<!--
+						<form role="search" method="get" class="search-container responsive-show" action="<?php echo esc_url( home_url( \'/\' ) ); ?>">
+							<label>
+								<input type="search" class="search" placeholder="SEARCH" value="<?php echo get_search_query(); ?>" name="s" />
+								<button type="submit"><i class="material-icons icon">&#xE8B6;</i></button>
+							</label>
+						</form>-->
+						<form role="search" method="get" class="search-container responsive-show" action="<?php echo esc_url( home_url( '/' ) ); ?>">
+							<label>
+								<input type="search" class="search" placeholder="SEARCH" value="" name="s" />
+								<button type="submit"><i class="material-icons icon">&#xE8B6;</i></button>
+							</label>
+						</form>
+
+
+					</li>
+
 				</ul>
 			</nav>
 
 			<a href="javascript:void(0)" class="small-menu-trigger"><i class="material-icons icon">&#xE5D2;</i></a>
 
 <!--
-			<?php $unique_id = esc_attr( uniqid( 'search-form-' ) ); ?>
-			<form role="search" method="get" class="search-container" action="<?php echo esc_url( home_url( '/' ) ); ?>">
+			<form role="search" method="get" class="search-container responsive-hide" action="<?php echo esc_url( home_url( '/' ) ); ?>">
 				<label>
 					<input type="search" class="search" placeholder="Search" value="<?php echo get_search_query(); ?>" name="s" />
 					<button type="submit"><i class="material-icons icon">&#xE8B6;</i></button>
 				</label>
-			</form>--><form role="search" method="get" class="search-container" action="<?php echo esc_url( home_url( '/' ) ); ?>">
+			</form>--><form role="search" method="get" class="search-container responsive-hide" action="<?php echo esc_url( home_url( '/' ) ); ?>">
 				<label>
 					<input type="search" class="search" placeholder="Search" value="" name="s" />
 					<button type="submit"><i class="material-icons icon">&#xE8B6;</i></button>
