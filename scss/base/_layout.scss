@@ -1,7 +1,7 @@
 
 $pad: 4rem;
 
-[class*='col-'] {
+[class^='col-'] {
 	float: left;
 	padding-right: $pad;
 	&:last-of-type {
