@@ -6,14 +6,12 @@ $parade-img-width:1550px;
 		//text-shadow: 0 2px 3px #555;
 		padding-bottom: 6.4rem;
 		height:900px;
-
 		.wrapper{
 			padding-top:0;
 		}
 		h1{
 			@include transform(rotate(-2deg));
 		}
-
 		@media only screen and (max-width:$promo-break-point) {
 			h1 {
 				font-size:7rem;

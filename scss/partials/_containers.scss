@@ -150,9 +150,15 @@
 .hero {
 	color:white;
 	text-align: center;
-	h1{
-		//@include transform(rotate(-5deg));
+
+	.wrapper{
+		padding-top:0;
+		padding-bottom:2rem;
 	}
+	h1{
+		line-height: 1.1em;
+	}
+
 	&.bg-scroll-img{
 		//background-attachment: initial;
 		background-color: $hero-bg-color;
@@ -160,5 +166,21 @@
 		&:before{
 			background:none;
 		}
+	}
+}
+
+.home,
+.what,
+.why,
+.who,
+.pricing,
+.contact{
+	.hero .wrapper{
+		padding-top:5rem;
+		padding-bottom:5rem;
+	}
+	.hero h1{
+		font-size:12rem;
+		line-height:1.3em;
 	}
 }

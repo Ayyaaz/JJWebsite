@@ -18,6 +18,9 @@
 		to   { transform: rotate(360deg) translateX(20px) rotate(-360deg); }
 	}
 
+	h5{
+		margin-bottom:1.7em;
+	}
 	.hero {
 		padding-bottom: 16rem;
 
@@ -139,7 +142,7 @@
 		.top-section{
 			text-align: center;
 			padding-top:3rem;
-			padding-bottom:300px;
+			padding-bottom:305px;
 			color:white;
 			background-color:$green;
 			background-image:url(assets/img/hero-imgs/hero-light-bg.jpg);
