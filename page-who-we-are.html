@@ -36,7 +36,7 @@
 					<li>
 						<a href="page-why-our-fulfilment-services.html">Why</a>
 					</li>
-					<li class="current-menu-item">
+					<li>
 						<a href="page-who-we-are.html">Who</a>
 					</li>
 					<li>
@@ -45,15 +45,42 @@
 					<li>
 						<a href="page-contact.html">Contact</a>
 					</li>
+
+					<li>
+<!--
+						<form role="search" method="get" class="search-container mobile" action="<?php echo esc_url( home_url( \'/\' ) ); ?>">
+							<label>
+								<input type="search" class="search" placeholder="SEARCH" value="<?php echo get_search_query(); ?>" name="s" />
+								<button type="submit"><i class="material-icons icon">&#xE8B6;</i></button>
+							</label>
+						</form>-->
+						<form role="search" method="get" class="search-container mobile" action="<?php echo esc_url( home_url( '/' ) ); ?>">
+							<label>
+								<input type="search" class="search" placeholder="SEARCH" value="" name="s" />
+								<button type="submit"><i class="material-icons icon">&#xE8B6;</i></button>
+							</label>
+						</form>
+
+
+					</li>
+
 				</ul>
 			</nav>
 
 			<a href="javascript:void(0)" class="small-menu-trigger"><i class="material-icons icon">&#xE5D2;</i></a>
 
-			<label class="search-container">
-				<input type="search" class="search" placeholder="Search" />
-				<i class="material-icons icon">&#xE8B6;</i>
-			</label>
+<!--
+			<form role="search" method="get" class="search-container" action="<?php echo esc_url( home_url( '/' ) ); ?>">
+				<label>
+					<input type="search" class="search" placeholder="Search" value="<?php echo get_search_query(); ?>" name="s" />
+					<button type="submit"><i class="material-icons icon">&#xE8B6;</i></button>
+				</label>
+			</form>--><form role="search" method="get" class="search-container" action="<?php echo esc_url( home_url( '/' ) ); ?>">
+				<label>
+					<input type="search" class="search" placeholder="Search" value="" name="s" />
+					<button type="submit"><i class="material-icons icon">&#xE8B6;</i></button>
+				</label>
+			</form>
 
 			<div class="navSmoker"></div>
 
@@ -63,7 +90,7 @@
 			<div class="wrapper">
 				<span class="alignleft"><i class="material-icons icon">&#xE192;</i>&ensp;15:02 GMT</span>
 				<span class="aligncenter">Received a new order for Bradfors, United Kingdom 15:01:07 - 09 NOV 17</span>
-				<span class="alignright"><i class="material-icons icon">&#xE0CA;</i>&ensp;Live Chat</span>
+				<span class="alignright"><i class="material-icons icon">&#xE0CD;</i>&ensp;+44 (0) 1604 968820</span>
 			</div>
 		</div>
 

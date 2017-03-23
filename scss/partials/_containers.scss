@@ -150,7 +150,9 @@
 .hero {
 	color:white;
 	text-align: center;
-
+	h1{
+		//@include transform(rotate(-5deg));
+	}
 	&.bg-scroll-img{
 		//background-attachment: initial;
 		background-color: $hero-bg-color;

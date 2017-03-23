@@ -46,7 +46,14 @@
 			color: $black;
 		}
 	}
+	&.mobile{
+		display: none;
+	}
 	@media only screen and (max-width:$nav-break-point) {
+		display: none;
+		&.mobile{
+			display: block;
+		}
 		button{
 			margin-top:12px;
 		}

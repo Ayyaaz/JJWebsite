@@ -77,8 +77,8 @@ $parade-img-width:1550px;
 
 	@media only screen and (min-width:$parade-img-width) {
 		.hero{
-			margin-top: -180px;
-			padding-top: 180px;
+			margin-top: -140px;
+			padding-top: 140px;
 		}
 	}
 	@media only screen and (max-width:$nav-break-point) and (min-width:$mobile-break-point) {
