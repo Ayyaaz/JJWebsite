@@ -180,7 +180,7 @@ $parade-img-width:1550px;
 			opacity: 0.3;
 			font-size: 1.5rem;
 		}
-		.btn{
+		.button{
 			width:270px;
 			margin-top:-200px;
 		}
@@ -240,7 +240,7 @@ $parade-img-width:1550px;
 			}
 
 
-			.btn{
+			.button{
 				display: block;
 				float:none;
 				margin:16px auto;
@@ -365,7 +365,7 @@ $parade-img-width:1550px;
 			}
 		}
 		@media only screen and (max-width:$promo-break-point) {
-			.btn{
+			.button{
 				margin-top: 40px;
 			}
 		}

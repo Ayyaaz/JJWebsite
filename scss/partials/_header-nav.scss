@@ -54,17 +54,17 @@ $nav-line-height: 80px;
 	background: rgba(255,255,255,0.75);
 
 	@media only screen and (min-width:$nav-break-point) {
-	position: relative;
-	background: transparent;
-	display: inline-block;
-	//width: auto;
-	//float: right;
+		position: relative;
+		background: transparent;
+		display: inline-block;
+		//width: auto;
+		//float: right;
 
-	text-align: center;
-	width: calc(100% - 500px);;
+		text-align: center;
+		width: calc(100% - 500px);;
 	}
 
-	ul {
+	> ul {
 		position: fixed;
 		width: 280px;
 		height: 100%;

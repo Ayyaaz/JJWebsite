@@ -64,7 +64,7 @@ get_header(); ?>
                 </p>
                 <div class="contact-form">
                     <input type="eamil" class="email" />
-                    <button class="btn">Submit Email</button>
+                    <button class="primary">Submit Email</button>
                 </div>
             </div>
         </section>
