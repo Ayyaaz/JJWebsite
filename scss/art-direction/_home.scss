@@ -21,10 +21,10 @@ $parade-img-width:1550px;
 		.parade{
 			position: absolute;
 			bottom:-223px;
-			right: -100px;//-1500px;
+			right:0; //right: -100px; ANIIMATION REMOVED
 			height: 100%;
 			width:auto;
-
+			/* ANIIMATION REMOVED
 			&.e-award {
 				right: -1500px;
 				@include transition(all 1.4s ease-out);
@@ -36,36 +36,35 @@ $parade-img-width:1550px;
 			&.ele,
 			&.afroman {
 				@include transition(all 1s ease-out);
-				-webkit-transition-delay: 1s; /* Safari */
+				-webkit-transition-delay: 1s;
 				transition-delay: 1s;
 			}
 			&.band {
 				@include transition(all 1s ease-out);
-				-webkit-transition-delay: 1.2s; /* Safari */
+				-webkit-transition-delay: 1.2s;
 				transition-delay: 1.2s;
 			}
 			&.handstand {
 				@include transition(all 1.4s ease-out);
-				-webkit-transition-delay: 1.4s; /* Safari */
+				-webkit-transition-delay: 1.4s;
 				transition-delay: 1.4s;
+			}
+			&.giraffe {
+				@include transition(all 2s ease-out);
+				-webkit-transition-delay: 1s;
+				transition-delay: 1s;
 			}
 			&.lift-girls {
 				right: -150px;
 				@include transition(all 2s ease-out);
-				-webkit-transition-delay: 1.2s; /* Safari */
+				-webkit-transition-delay: 1.2s;
 				transition-delay: 1.2s;
 			}
-			&.giraffe {
-				@include transition(all 2s ease-out);
-				-webkit-transition-delay: 1s; /* Safari */
-				transition-delay: 1s;
-			}
-
 			&.come-in,
 			&.already-visible {
 				right:0;
 			}
-
+			*/
 			&.lift-girls.come-in,
 			&.lift-girls.already-visible {
 				right:-3%;

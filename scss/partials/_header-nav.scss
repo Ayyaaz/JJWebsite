@@ -237,6 +237,7 @@ $nav-line-height: 80px;
 		float: right;
 		width:150px;
 		text-align:right;
+		white-space:nowrap;
 	}
 	@media only screen and (max-width:$nav-break-point) {
 		padding:5px 0;
