@@ -111,6 +111,7 @@
 			position: relative;
 			.pricing-bird{
 				position: absolute;
+				z-index: 1;
 				left: 20px;
 
 //			-webkit-animation: float 14s linear infinite;
