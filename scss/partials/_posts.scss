@@ -1,0 +1,24 @@
+.post-summary{
+	padding-bottom:16px;
+
+	.thumbnail{
+		display:inline-block;
+		position: relative;
+		width:180px;
+		height:180px;
+		margin-right:16px;
+		overflow:hidden;
+		float:left;
+		img{
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			height: 100%;
+			width: auto;
+			@include transform(translate(-50%,-50%));
+		}
+	}
+	.excerpt{
+		display:inline;
+	}
+}

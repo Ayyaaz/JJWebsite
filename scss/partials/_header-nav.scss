@@ -61,7 +61,8 @@ $nav-line-height: 80px;
 		//float: right;
 
 		text-align: center;
-		width: calc(100% - 440px);;
+		width: calc(100% - 440px);
+		white-space:nowrap;
 	}
 
 	> ul {

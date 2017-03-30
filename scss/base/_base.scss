@@ -97,3 +97,10 @@ a {
 	color: $link-color;
 	text-decoration:none;
 }
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #ccc;
+    background-image: linear-gradient(to right, #eee, #ccc, #eee);
+}

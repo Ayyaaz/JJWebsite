@@ -148,9 +148,9 @@ $(function() {
 			}
 		}, function() { // mouse leave
 			$(this).find('.popover').on('transitionend MSTransitionEnd webkitTransitionEnd oTransitionEnd', function() {
-					$(this).removeClass('correct-pos').off('transitionend MSTransitionEnd webkitTransitionEnd oTransitionEnd');
-				}
-			);
+				$(this).off('transitionend MSTransitionEnd webkitTransitionEnd oTransitionEnd');
+				$('.popover').removeClass('correct-pos');
+			});
 		}
 	);
 	// end: map tooltips
