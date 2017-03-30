@@ -135,12 +135,13 @@ $(function() {
 	// map tooltips
 	$('.map-location').hover(
 		function() { // mouse enter
-			var thisPopover = $(this).find('.popover');
-			var posFromTop = $('.correct-pos').offset().top - $(window).scrollTop()
-			var offset = -150;//20; //Offset of 20px
 			$('.popover').removeClass('correct-pos');
+			var thisPopover = $(this).find('.popover');
 			thisPopover.addClass('correct-pos');
-			if(posFromTop < 77){
+
+			var posFromTop = $('.correct-pos').offset().top - $(window).scrollTop();
+			var offset = -150;//20; //Offset of 20px
+			if(posFromTop < 150){
 				$('html, body').animate({
 					scrollTop: $(".correct-pos").offset().top + offset
 				}, 100);
