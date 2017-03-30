@@ -4,6 +4,7 @@ textarea, input {
 	-webkit-appearance: none; // careful if we want to use radio button or check-box!
 }
 textarea, input, select {
+	color:$black;
 	width: 100%;
 	display: block;
 	margin: 16px 0;

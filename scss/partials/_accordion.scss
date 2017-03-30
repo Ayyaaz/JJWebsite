@@ -1,0 +1,16 @@
+.accordion{
+    input[id^='check-']{
+        display: none;
+    }
+    label {
+        cursor: pointer;
+    }
+    article {
+        max-height:0px;
+        overflow:hidden;
+        @include transition(all 1s ease-in-out);
+    }
+    input:checked ~ article {
+        max-height: 1000px;
+    }
+}
