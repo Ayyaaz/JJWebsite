@@ -54,21 +54,13 @@ $parade-img-width:1550px;
 				-webkit-transition-delay: 1s;
 				transition-delay: 1s;
 			}
-			&.lift-girls {
-				right: -150px;
-				@include transition(all 2s ease-out);
-				-webkit-transition-delay: 1.2s;
-				transition-delay: 1.2s;
+			&.car-man {
 			}
 			&.come-in,
 			&.already-visible {
 				right:0;
 			}
 			*/
-			&.lift-girls.come-in,
-			&.lift-girls.already-visible {
-				right:-3%;
-			}
 		}
 	}
 
@@ -111,13 +103,12 @@ $parade-img-width:1550px;
 				max-width:initial;
 				width:960px;
 				margin-bottom: -127px;
-				&.ele,
-				&.lift-girls,
-				&.lift-girls {
+				&.ele{
 					left:-150px;
 				}
 				&.band,
-				&.handstand {
+				&.handstand,
+				&.car-man {
 					left:-190px;
 				}
 				&.confetti{
