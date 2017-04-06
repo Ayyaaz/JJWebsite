@@ -38,7 +38,6 @@
 	@media only screen and (max-width:999px) {
 		max-width:48%;
 		margin:1%;
-		height:460px;
 		.excerpt {
 			max-height: 200px;
 		}
@@ -47,9 +46,64 @@
 		max-width:100%;
 		margin:0;
 		margin-bottom:16px;
-		height:430px;
 		.excerpt {
 			max-height: 195px;
 		}
 	}
 }
+
+// post bread-crumb-trail
+.bread-crumb-trail{
+    display: table;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 10px 0 4px 0;
+}
+// arrow in post bread-crumb-trail
+.arrow {
+	text-transform:uppercase;
+    background-color:  white;
+	height: 30px;
+	line-height: 26px;
+	border: 1px solid $green-light;
+	position: relative;
+	display: inline-block;
+	margin-right:6px;
+	margin-bottom:6px;
+	text-align:center;
+	padding: 0 36px 0 44px;
+	small{
+		font-weight: 700;
+	}
+}
+.arrow-head:after,
+.arrow-head:before,
+.arrow:after,
+.arrow:before {
+	content: '';
+	position: absolute;
+	top: -1px;
+	width: 0;
+	height: 0;
+	border: 15px solid transparent;
+}
+.arrow-head:before{
+	left:0;
+	border-left: 12px solid $green-light;
+}
+.arrow-head:after{
+	left:-1px;
+	border-left: 12px solid $grey-light;
+}
+.arrow:after {
+	right: -27px;
+	border-left: 12px solid white;
+	z-index: 99;
+}
+.arrow:before {
+	right: -28px;
+	border-left: 12px solid $green-light;
+	z-index: 99;
+}
+// end: post bread-crumb-trail
