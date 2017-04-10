@@ -178,6 +178,7 @@ RewriteRule ^company/blog(.*/)?                             https://www.ecommerc
 RewriteRule ^company/meet-team/?                https://www.ecommercefulfilment.com/company/board/
 RewriteRule ^company/partners/?                 https://www.ecommercefulfilment.com/company/fulfilment-partners/
 RewriteRule ^company/careers/?                  https://www.ecommercefulfilment.com/company/fulfilment-careers/
+RewriteRule ^company/press/?                    https://www.ecommercefulfilment.com/category/pr-and-news/
 
 RewriteRule ^order-fulfilment/sell-europe/?                         https://www.ecommercefulfilment.com/landing/sell-europe/
 RewriteRule ^order-fulfilment/interested-us-order-fulfilment/?      https://www.ecommercefulfilment.com/landing/interested-us-order-fulfilment/

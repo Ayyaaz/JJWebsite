@@ -7,10 +7,13 @@
 		h1{
 			font-size: 24rem;
 			line-height: 20rem;
-			@include transform(rotate(-10deg));
-
+		    width:100%;
+		    max-width: 650px;
+		    margin-left: auto;
+		    margin-right: auto;
 		    margin-top: -50px;
 		    margin-bottom: -40px;
+			@include transform(rotate(-10deg));
 		}
 
 		.parade{
@@ -62,6 +65,7 @@
 				font-size: 14rem;
 				line-height: 12rem;
 				padding-top:2rem;
+		    	max-width: 300px;
 			}
 			.parade.hand-stand {
 				height: 350px;

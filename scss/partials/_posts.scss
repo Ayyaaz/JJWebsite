@@ -70,6 +70,9 @@
 		box-shadow:none;
 		margin-top: 0px;
 		margin-bottom: 35px;
+		&:last-of-type {
+			margin-bottom: 0;
+		}
 	}
 	.post-title{
 		font-size: 1.6rem;
@@ -90,6 +93,7 @@
 
 // post bread-crumb-trail
 .bread-crumb-trail{
+	white-space: nowrap;
     display: table;
     width: 100%;
     max-width: 1000px;
@@ -108,7 +112,7 @@
 		margin-right:4px;
 		margin-bottom:6px;
 		text-align:center;
-		padding: 0 36px 0 44px;
+		padding: 0 32px 0 40px;
 		font-weight: 700;
 	}
 	a:after,
@@ -181,3 +185,35 @@
 	}
 }
 // end: post bread-crumb-trail
+
+// categories
+.categories{
+	text-align: center;
+	label{
+		margin-bottom: 10px;
+	}
+	article{
+		margin-bottom: 30px;
+		br {
+			display: none;
+		}
+		a{
+			@extend .button;
+			@extend .primary-alt;
+		}
+	}
+}
+// end: categories
+
+// next and previous post buttons
+.next-prev-btns{
+    padding-top: 0;
+    .prev-btn{
+    	padding-top: 1.6rem;
+    }
+    .next-btn{
+    	padding-top: 1.6rem;
+    	text-align: right;
+    }
+}
+// next and previous post buttons
