@@ -211,13 +211,14 @@
 // next and previous post buttons
 .next-prev-btns{
     padding-top: 0;
-	//padding-bottom: 1.6rem;
     .prev-btn{
     	padding-top: 1.6rem;
+    	width: 50%;
     }
     .next-btn{
     	padding-top: 1.6rem;
     	text-align: right;
+    	width: 50%;
     }
 }
 // next and previous post buttons
