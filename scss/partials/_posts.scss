@@ -73,6 +73,9 @@
 		&:last-of-type {
 			margin-bottom: 0;
 		}
+		@media only screen and (max-width:660px) {
+		    max-width: 100%;
+		}
 	}
 	.post-title{
 		font-size: 1.6rem;
@@ -208,6 +211,7 @@
 // next and previous post buttons
 .next-prev-btns{
     padding-top: 0;
+	//padding-bottom: 1.6rem;
     .prev-btn{
     	padding-top: 1.6rem;
     }
@@ -217,3 +221,68 @@
     }
 }
 // next and previous post buttons
+
+// WP popular posts plugin
+.popular-posts{
+	h4{margin-top:0;}
+}
+ul.wpp-list {
+    list-style-type: none;
+    counter-reset: li-counter;
+    margin-top:2em;
+    @extend .cf-group;
+
+    .wpp-post-title{
+    	display: inline-block;
+    	width:calc(100% - 80px);
+    	max-height:40px;
+    	overflow: hidden;
+
+		@media only screen and (max-width:$promo-break-point) {
+    		max-height:36px;
+		}
+    }
+    .wpp-thumbnail{
+    	margin-right:1em;
+    }
+    li{
+    	width:50%;
+        overflow: visible;
+        position: relative;
+        margin-bottom: 20px;
+        padding-left: 1em;
+        min-height: 3em;
+        height: 64px;
+        clear: none;
+        border-left: 2px solid darken($grey, 5%);
+    }
+    li:before {
+        position: absolute;
+        left: -1em;
+        font-size: 3em;
+        line-height: 1;
+        color: darken($grey, 5%);
+        content: counter(li-counter);
+        counter-increment: li-counter;
+    }
+    li span.wpp-stats,
+    .wpp-views{
+        display: block;
+    }
+
+	li:nth-child(odd) {
+    	width:calc(50% - 50px);
+		float: left;
+	}
+	li:nth-child(even) {
+		float: right;
+	}
+	@media only screen and (max-width:600px) {
+		li:nth-child(odd),
+		li:nth-child(even) {
+			float: none;
+			width:100%;
+		}
+	}
+}
+// end: WP popular posts plugin

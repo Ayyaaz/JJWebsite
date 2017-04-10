@@ -6,12 +6,14 @@ Author URI: https://www.ecommercefulfilment.com/
 Description: Designed by Blayney Partnership and built in-house at James and James Fulfilment.
 */
 
+// Variables
+@import "base/variables";
+@import "base/mixins";
+
 // 3rd party css
 @import "vendor/vendor-bundle";
 
-// Baseline and variables
-@import "base/variables";
-@import "base/mixins";
+// Baseline
 @import "base/base";
 @import "base/global";
 @import "base/layout";
