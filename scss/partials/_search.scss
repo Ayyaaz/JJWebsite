@@ -3,6 +3,13 @@
 		padding-top:0;
 		padding-bottom:0;
 	}
+	.stacked-posts .thumbnail{
+		height: 130px;
+		width: 130px;
+	}
+	.post-summary .excerpt{
+		max-height: none;
+	}
 }
 .search-container{
 	position: relative;

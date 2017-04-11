@@ -64,7 +64,7 @@
 	}
 	.post-summary{
 		height: auto;
-		max-width: 400px;
+		max-width: 100%;
 		float:none;
 		margin-left: 0;
 		box-shadow:none;
@@ -84,11 +84,10 @@
 		height:80px;
 		width:80px;
 		float: left;
+		margin-right: 16px;
 	}
 	.excerpt{
-		//height:75px;
-		//overflow:hidden;
-		padding-top:0px;
+		padding:0px;
 	}
 }
 // end: stacked-posts WP recent posts sidebar
