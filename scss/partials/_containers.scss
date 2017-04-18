@@ -74,7 +74,9 @@
 			}
 		}
 	}
-
+	.hs_submit{
+		text-align: center;
+	}
 	@media only screen and (max-width:$mobile-break-point+100) {
 		.contact-form{
 			input.email{
