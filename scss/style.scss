@@ -1,0 +1,41 @@
+/*!
+Theme Name: James and James 2017
+Author: Ayyaaz Afzal-Khan, Alex Coles
+Version: 0.1
+Author URI: https://www.ecommercefulfilment.com/
+Description: Designed by Blayney Partnership and built in-house at James and James Fulfilment.
+*/
+
+// Variables
+@import "base/variables";
+@import "base/mixins";
+
+// 3rd party css
+@import "vendor/vendor-bundle";
+
+// Baseline
+@import "base/base";
+@import "base/global";
+@import "base/layout";
+
+// Components
+@import "partials/header-nav";
+@import "partials/footer";
+@import "partials/slider";
+@import "partials/spinner";
+@import "partials/button";
+@import "partials/popover";
+@import "partials/containers";
+@import "partials/testimonial-card";
+@import "partials/testimonial-carousel";
+@import "partials/forms";
+@import "partials/map";
+@import "partials/search";
+@import "partials/posts";
+@import "partials/accordion";
+
+// Helper classes
+@import "partials/utilities";
+
+// Site specific
+@import "art-direction/art-direction";

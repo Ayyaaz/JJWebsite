@@ -55,7 +55,7 @@
 		}
 		p{
 			font-family: $font-cantata;
-			font-size: 1.6rem;
+			font-size: 2rem;
 		}
 	}
 	.button{
@@ -107,7 +107,7 @@
 		}
 	}
 	.slick-list{
-		min-height: 400px;
+		min-height: 430px;
 	}
 	@media only screen and (max-width:$promo-break-point) {
 		max-width:500px;

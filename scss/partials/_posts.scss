@@ -295,5 +295,8 @@ ul.wpp-list {
 	input[type="submit"]{
 		margin:0;
 	}
+	.submitted-message{
+		@extend h4;
+	}
 }
 // end: signup to blog form

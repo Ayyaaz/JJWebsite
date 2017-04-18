@@ -17,19 +17,16 @@
 		from { transform: rotate(0deg) translateX(20px) rotate(0deg); }
 		to   { transform: rotate(360deg) translateX(20px) rotate(-360deg); }
 	}
-
-	h5{
+	.hero-container h5{
 		margin-bottom:1.7em;
 	}
 	.hero {
 		padding-bottom: 16rem;
-
 		h1{
 			font-size: 34rem;
 			line-height: 20rem;
 			@include transform(rotate(-10deg));
 		}
-
 		.parade{
 			position: absolute;
 			z-index: 2;
@@ -140,6 +137,9 @@
 
 	.how-pricing-works{
 		position: relative;
+		h5{
+			margin-bottom:1.7em;
+		}
 		.top-section{
 			text-align: center;
 			padding-top:3rem;
@@ -213,6 +213,9 @@
 				padding:0;
 				margin:0;
 			}
+			hr{
+				margin:0;
+			}
 			header{
 				padding-bottom:3rem;
 				h5{
@@ -263,8 +266,8 @@
 						color:$yellow;
 					}
 				}
-				.features{
-					border-top:1px solid rgba($grey,.2);
+				hr{
+					opacity: 0.15;
 				}
 				.button{
 					background:rgba($yellow,0.9);
@@ -285,7 +288,6 @@
 				}
 			}
 			.features{
-				border-top:1px solid $grey-light;
 				padding-top:1.5rem;
 				padding-bottom:2rem;
 				li{

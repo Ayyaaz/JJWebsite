@@ -26,7 +26,7 @@ gulp.task('styles', function () {
         cssnano
     ];
 
-    return gulp.src('scss/core.scss') // only reference the central .scss file
+    return gulp.src('scss/style.scss') // only reference the central .scss file
         .pipe(sass().on('error', sass.logError))
         .pipe(postcss(processors))
         .pipe(gulp.dest('css'))
