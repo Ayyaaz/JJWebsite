@@ -74,7 +74,7 @@
 			margin-bottom: 0;
 		}
 		@media only screen and (max-width:660px) {
-		    max-width: 100%;
+			max-width: 100%;
 		}
 	}
 	.post-title{
@@ -96,16 +96,16 @@
 // post bread-crumb-trail
 .bread-crumb-trail{
 	white-space: nowrap;
-    display: table;
-    width: 100%;
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 10px 0 4px 0;
-    font-size:80%;
+	display: table;
+	width: 100%;
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 10px 0 4px 0;
+	font-size:80%;
 	a,
 	.breadcrumb_last { // arrow in post bread-crumb-trail
 		text-transform:uppercase;
-	    background-color:  white;
+		background-color:  white;
 		height: 30px;
 		line-height: 28px;
 		border: 1px solid $green-light;
@@ -149,7 +149,7 @@
 		border-left: 12px solid $green-light;
 	}
 	span[typeof~="v:Breadcrumb"]{
-	    position:relative;
+		position:relative;
 	}
 	span[rel="v:child"]:after,
 	span[rel="v:child"]:before,
@@ -209,16 +209,16 @@
 
 // next and previous post buttons
 .next-prev-btns{
-    padding-top: 0;
-    .prev-btn{
-    	padding-top: 1.6rem;
-    	width: 50%;
-    }
-    .next-btn{
-    	padding-top: 1.6rem;
-    	text-align: right;
-    	width: 50%;
-    }
+	padding-top: 0;
+	.prev-btn{
+		padding-top: 1.6rem;
+		width: 50%;
+	}
+	.next-btn{
+		padding-top: 1.6rem;
+		text-align: right;
+		width: 50%;
+	}
 }
 // next and previous post buttons
 
@@ -227,51 +227,51 @@
 	h4{margin-top:0;}
 }
 ul.wpp-list {
-    list-style-type: none;
-    counter-reset: li-counter;
-    margin-top:2em;
-    @extend .cf-group;
+	list-style-type: none;
+	counter-reset: li-counter;
+	margin-top:2em;
+	@extend .cf-group;
 
-    .wpp-post-title{
-    	display: inline-block;
-    	width:calc(100% - 80px);
-    	max-height:40px;
-    	overflow: hidden;
+	.wpp-post-title{
+		display: inline-block;
+		width:calc(100% - 80px);
+		max-height:40px;
+		overflow: hidden;
 
 		@media only screen and (max-width:$promo-break-point) {
-    		max-height:36px;
+			max-height:36px;
 		}
-    }
-    .wpp-thumbnail{
-    	margin-right:1em;
-    }
-    li{
-    	width:50%;
-        overflow: visible;
-        position: relative;
-        margin-bottom: 20px;
-        padding-left: 1em;
-        min-height: 3em;
-        height: 64px;
-        clear: none;
-        border-left: 2px solid darken($grey, 5%);
-    }
-    li:before {
-        position: absolute;
-        left: -1em;
-        font-size: 3em;
-        line-height: 1;
-        color: darken($grey, 5%);
-        content: counter(li-counter);
-        counter-increment: li-counter;
-    }
-    li span.wpp-stats,
-    .wpp-views{
-        display: block;
-    }
+	}
+	.wpp-thumbnail{
+		margin-right:1em;
+	}
+	li{
+		width:50%;
+		overflow: visible;
+		position: relative;
+		margin-bottom: 20px;
+		padding-left: 1em;
+		min-height: 3em;
+		height: 64px;
+		clear: none;
+		border-left: 2px solid darken($grey, 5%);
+	}
+	li:before {
+		position: absolute;
+		left: -1em;
+		font-size: 3em;
+		line-height: 1;
+		color: darken($grey, 5%);
+		content: counter(li-counter);
+		counter-increment: li-counter;
+	}
+	li span.wpp-stats,
+	.wpp-views{
+		display: block;
+	}
 
 	li:nth-child(odd) {
-    	width:calc(50% - 50px);
+		width:calc(50% - 50px);
 		float: left;
 	}
 	li:nth-child(even) {
@@ -286,3 +286,14 @@ ul.wpp-list {
 	}
 }
 // end: WP popular posts plugin
+
+// signup to blog form
+.blog-subscribe{
+	.hs_email > label{
+		display: none;
+	}
+	input[type="submit"]{
+		margin:0;
+	}
+}
+// end: signup to blog form
