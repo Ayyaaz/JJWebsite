@@ -22,16 +22,20 @@
 		width:0;
 		max-width:100%;
 		outline:none;
-		border: none;
+		border-color: transparent;
 		border-radius:40px;
-		padding-right: 31px;
-		padding-left: 20px;
+		padding-right: 10px;
+		padding-left: 40px;
 		margin-bottom:0;
 		margin-right:0;
 		@include transition(width .5s ease);
 	}
-	button,
-	.button-for-mobile{
+	&:not(.mobile) i.icon{
+		position: absolute;
+		top: 28px;
+		left: 14px;
+	}
+	button{
 		position: absolute;
 		z-index: 1;
 		right:0;
@@ -46,7 +50,6 @@
 	input.search:active,
 	&:hover input.search{
 		width: 210px;
-		padding-right: 35px;
 		border: 1px solid $grey;
 		 + button{
 			color: $black;
