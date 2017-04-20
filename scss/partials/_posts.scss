@@ -289,14 +289,14 @@ ul.wpp-list {
 
 // signup to blog form
 .blog-subscribe{
-	.hs_email > label{
-		display: none;
-	}
 	input[type="submit"]{
 		margin:0;
 	}
-	.submitted-message{
-		@extend h4;
+	.hs_submit{
+		display: none;
+	}
+	.hs_email + .hs_submit{
+		display: block;
 	}
 }
 // end: signup to blog form
