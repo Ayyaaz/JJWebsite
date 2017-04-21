@@ -1,3 +1,21 @@
+/**
+ *
+ * FAO: AH
+ * FROM: AA
+ *
+ */
+
+=====================
+Test Live Stats
+=====================
+
+- We need to test that the live stats stuff still works on the home page.
+
+
+=====================
+301 Redirects
+=====================
+
 RewriteRule ^ecommerce-fulfilment/magento/?                     https://www.ecommercefulfilment.com/fulfilment-services/technology/fulfilment-warehouse-intergration/
 RewriteRule ^ecommerce-fulfilment/interspire-shopping-cart/?    https://www.ecommercefulfilment.com/fulfilment-services/technology/fulfilment-warehouse-intergration/
 RewriteRule ^ecommerce-fulfilment/actinic-catalog/?             https://www.ecommercefulfilment.com/fulfilment-services/technology/fulfilment-warehouse-intergration/
