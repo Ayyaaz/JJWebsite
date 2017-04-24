@@ -237,7 +237,7 @@ $(function() {
 	// end: Stats Counter
 
 	if($("#analogue").length != 0) {
-		clock( $('#analogue>canvas'), {"bottom":130, "left": 0}, true);
+		clock( $('#analogue>canvas'), {"bottom":130, "top": 0}, true);
 	}
 });
 

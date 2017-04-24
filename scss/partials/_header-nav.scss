@@ -240,6 +240,23 @@ $nav-line-height: 80px;
 		text-align:right;
 		white-space:nowrap;
 	}
+
+	// live feed
+	#analogue{
+		position: relative;
+		height: 21px;
+		.event{
+			top:0;
+			opacity: 0;
+			position: absolute;
+			width:580px;
+		}
+		canvas{
+			display: none;
+		}
+	}
+	// end: live feed
+
 	@media only screen and (max-width:$nav-break-point) {
 		padding:5px 0;
 	}
