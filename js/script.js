@@ -166,6 +166,20 @@ $(function() {
 	// end: home page srcoll cta
 
 
+	// scroll to section - TODO: could allow multiple per page
+	$(".trigger-scroll").click(function() {
+		var offset = -100;//20; //Offset of 20px
+		var scrollToMe = '.scroll-to-me';
+		if($(scrollToMe).closest('.contact-panel').length != 0){ // in contact panel
+			scrollToMe = '.contact-panel input[type="checkbox"]:not(:checked) ~ .scroll-to-me'; // only scroll to me if panel is closed
+		}
+		$('html, body').animate({
+			scrollTop: $(scrollToMe).offset().top + offset
+		}, 1200);
+	});
+	// end: scroll to section
+
+
 	// vital stats carousel
 	$(function() {
 		$('.home .slider').slick({
