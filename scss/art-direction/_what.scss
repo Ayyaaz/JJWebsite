@@ -238,14 +238,14 @@
 		}
 
 		@keyframes bobbing-balloon-1 {
-			0% {@include transform(translate(0, 6px));}
+			0% {@include transform(translate(0, 10px));}
 			50% {@include transform(translate(0, 0));}
-			100% {@include transform(translate(0, 6px));}
+			100% {@include transform(translate(0, 10px));}
 		}
 		@keyframes bobbing-balloon-2 {
-			0% {@include transform(translate(0, -6px));}
+			0% {@include transform(translate(0, -10px));}
 			50% {@include transform(translate(0, 0));}
-			100% {@include transform(translate(0, -6px));}
+			100% {@include transform(translate(0, -10px));}
 		}
 
 		&.come-in,
