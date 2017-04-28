@@ -42,6 +42,9 @@
 		max-width: 900px;
 		padding-bottom: 50px;
 	}
+	.accordion input[type="checkbox"]:checked + .center-text{
+		display: none;
+	}
 	.submit-input{
 		input[type=email]{
 			display: inline-block;
@@ -75,6 +78,9 @@
 		}
 	}
 	.hs_submit{
+		text-align: center;
+	}
+	.submitted-message{
 		text-align: center;
 	}
 	@media only screen and (max-width:$mobile-break-point+100) {
