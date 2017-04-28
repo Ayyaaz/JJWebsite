@@ -24,14 +24,16 @@ $parade-img-width:1550px;
 			right:0; //right: -100px; ANIIMATION REMOVED
 			height: 100%;
 			width:auto;
+
+			&.confetti {
+				right: -50px;
+				@include transition(all 1.2s ease-out);
+			}
+
 			/* ANIIMATION REMOVED
 			&.e-award {
 				right: -1500px;
 				@include transition(all 1.4s ease-out);
-			}
-			&.confetti {
-				right: -1500px;
-				@include transition(all 1.2s ease-out);
 			}
 			&.ele,
 			&.afroman {
@@ -56,11 +58,11 @@ $parade-img-width:1550px;
 			}
 			&.car-man {
 			}
+			*/
 			&.come-in,
 			&.already-visible {
 				right:0;
 			}
-			*/
 		}
 	}
 

@@ -26,15 +26,28 @@
 				margin-left:0;
 				top:50%;
 				z-index: 2;
-
 			}
 			&.hand-stand {
 				@include transition(all 1.5s ease-out);
 				-webkit-transition-delay: 1s; /* Safari */
 				transition-delay: 1s;
-				margin-left:-300px;
+				margin-left:-360px; // -300px;
 				margin-top: -131px;
 				z-index: 2;
+				transform-origin: 50% 100%;
+				animation: rock-girl infinite 5s;
+
+				@keyframes rock-girl {
+					0% {
+						@include transform(rotate(-0.6deg));
+					}
+					50% {
+						@include transform(rotate(0.4deg));
+					}
+					100% {
+						@include transform(rotate(-0.6deg));
+					}
+				}
 			}
 			&.confetti {
 				@include transition(all 2s ease-out);
@@ -53,7 +66,7 @@
 					margin-left:-450px;
 				}
 				&.hand-stand {
-					margin-left:-360px;
+					//margin-left:-360px;
 				}
 				&.confetti {
 					@include transform(scale(1,1));
