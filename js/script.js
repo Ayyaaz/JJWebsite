@@ -208,6 +208,10 @@ $(function() {
 	// Stats Counter
 	function countUp(){
 		$('.count').each(function () {
+			while ($(this).text().length < 3) {
+				var after = $(this).text() + '0';
+				$(this).text(after);
+			}
 			$(this).prop('Counter',0).animate({
 				Counter: $(this).text()
 			}, {
