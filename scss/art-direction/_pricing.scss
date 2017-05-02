@@ -21,16 +21,15 @@
 		margin-bottom:1.7em;
 	}
 	.hero {
-		padding-bottom: 16rem;
+		padding-bottom: 4rem;
 		h1{
-			font-size: 34rem;
-			line-height: 20rem;
+			font-size: 12rem;//34rem;
+			line-height: 13rem;//20rem;
 			@include transform(rotate(-10deg));
 		}
 		.parade{
 			position: absolute;
 			z-index: 2;
-			bottom:-215px;
 			left:50%;
 			margin-left:-770px;
 
@@ -51,6 +50,7 @@
 				transition-delay: 1s;
 				@include transform(scale(.9));
 				z-index: 0;
+			    bottom: -385px;
 			}
 			&.giraffe {
 				@include transition(all 1s ease-out);
@@ -59,8 +59,11 @@
 				transform-origin: 70% 74%;
 				@include transform(scale(.9));
 				z-index: 2;
+				margin-left:-490px;
+				bottom:-156px;
 			}
 			&.butterfly {
+				bottom:-215px;
 //			-webkit-animation: float 14s linear infinite;
 //			   -moz-animation: float 14s linear infinite;
 //				 -o-animation: float 14s linear infinite;
@@ -82,10 +85,6 @@
 		}
 		@media only screen and (max-width:$promo-break-point) {
 			padding-bottom:3rem;
-			h1{
-				font-size: 20rem;
-				line-height: 14rem;
-			}
 			.parade.butterfly{
     			margin-left: -570px;
 				height: 555px;

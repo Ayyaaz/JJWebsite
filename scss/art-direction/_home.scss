@@ -14,7 +14,7 @@ $parade-img-width:1550px;
 		}
 		@media only screen and (max-width:$promo-break-point) {
 			h1 {
-				font-size:7rem;
+				font-size:6rem;
 			}
 		}
 
@@ -136,8 +136,7 @@ $parade-img-width:1550px;
 		h2{
 			margin-top:1rem;
 			margin-bottom:2rem;
-			font-size: 9rem;
-			@include transform(rotate(-3degs))
+			font-size: 5rem;
 		}
 		p {
 			font-size: 4rem;
@@ -228,7 +227,7 @@ $parade-img-width:1550px;
 		}
 		@media only screen and (max-width:1000px) {
 			h2{
-				font-size: 6rem;
+				font-size: 4rem;
 			}
 
 
@@ -331,19 +330,19 @@ $parade-img-width:1550px;
 				padding-top:28.5rem;
 				h1,h2{
 					margin:0;
-					line-height: 0.9em;
+					line-height: 1.2em;
 				}
 				h1{
-					font-size: 13rem;
+					font-size: 7rem;
 					text-shadow: 1px 1px 1px rgba(255,255,255,0.6),
 								 -1px -1px 1px rgba(255,255,255,0.6);
 				}
 				h2{
 					color: $yellow;
-					font-size: 5rem;
+					font-size: 3rem;
 					&:first-child{
 						color: $black;
-						font-size: 7rem;
+						font-size: 4rem;
 						text-shadow: 1px 1px 1px rgba(255,255,255,0.6);
 					}
 				}

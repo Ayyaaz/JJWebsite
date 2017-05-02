@@ -5,13 +5,13 @@
 		padding-bottom: 6.4rem;
 
 		h1{
-			font-size: 24rem;
-			line-height: 20rem;
+			font-size: 11rem;
+			line-height: 12rem;
 		    width:100%;
 		    max-width: 650px;
 		    margin-left: auto;
 		    margin-right: auto;
-		    margin-top: -50px;
+		    margin-top: -20px;
 		    margin-bottom: -40px;
 			@include transform(rotate(-10deg));
 		}
@@ -24,15 +24,15 @@
 				-webkit-transition-delay: 1s; /* Safari */
 				transition-delay: 1s;
 				margin-left:0;
-				top:50%;
+				top:30%;
 				z-index: 2;
 			}
 			&.hand-stand {
 				@include transition(all 1.5s ease-out);
 				-webkit-transition-delay: 1s; /* Safari */
 				transition-delay: 1s;
-				margin-left:-360px; // -300px;
-				margin-top: -131px;
+				margin-left:-220px; // -300px;
+				margin-top: -70px;
 				z-index: 2;
 				transform-origin: 50% 100%;
 				animation: rock-girl infinite 5s;
@@ -63,7 +63,7 @@
 			&.come-in,
 			&.already-visible {
 				&.parrot-with-banner {
-					margin-left:-450px;
+					margin-left:-420px;
 				}
 				&.hand-stand {
 					//margin-left:-360px;
