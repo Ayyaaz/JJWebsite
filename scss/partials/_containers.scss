@@ -108,13 +108,15 @@
 	h5{
 		font-size: 2rem;
 		margin:0.8rem 0;
+		@include transition(all .3s ease-in-out);
 	}
 	p{
 		margin-top: 0;
 	}
 }
 a.icon-card:hover h5{
-	font-weight: bold;
+	//font-weight: bold;
+	@include transform(scale(1.05));
 }
 @media only screen and (max-width:$promo-break-point) {
 	.icon-card{
