@@ -113,10 +113,17 @@
 	p{
 		margin-top: 0;
 	}
+	img{
+		@include transition(all .3s ease-in-out);
+	}
 }
-a.icon-card:hover h5{
-	//font-weight: bold;
-	@include transform(scale(1.05));
+a.icon-card:hover{
+	img{
+		@include transform(scale(1.05) rotate(-15deg));
+	}
+	h5{
+		@include transform(scale(1.05));
+	}
 }
 @media only screen and (max-width:$promo-break-point) {
 	.icon-card{

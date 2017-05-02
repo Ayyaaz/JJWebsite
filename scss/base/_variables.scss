@@ -4,20 +4,25 @@
  */
 
 /* fonts */
-@import url(https://fonts.googleapis.com/css?family=Lato|Open+Sans:300,500,600,700|Cantata+One:300,500,600,700);
-//@import url(https://fonts.googleapis.com/css?family=Lato:300,500,600,700|Open+Sans:300,500,600,700|Cantata+One:300,500,600,700);
-$font-open: 'Open Sans', Helvetica, Arial, sans-serif;
+
+@import url(https://fonts.googleapis.com/css?family=Lato|Cantata+One:300,500,600,700|Paprika);
+//Lato:300,500,600,700
+//Open+Sans:300,500,600,700
+
 $font-lato: 'Lato', sans-serif;
 $font-cantata: 'Cantata One', serif;
+$font-paprika: 'Paprika', cursive;
+//$font-open: 'Open Sans', Helvetica, Arial, sans-serif;
 //$font-palatino: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
 
-@font-face {
+// old Reis font stuff
+/*@font-face {
 	font-family: reis_font;
 	src: local(reis_font),
          url('assets/font/REIS-Regular.woff') format('woff');
          //url('font/REIS-Regular.ttf') format('truetype'),
          //url('font/REIS-Regular.woff2') format('woff2');
-}
+}*/
 
 $grey:#ececec;
 $grey-dark:#ccc;
