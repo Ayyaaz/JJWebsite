@@ -33,26 +33,26 @@ $(function() {
 
 	//smoker
 	$('.smoke').click(function(){
-			if($(this).hasClass('closer')) {
-				$(this).parents('.smoker').removeClass('on');
+		if($(this).hasClass('closer')) {
+			$(this).parents('.smoker').removeClass('on');
+		}
+		else
+		{
+			windowID = $(this).attr('href');
+			if(windowID) {
+				$(windowID+'.smoker').toggleClass('on');
+				$(windowID+'.smoker').scrollTop(0); // Makes sure you're at the top of the modal whenever it's launched / relaunched
+				windowID = null;
 			}
 			else
 			{
-				windowID = $(this).attr('href');
-				if(windowID) {
-					$(windowID+'.smoker').toggleClass('on');
-					$(windowID+'.smoker').scrollTop(0); // Makes sure you're at the top of the modal whenever it's launched / relaunched
-					windowID = null;
-				}
-				else
-				{
-					$('.smoker').toggleClass('on');
-					windowID = null;
-				}
+				$('.smoker').toggleClass('on');
+				windowID = null;
 			}
+		}
 
-			$('body, html').toggleClass('locked');
-			return false;
+		$('body, html').toggleClass('locked');
+		return false;
 	});
 	//end: smoker
 
