@@ -47,8 +47,14 @@
 .counter{
 	width:55px;
 	border-top:6px solid $yellow;
+	&.blue{
+		border-color:$blue;
+	}
 	&.green{
 		border-color:$green;
+	}
+	&.green-light{
+		border-color:$green-light;
 	}
 	+ p,
 	+ h5{

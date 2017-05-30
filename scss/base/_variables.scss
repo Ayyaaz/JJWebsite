@@ -3,26 +3,28 @@
  *
  */
 
-/* fonts */
+// fonts
 
-@import url(https://fonts.googleapis.com/css?family=Lato|Cantata+One:300,500,600,700|Paprika);
+@import url(https://fonts.googleapis.com/css?family=Lato|Cantata+One:300,500,600,700);
 //Lato:300,500,600,700
 //Open+Sans:300,500,600,700
 
 $font-lato: 'Lato', sans-serif;
 $font-cantata: 'Cantata One', serif;
-$font-paprika: 'Paprika', cursive;
 //$font-open: 'Open Sans', Helvetica, Arial, sans-serif;
 //$font-palatino: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
 
-// old Reis font stuff
-/*@font-face {
-	font-family: reis_font;
-	src: local(reis_font),
-         url('assets/font/REIS-Regular.woff') format('woff');
-         //url('font/REIS-Regular.ttf') format('truetype'),
-         //url('font/REIS-Regular.woff2') format('woff2');
-}*/
+// Bellaboo font stuff
+@font-face {
+    font-family: bellaboo_font;
+    src: url('assets/font/BELLABOO-Regular.eot') format('embedded-opentype');   // For IE
+    src: local(bellaboo_font),
+         url('assets/font/BELLABOO-Regular.woff2') format('woff2'),   // Super Modern Browsers
+         url('assets/font/BELLABOO-Regular.woff') format('woff'),     // Pretty Modern Browsers
+         url('assets/font/BELLABOO-Regular.ttf')  format('truetype'), // Safari, Android, iOS
+}
+
+// colours
 
 $grey:#ececec;
 $grey-dark:#ccc;
@@ -32,6 +34,7 @@ $green: #71a61c;
 $green-dark: #215636;
 $green-light: #91bf47;
 
+$blue:#2F7FC5;
 $yellow:#fdd600;
 $black:#333;
 $off-white:#f6f6f6;
@@ -39,6 +42,8 @@ $off-white:#f6f6f6;
 $spot-color: $green;
 $link-color: $green;
 $hero-bg-color: #45781f;
+
+// break-points
 
 $nav-break-point: 950px;
 $promo-break-point: 800px;

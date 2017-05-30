@@ -5,15 +5,10 @@
 		padding-bottom: 6.4rem;
 
 		h1{
-			margin-top: 5rem;
-    		margin-bottom: -1rem;
-			font-size: 11rem;//18rem;
-			line-height: 12rem;//16rem;
-		    width:100%;
-		    max-width: 400px;
-		    margin-left: auto;
-		    margin-right: auto;
-			@include transform(rotate(-10deg));
+			margin-top: 2rem;
+    		margin-bottom: 4rem;
+			font-size: 8rem;
+			line-height: 10rem;
 		}
 		.wrapper{
 			padding-top:10px;
@@ -39,6 +34,7 @@
 				margin-left:-720px;
 				transform-origin: 50% 100%;
 				@include transform(scale(.8));
+				bottom:-80px;
 			}
 
 			&.butterfly {
@@ -61,23 +57,13 @@
 		}
 
 		@media only screen and (max-width:$promo-break-point) {
-			.wrapper{
-				margin-left: -10%;
-			}
-			h1{
-				font-size: 16rem;
-				line-height: 14rem;
-		    	max-width: 300px;
-			}
 			.parade.afroman {
-				right: -15%;
-				margin-left: auto;
 				height: 100%;
 			}
 
 			.parade.already-visible {
 				&.afroman {
-					margin-left:-650px;
+					margin-left:-500px;
 				}
 			}
 		}

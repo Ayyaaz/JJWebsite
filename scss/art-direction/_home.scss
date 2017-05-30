@@ -4,13 +4,18 @@ $parade-img-width:1550px;
 
 	.hero {
 		//text-shadow: 0 2px 3px #555;
-		padding-bottom: 6.4rem;
-		height:900px;
+		//padding-bottom: 6.4rem;
+		height:550px;
 		.wrapper{
-			padding-top:2rem;
+			padding-top:1rem;
 		}
 		h1{
-			@include transform(rotate(-2deg));
+			@include transform(rotate(-1deg));
+			margin-top: 0;
+			margin-bottom: 1rem;
+		}
+		h4{
+			margin-top: 1.6rem;
 		}
 		@media only screen and (max-width:$promo-break-point) {
 			h1 {
@@ -20,101 +25,77 @@ $parade-img-width:1550px;
 
 		.parade{
 			position: absolute;
-			bottom:-223px;
+			bottom:-170px;
 			right:0; //right: -100px; ANIIMATION REMOVED
-			height: 100%;
+			height: 125%;
 			width:auto;
 
 			&.confetti {
 				right: -50px;
 				@include transition(all 1.2s ease-out);
 			}
-
+			&.ele.come-in,
+			&.ele.already-visible {
+				left: 50%;
+				margin-left:-630px;
+			}
+			&.band.come-in,
+			&.band.already-visible {
+				left: 50%;
+				margin-left:-560px;
+			}
+			&.handstand.come-in,
+			&.handstand.already-visible {
+				left: 50%;
+				margin-left:-520px;
+			}
+			&.afroman.come-in,
+			&.afroman.already-visible {
+				left: 50%;
+				margin-left:-540px;
+			}
+			&.car-man.come-in,
+			&.car-man.already-visible {
+				left: 50%;
+				margin-left:-440px;
+			}
 			/* ANIIMATION REMOVED
-			&.e-award {
-				right: -1500px;
-				@include transition(all 1.4s ease-out);
-			}
-			&.ele,
-			&.afroman {
+			&.ele {
 				@include transition(all 1s ease-out);
 				-webkit-transition-delay: 1s;
 				transition-delay: 1s;
-			}
-			&.band {
-				@include transition(all 1s ease-out);
-				-webkit-transition-delay: 1.2s;
-				transition-delay: 1.2s;
-			}
-			&.handstand {
-				@include transition(all 1.4s ease-out);
-				-webkit-transition-delay: 1.4s;
-				transition-delay: 1.4s;
-			}
-			&.giraffe {
-				@include transition(all 2s ease-out);
-				-webkit-transition-delay: 1s;
-				transition-delay: 1s;
-			}
-			&.car-man {
-			}
-			*/
+			} */
 			&.come-in,
 			&.already-visible {
 				right:0;
 			}
 		}
 	}
-
-	@media only screen and (min-width:$parade-img-width) {
-		.hero{
-			margin-top: -140px;
-			padding-top: 140px;
-		}
-	}
-	@media only screen and (max-width:$nav-break-point) and (min-width:$mobile-break-point) {
-		.hero{
-			margin-top: -90px;
-			padding-top: 90px;
-		}
-	}
-	@media only screen and (max-width:$parade-img-width) {
-		.hero{
-			height:650px;
-			.parade{
-				max-width:100%;
-				height:auto;
-				bottom: 0%;
-				margin-bottom: -13.3%;
-			}
-		}
-	}
 	@media only screen and (max-width:$nav-break-point) {
 		.hero{
-			height:680px;
+			height:500px;
 			.parade{
-				max-width:120%;
-				margin-bottom: -15.9%;
+			    bottom: -155px;
+			    &.ele.already-visible,
+			    &.ele.come-in {
+    				margin-left: -600px;
+			    }
 			}
 		}
 	}
 	@media only screen and (max-width:$promo-break-point) {
 		.hero{
-			height:580px;
+			height:450px;
 			.parade{
+				height:auto;
+				bottom: 0%;
 				max-width:initial;
 				width:960px;
 				margin-bottom: -127px;
-				&.ele{
-					left:-150px;
-				}
-				&.band,
-				&.handstand,
-				&.car-man {
-					left:-190px;
-				}
-				&.confetti{
-					bottom:70px;
+			    &.ele.already-visible,
+			    &.ele.come-in {
+					margin-left: 0;
+					left: -20%;
 				}
 			}
 		}
@@ -124,7 +105,7 @@ $parade-img-width:1550px;
 			.parade{
 				&.afroman.come-in,
 				&.afroman.already-visible {
-					right:-50px;
+					//right:-50px;
 				}
 			}
 		}
@@ -243,8 +224,11 @@ $parade-img-width:1550px;
 
 
 	.four-pillars{
-		h5{
+		h2{
 			margin-bottom:0;
+		}
+		h5{
+			max-width:800px;
 		}
 		.wrapper {
 			position: relative;
@@ -260,15 +244,15 @@ $parade-img-width:1550px;
 		.copy-block{
 			@extend .cf-group;
 			margin-top:150px;
+			&:last-of-type{
+				margin-top:50px;
+			}
 		}
 		.copy{
 			float:right;
 			max-width:280px;
 			&:nth-child(even){
 				float:left;
-			}
-			h5{
-				color: $green;//#2f8b26;
 			}
 		}
 
@@ -302,7 +286,7 @@ $parade-img-width:1550px;
 			text-align: center;
 			background:url(assets/img/bird-man-thomas.png) no-repeat center center;
 			background-size: contain;
-			height: 750px;
+			height: 630px;
 			.bird {
 				position: absolute;
 				left:50%;
@@ -322,28 +306,6 @@ $parade-img-width:1550px;
 					&.come-in,
 					&.already-visible {
 						margin-left: -220px;
-					}
-				}
-			}
-			.bird-man-caption{
-				margin: 0 auto;
-				padding-top:28.5rem;
-				h1,h2{
-					margin:0;
-					line-height: 1.2em;
-				}
-				h1{
-					font-size: 7rem;
-					text-shadow: 1px 1px 1px rgba(255,255,255,0.6),
-								 -1px -1px 1px rgba(255,255,255,0.6);
-				}
-				h2{
-					color: $yellow;
-					font-size: 3rem;
-					&:first-child{
-						color: $black;
-						font-size: 4rem;
-						text-shadow: 1px 1px 1px rgba(255,255,255,0.6);
 					}
 				}
 			}
@@ -382,6 +344,7 @@ $parade-img-width:1550px;
 			padding-bottom: 6rem;
 		}
 		h2{
+			font-size: 6rem;
 			margin-top:3rem;
 			margin-bottom: 3.2rem;
 			position: relative;
@@ -453,12 +416,25 @@ $parade-img-width:1550px;
 			padding-top:7rem;
 			padding-bottom:8rem;
 		}
+		h2{
+			font-size: 6rem;
+			max-width:600px;
+			margin-left: auto;
+			margin-right: auto;
+		}
 		.logos,
 		.awards{
 			padding-left:0;
 			li{
 				list-style-type: none;
 				display: inline-block;
+				filter: grayscale(100%);
+				opacity: .8;
+				@include transition(all 300ms ease-out);
+				&:hover{
+					filter: none;
+					opacity: 1;
+				}
 			}
 			img{
 				width: 100%;
@@ -498,6 +474,12 @@ $parade-img-width:1550px;
 		.wrapper{
 			display: inline-block;
 			padding-bottom:6rem;
+			> h2{
+				font-size: 6rem;
+				max-width:500px;
+				margin-left: auto;
+				margin-right: auto;
+			}
 		}
 	}
 

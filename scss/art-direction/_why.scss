@@ -1,19 +1,9 @@
 
 .why{
-	h2{
- 		sub{
-			bottom: .4em;
-			font-size:70%;
-		}
-	}
 	.hero {
 		padding-bottom: 6.4rem;
 
 		h1{
-			font-size: 13rem;
-			line-height: 13rem;
-			@include transform(rotate(-5deg));
-
 			margin-top:0px;
 			white-space: nowrap;
 		}
@@ -28,17 +18,18 @@
 
 			&.man{
 				bottom:0;
-				height: 120%;
+				//height: 120%;
+				margin-left:-550px;
 			}
 			&.birds-L {
 				top:-25px;
-				margin-left:-600px;
-				height: 130%;
+				margin-left:-500px;
+				height: 100%;
 			}
 			&.birds-R {
 				top:-25px;
 				margin-left:-750px;
-				height: 130%;
+				height: 100%;
 			}
 			&.confetti {
 				bottom:0;
@@ -50,10 +41,10 @@
 			&.already-visible {
 				&.birds-L,
 				&.birds-R {
-					margin-left:-650px;
+					margin-left:-630px;
 				}
 				&.confetti {
-					@include transform(scale(1,1));
+					@include transform(scale(.9,.9));
 				}
 			}
 		}
@@ -63,7 +54,7 @@
 			}
 			.parade{
 				&.man{
-						margin-left:-550px;
+					margin-left:-550px;
 				}
 				&.birds-L,
 				&.birds-R {
@@ -149,25 +140,20 @@
 	}
 	.promo-happy .promo-happy-img{
 		position: absolute;
-		height: 130%;
 		top:-10%;
-		width: 112%;
-		left:-6%;
+		right:3%;
 	}
-	.promo-trophy .promo-trophy-img{
+	.promo-know .promo-know-img{
 		position: absolute;
-		top:-130px;
-		right:-10px;
+		left:3%;
 	}
-	.promo-books .promo-books-img{
+	.promo-game .promo-game-img{
 		position: absolute;
-		top:-217px;
-		right:-120px;
+		left: 5%;
 	}
-	.promo-vine .promo-vine-img{
+	.promo-growth .promo-growth-img{
 		position: absolute;
-		top:-6.5%;
-		left:-4.5%;
-		width:108%;
+		margin-top:20px;
+		margin-left:20px;
 	}
 }

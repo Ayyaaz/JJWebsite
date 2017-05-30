@@ -18,6 +18,7 @@
 	overflow:hidden;
 	z-index: 1;
 	cursor: pointer;
+	@include shadow(1);
 	@include transition(all 0.3s ease-in-out);
 	&:hover{
 		@include shadow(2);

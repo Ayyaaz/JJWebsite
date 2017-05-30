@@ -5,11 +5,9 @@
  *
  */
 
-=====================
-Test Live Stats
-=====================
 
-- We need to test that the live stats stuff still works on the home page.
+- Redirect all HTTP requests to HTTPS; all should go to: https://www.
+- Test Live Stats: We need to test that the live stats stuff still works on the home page.
 
 
 =====================

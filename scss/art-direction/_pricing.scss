@@ -156,6 +156,8 @@
 				transition-delay: 1s;
 				position: absolute;
 				right:150px;
+				top: 120px;
+				z-index: 1;
 
 				&.come-in,
 				&.already-visible {
@@ -205,6 +207,7 @@
 			padding:0;
 			margin:0;
 			margin-top:-355px;
+			margin-bottom:5rem;
 			border-radius: 2.4rem;
 			box-shadow: 50px 50px 100px 20px rgba(0,0,0,0.12);
 			//overflow: hidden;
@@ -214,6 +217,7 @@
 			}
 			hr{
 				margin:0;
+				background:$black;
 			}
 			header{
 				padding-bottom:3rem;
@@ -228,7 +232,6 @@
 				}
 				.currency{
 					font-size: 4rem;
-					color: $grey-dark;
 					vertical-align: text-top;
 				}
 			}
@@ -252,39 +255,23 @@
 				padding:4rem 3rem 8rem 3rem;
 				width:33.33%;
 			}
+			.center,
+			.right{
+				color: white;
+				hr{
+					background:white;
+				}
+			}
 			.left{
-				border-right:1px solid $grey;
 				border-radius: 2.4rem 0 0 2.4rem;
+				background: #b9e140;
+			}
+			.center{
+				background: #8bbf12;
 			}
 			.right{
-				background-color:$green-dark;
-				color: white;
-				border-radius: 0 2.4rem 2.4rem 0 ;
-				header{
-					h5{
-						color:$yellow;
-					}
-				}
-				hr{
-					opacity: 0.15;
-				}
-				.button{
-					background:rgba($yellow,0.9);
-				}
-				.star{
-					position: absolute;
-					left: 50%;
-					top: -31px;
-					margin-left: -31px;
-					height: 62px;
-					width:62px;
-					border-radius:50%;
-					background:$yellow;
-					i.icon{
-						font-size:38px;
-						line-height:62px;
-					}
-				}
+				background-color:#547e16;
+				border-radius: 0 2.4rem 2.4rem 0;
 			}
 			.features{
 				padding-top:1.5rem;

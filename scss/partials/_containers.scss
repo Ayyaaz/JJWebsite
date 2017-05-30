@@ -42,6 +42,9 @@
 		max-width: 900px;
 		padding-bottom: 50px;
 	}
+	h2{
+		font-size: 6rem;
+	}
 	.accordion input[type="checkbox"]:checked + .center-text{
 		display: none;
 	}
@@ -105,9 +108,9 @@
 	float:left;
 	padding:0 0.8rem;
 	color:inherit;
-	h5{
-		font-size: 2rem;
-		margin:0.8rem 0;
+	h2{
+		font-size: 2.7rem;
+		margin: 0.8rem 0 1.2rem 0;
 		@include transition(all .3s ease-in-out);
 	}
 	p{
@@ -119,9 +122,6 @@
 }
 a.icon-card:hover{
 	img{
-		@include transform(scale(1.05) rotate(-15deg));
-	}
-	h5{
 		@include transform(scale(1.05));
 	}
 }
