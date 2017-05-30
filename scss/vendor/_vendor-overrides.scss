@@ -10,6 +10,11 @@
         &.form-columns-1 .hs-input{
             width:100% !important;
         }
+        &.form-columns-2 .input {
+            @media (max-width: 400px), (max-device-width: 480px) and (min-device-width: 320px){
+                margin-right: 0 !important;
+            }
+        }
     }
     legend{
         font-size: 1.1rem;
