@@ -181,9 +181,6 @@ a.icon-card:hover{
 		//background-attachment: initial;
 		background-color: $hero-bg-color;
 		background-image:url(assets/img/hero-imgs/hero-bg.jpg);
-		&:before{
-			background:none;
-		}
 	}
 }
 

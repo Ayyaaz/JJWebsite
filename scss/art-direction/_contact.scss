@@ -1,8 +1,6 @@
 
 .contact{
 	.hero {
-		//padding-bottom: 6rem;
-
 		h1{
 			margin-top:0px;
 		}
@@ -56,17 +54,6 @@
 					margin-left:150px;
 				}
 			}
-		}
-
-
-		@media only screen and (max-width:$promo-break-point) {
-				&.birds-L{
-					left:0px;
-				}
-		}
-		@media only screen and (max-width:600px) {
-		}
-		@media only screen and (max-width:490px) {
 		}
 	}
 }

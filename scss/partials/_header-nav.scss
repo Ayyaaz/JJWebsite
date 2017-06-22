@@ -247,7 +247,7 @@ $nav-line-height: 80px;
 		position: relative;
 		height: 21px;
 		.event{
-			top:0;
+			top:0 !important;
 			opacity: 0;
 			position: absolute;
 			width:580px;

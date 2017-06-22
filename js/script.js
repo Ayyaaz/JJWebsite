@@ -1,4 +1,8 @@
-$(function() {
+
+//$(function() {
+
+jQuery.noConflict();
+(function($) {
 
 	// killer carousel
 	$('.kc-wrap').KillerCarousel({
@@ -240,9 +244,15 @@ $(function() {
 	});
 	// end: Stats Counter
 
-	if($("#analogue").length != 0) {
-		clock( $('#analogue>canvas'), {"bottom":130, "top": 0}, true);
-	}
-});
+
+	// fast click
+    window.addEventListener('load', function() {
+        FastClick.attach(document.body);
+    }, false);
+	// end: fast click
+
+
+//});
+})( jQuery );
 
 

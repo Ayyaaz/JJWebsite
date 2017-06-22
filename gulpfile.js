@@ -15,7 +15,10 @@ var gulp = require('gulp'),
     notify = require('gulp-notify'),
     del = require('del'),
     browserSync = require('browser-sync').create(),
-    imagemin = require('gulp-imagemin');
+    imagemin = require('gulp-imagemin'),
+    concat = require('gulp-concat'),
+    uglify = require('gulp-uglify');
+
 
 // SCSS Compiling Magic
 gulp.task('styles', function () {
@@ -39,7 +42,7 @@ gulp.task('clean', function() {
     return del(['css']);
 });
 
-gulp.task('watch', function() {
+gulp.task('watch', ['scripts'], function() {
 
     // Create Browser Sync Server
     browserSync.init({
@@ -58,3 +61,28 @@ gulp.task('images', () =>
         .pipe(imagemin())
         .pipe(gulp.dest('css/assets/img'))
 );
+
+// concat and minify js
+var //jsFiles = 'js/**/*.js',
+    jsDest = 'dist/scripts';
+
+
+var jsFiles = [
+  'js/vendor/fastclick.js',
+  'js/vendor/slick.js',
+  'js/vendor/placeholder.js',
+  'js/vendor/killercarousel.js',
+  'js/live-feed.js',
+  'js/clock2.js?1492702292',
+  'js/script.js'
+];
+
+gulp.task('scripts', function() {
+    return gulp.src(jsFiles)
+        .pipe(concat('scripts.js'))
+        .pipe(gulp.dest(jsDest))
+        .pipe(rename('scripts.min.js'))
+        .pipe(uglify())
+        .pipe(gulp.dest(jsDest));
+});
+// concat and minify js
