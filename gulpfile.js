@@ -66,7 +66,6 @@ gulp.task('images', () =>
 var //jsFiles = 'js/**/*.js',
     jsDest = 'dist/scripts';
 
-
 var jsFiles = [
   'js/vendor/fastclick.js',
   'js/vendor/slick.js',
@@ -85,4 +84,4 @@ gulp.task('scripts', function() {
         .pipe(uglify())
         .pipe(gulp.dest(jsDest));
 });
-// concat and minify js
+// end: concat and minify js

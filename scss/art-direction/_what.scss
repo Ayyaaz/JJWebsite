@@ -20,8 +20,6 @@
 
 			&.afroman {
 				@include transition(all 1s ease-out);
-				-webkit-transition-delay: 1s; /* Safari */
-				transition-delay: 1s;
 				z-index: 3;
 				margin-left:-620px;//-500px;
 				transform-origin: 100% 100%;
@@ -29,8 +27,8 @@
 			}
 			&.confetti {
 				@include transition(all 2s ease-out);
-				-webkit-transition-delay: 1s; /* Safari */
-				transition-delay: 1s;
+				//-webkit-transition-delay: 1s; /* Safari */
+				//transition-delay: 1s;
 				margin-left:-720px;
 				transform-origin: 50% 100%;
 				@include transform(scale(.8));

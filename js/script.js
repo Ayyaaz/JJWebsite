@@ -22,9 +22,7 @@ jQuery.noConflict();
 		,autoChangeDirection: 1
 		//,autoChangeDelay: 3000
 	});
-
-
-	// killer carousel
+	// end: killer carousel
 
 	$(".small-menu-trigger").click(function(){
 			$('body').addClass('navOpen');
@@ -194,6 +192,8 @@ jQuery.noConflict();
 			,prevArrow: ''//<div class="slick-prev"><i class="material-icons">&#xE314;</i></div>'
 			,nextArrow: ''//<div class="slick-next"><i class="material-icons">&#xE315;</i></div>'
 			,fade:true
+			,pauseOnHover:false
+			,pauseOnFocus:false
 		});
 	});
 	$(function() {
@@ -250,6 +250,40 @@ jQuery.noConflict();
         FastClick.attach(document.body);
     }, false);
 	// end: fast click
+
+
+
+
+	// clock in top bar
+	/*function tzAbbr(dateInput) {
+		var dateObject = dateInput || new Date(),
+			dateString = dateObject + "",
+			tzAbbr = (
+				dateString.match(/\(([^\)]+)\)$/) || // Works for the majority of modern browsers
+				dateString.match(/([A-Z]+) [\d]{4}$/) // IE outputs date strings in a different format:
+			);
+		if (tzAbbr) tzAbbr = tzAbbr[1].match(/[A-Z]/g).join("");
+		return tzAbbr;
+	};*/
+	function startTime() {
+		//var tz = tzAbbr();
+	    var today = new Date();
+	    var h = today.getHours();
+	    var m = today.getMinutes();
+	    var s = today.getSeconds();
+	    m = checkTime(m);
+	    s = checkTime(s);
+
+	    $('#time').html(h + ":" + m + ":" + s); // + " " + tz
+	    var t = setTimeout(startTime, 500);
+	}
+	function checkTime(i) {
+	    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+	    return i;
+	}
+	startTime();
+	// end: clock in top bar
+
 
 
 //});

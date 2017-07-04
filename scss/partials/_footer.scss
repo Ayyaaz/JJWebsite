@@ -4,13 +4,17 @@
 	.wrapper{
 		padding-top:3rem;
 		padding-bottom:3rem;
+		max-width: 800px;
 	}
 	.copy-block{
-		width:25%;
+		width:38%;
 		float:left;
 		padding-right:16px;
 		padding-left:16px;
 
+		&:last-of-type{
+			width:24%;
+		}
 		h5{
 			font-size:2rem;
 			margin:0;
@@ -21,12 +25,18 @@
 
 		@media only screen and (max-width:600px) {
 			width:50%;
+			&:last-of-type{
+				width:50%;
+			}
 			&:nth-child(even){
 				float: right;
 			}
 		}
 		@media only screen and (max-width:400px) {
 			width:100%;
+			&:last-of-type{
+				width:100%;
+			}
 		}
 	}
 	.brand {
@@ -36,6 +46,9 @@
 	}
 	.social-icons{
 		margin-top:2rem;
+		@media only screen and (max-width:600px) {
+			margin-bottom:2rem;
+		}
 	}
 	.copyright-notice{
 		font-size: 1.2rem;
