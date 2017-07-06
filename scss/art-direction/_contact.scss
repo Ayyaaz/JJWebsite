@@ -3,6 +3,7 @@
 	.wrapper{
 		position: relative;
 		z-index: 1;
+		padding: 5rem 1.6rem;
 	}
 	.parade{
 		position: absolute;
@@ -14,6 +15,7 @@
 		&.birds-R{
 			top:0;
 			max-height: 100%;
+			z-index: 1;
 		}
 		&.birds-L{
 			margin-left:-350px;

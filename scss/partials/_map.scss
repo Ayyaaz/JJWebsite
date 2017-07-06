@@ -84,6 +84,12 @@
 		.pin{
 			background-color:$blue;
 		}
+		&.default-open{
+			top:auto;
+			right:auto;
+			@include transform(scale(1));
+			opacity: 1;
+		}
 	}
 	.outer{
 		@include transition(all 0.25s ease-in-out);
@@ -113,6 +119,7 @@
 			line-height: 10px;
 		}
 	}
+
 	&:hover {
 		.popover{
 			@include transform(scale(1));
