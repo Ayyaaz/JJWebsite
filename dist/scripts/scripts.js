@@ -1270,6 +1270,7 @@ jQuery.noConflict();
 	// map tooltips
 	$('.map-location').hover(
 		function() { // mouse enter
+			$('.popover').removeClass('default-open');
 			$('.popover').removeClass('correct-pos');
 			var thisPopover = $(this).find('.popover');
 			thisPopover.addClass('correct-pos');
