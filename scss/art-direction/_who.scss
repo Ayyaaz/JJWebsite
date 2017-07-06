@@ -1,105 +1,81 @@
 
 .who{
 
-	.hero {
-		padding-bottom: 6.4rem;
+	.parade{
+		position: absolute;
 
-		h1{
-			font-size: 11rem;
-			line-height: 12rem;
-		    width:100%;
-		    max-width: 650px;
-		    margin-left: auto;
-		    margin-right: auto;
-		    margin-top: -20px;
-		    margin-bottom: -40px;
-			@include transform(rotate(-10deg));
+		&.parrot-with-banner {
+			@include transition(all 2s ease-in-out);
+			margin-left:0;
+			top:30%;
+			z-index: 2;
+		}
+		&.hand-stand {
+			@include transition(all 1.5s ease-out);
+			-webkit-transition-delay: 1s; /* Safari */
+			transition-delay: 1s;
+			margin-left:-220px; // -300px;
+			margin-top: -70px;
+			z-index: 2;
+			transform-origin: 50% 100%;
+			animation: rock-girl infinite 5s;
+			bottom: -57px;
+
+			@keyframes rock-girl {
+				0% {
+					@include transform(rotate(-0.6deg));
+				}
+				50% {
+					@include transform(rotate(0.4deg));
+				}
+				100% {
+					@include transform(rotate(-0.6deg));
+				}
+			}
+		}
+		&.confetti {
+			@include transition(all 2s ease-out);
+			-webkit-transition-delay: 1s; /* Safari */
+			transition-delay: 1s;
+			bottom:0;
+			left:50%;
+			margin-left:-720px;
+			transform-origin: 50% 100%;
+			@include transform(scale(.8,.8));
 		}
 
-		.parade{
-			position: absolute;
-
+		&.come-in,
+		&.already-visible {
 			&.parrot-with-banner {
-				@include transition(all 2s ease-out);
-				-webkit-transition-delay: 1s; /* Safari */
-				transition-delay: 1s;
-				margin-left:0;
-				top:30%;
-				z-index: 2;
+				margin-left:-420px;
 			}
 			&.hand-stand {
-				@include transition(all 1.5s ease-out);
-				-webkit-transition-delay: 1s; /* Safari */
-				transition-delay: 1s;
-				margin-left:-220px; // -300px;
-				margin-top: -70px;
-				z-index: 2;
-				transform-origin: 50% 100%;
-				animation: rock-girl infinite 5s;
-
-				@keyframes rock-girl {
-					0% {
-						@include transform(rotate(-0.6deg));
-					}
-					50% {
-						@include transform(rotate(0.4deg));
-					}
-					100% {
-						@include transform(rotate(-0.6deg));
-					}
-				}
+				//margin-left:-360px;
 			}
 			&.confetti {
-				@include transition(all 2s ease-out);
-				-webkit-transition-delay: 1s; /* Safari */
-				transition-delay: 1s;
-				bottom:0;
-				left:50%;
-				margin-left:-720px;
-				transform-origin: 50% 100%;
-				@include transform(scale(.8,.8));
-			}
-
-			&.come-in,
-			&.already-visible {
-				&.parrot-with-banner {
-					margin-left:-420px;
-				}
-				&.hand-stand {
-					//margin-left:-360px;
-				}
-				&.confetti {
-					@include transform(scale(1,1));
-				}
-			}
-		}
-		@media only screen and (max-width:$promo-break-point) {
-			h1{
-				font-size: 14rem;
-				line-height: 12rem;
-				padding-top:2rem;
-		    	max-width: 300px;
-			}
-			.parade.hand-stand {
-				height: 350px;
-				bottom: -45px;
-				right: -150px;
-			}
-			.parade.parrot-with-banner {
-				height: 120px;
-				top:30%;
-			    left: auto;
-			    right: 55%;
-			}
-		}
-		@media only screen and (max-width:500px) {
-			.parade.hand-stand,
-			.parade.parrot-with-banner {
-				display: none;
+				@include transform(scale(1,1));
 			}
 		}
 	}
-
+	@media only screen and (max-width:$promo-break-point) {
+		.parade.hand-stand {
+			height: 350px;
+			bottom: -45px;
+			right: -150px;
+		}
+		.parade.parrot-with-banner {
+			height: 120px;
+			top:30%;
+		    left: auto;
+		    right: 55%;
+		}
+	}
+	@media only screen and (max-width:500px) {
+		.parade.hand-stand,
+		.parade.parrot-with-banner {
+			display: none;
+		}
+	}
 	.who-we-are{
 		.wrapper{
 			padding-bottom:0;
@@ -112,7 +88,7 @@
 			margin-bottom:3rem;
 		}
 		p{
-			font-family: $font-Lusitana;
+			font-family: $font-palatino;
 			font-size: 1.8rem;
 			float: left;
 			width:33.33%;

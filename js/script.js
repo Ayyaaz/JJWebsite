@@ -265,7 +265,7 @@ jQuery.noConflict();
 		if (tzAbbr) tzAbbr = tzAbbr[1].match(/[A-Z]/g).join("");
 		return tzAbbr;
 	};*/
-	function startTime() {
+	/*function startTime() {
 		//var tz = tzAbbr();
 	    var today = new Date();
 	    var h = today.getHours();
@@ -281,7 +281,7 @@ jQuery.noConflict();
 	    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
 	    return i;
 	}
-	startTime();
+	startTime();*/
 	// end: clock in top bar
 
 

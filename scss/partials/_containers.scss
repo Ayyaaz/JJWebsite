@@ -173,10 +173,6 @@ a.icon-card:hover{
 		padding-top:0;
 		padding-bottom:2rem;
 	}
-	h1{
-		line-height: 1.4em;
-	}
-
 	&.bg-scroll-img{
 		//background-attachment: initial;
 		background-color: $hero-bg-color;
@@ -190,12 +186,9 @@ a.icon-card:hover{
 .who,
 .pricing,
 .contact{
-	.hero .wrapper{
-		padding-top:5rem;
-		padding-bottom:5rem;
-	}
 	.hero h1{
-		font-size:7rem;//12rem;
-		line-height:1.6em;//1.3em;
+		font-size: 12rem;
+		@include transform(rotate(-10deg));
+		line-height: 1.4em;
 	}
 }

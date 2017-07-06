@@ -1,130 +1,109 @@
 
 .why{
-	.hero {
-		padding-bottom: 6.4rem;
+	.parade{
+		position: absolute;
+		left:50%;
+		margin-left:-720px;
 
-		h1{
-			margin-top:0px;
-			white-space: nowrap;
+		@include transition(all 2s ease-out);
+		-webkit-transition-delay: 1s; /* Safari */
+		transition-delay: 1s;
+
+		&.man{
+			bottom:0;
+			//height: 120%;
+			margin-left:-550px;
 		}
-		.parade{
-			position: absolute;
-			left:50%;
-			margin-left:-720px;
+		&.birds-L {
+			top:-25px;
+			margin-left:-580px;
+			height: 100%;
+		}
+		&.birds-R {
+			top:-25px;
+			margin-left:-680px;
+			height: 100%;
+		}
+		&.confetti {
+			bottom:0;
+			transform-origin: 50% 100%;
+			@include transform(scale(.8,.8));
+		}
 
-			@include transition(all 2s ease-out);
-			-webkit-transition-delay: 1s; /* Safari */
-			transition-delay: 1s;
-
-			&.man{
-				bottom:0;
-				//height: 120%;
-				margin-left:-550px;
-			}
-			&.birds-L {
-				top:-25px;
-				margin-left:-580px;
-				height: 100%;
-			}
+		&.come-in,
+		&.already-visible {
+			&.birds-L,
 			&.birds-R {
-				top:-25px;
-				margin-left:-680px;
-				height: 100%;
+				margin-left:-630px;
 			}
 			&.confetti {
-				bottom:0;
-				transform-origin: 50% 100%;
-				@include transform(scale(.8,.8));
+				@include transform(scale(.9,.9));
 			}
-
+		}
+	}
+	@media only screen and (max-width:$promo-break-point) {
+		.parade{
+			&.man{
+				margin-left:-550px;
+			}
+			&.birds-L,
+			&.birds-R {
+				margin-left:-500px;
+			}
 			&.come-in,
 			&.already-visible {
 				&.birds-L,
 				&.birds-R {
-					margin-left:-630px;
-				}
-				&.confetti {
-					@include transform(scale(.9,.9));
-				}
-			}
-		}
-		@media only screen and (max-width:$promo-break-point) {
-			h1{
-				margin-left: 10%;
-			}
-			.parade{
-				&.man{
-					margin-left:-550px;
-				}
-				&.birds-L,
-				&.birds-R {
 					margin-left:-500px;
 				}
-				&.come-in,
-				&.already-visible {
-					&.birds-L,
-					&.birds-R {
-						margin-left:-500px;
-					}
-				}
 			}
 		}
-		@media only screen and (max-width:600px) {
-			padding-bottom:0;
-			.wrapper{
-				padding-top:0;
+	}
+	@media only screen and (max-width:600px) {
+		padding-bottom:0;
+		.wrapper{
+			padding-top:0;
+		}
+		.parade{
+			&.man,
+			&.birds-L,
+			&.birds-R{
+				width:auto;
+				height: 300px;
 			}
-			h1{
-				white-space: normal;
-				font-size:10rem;
-				line-height: 11rem;
-				margin-left: 20%;
-				margin-top: 40px;
-				margin-bottom: 70px;
+			&.man{
+				margin-left:-75%;
 			}
-			.parade{
-				&.man,
-				&.birds-L,
-				&.birds-R{
-					width:auto;
-					height: 300px;
-				}
-				&.man{
-					margin-left:-75%;
-				}
+			&.birds-L,
+			&.birds-R {
+				margin-left:-65%;
+			}
+			&.confetti {
+				@include transform(scale(0.5));
+			}
+			&.come-in,
+			&.already-visible {
 				&.birds-L,
 				&.birds-R {
 					margin-left:-65%;
 				}
 				&.confetti {
-					@include transform(scale(0.5));
-				}
-				&.come-in,
-				&.already-visible {
-					&.birds-L,
-					&.birds-R {
-						margin-left:-65%;
-					}
-					&.confetti {
-						@include transform(scale(0.6));
-					}
+					@include transform(scale(0.6));
 				}
 			}
 		}
-		@media only screen and (max-width:490px) {
-			.wrapper{
-				padding-top:2rem;
-			}
-			h1{
-				margin-left:auto;
-				margin-top: 0px;
-				margin-bottom: 0px;
-				//font-size: 16rem;
-			}
-			.parade.man{
-				display: none;
-			}
+	}
+	@media only screen and (max-width:490px) {
+		.wrapper{
+			padding-top:2rem;
 		}
+		.parade.man{
+			display: none;
+		}
+	}
+	.hero {
+		padding-top: 7rem;
+		padding-bottom: 7rem;
 	}
 	.testimonial-card{
 		margin-top:60px;
@@ -134,18 +113,25 @@
 			padding-top:8rem;
 			padding-bottom:8rem;
 		}
-		.promo-col:first-of-type .button{
-			margin-top:2rem;
+		.promo-col{
+			padding-top:55px;
+			&:last-of-type{
+				padding-top:0;
+			}
 		}
 	}
-	.promo-happy .promo-happy-img{
-		position: absolute;
-		top:-10%;
-		right:3%;
+	.promo-happy {
+		.promo-happy-img{
+			position: absolute;
+			top:-10%;
+			right:3%;
+			z-index: 1;
+		}
 	}
 	.promo-know .promo-know-img{
 		position: absolute;
-		left:3%;
+		right:3%;
+		z-index: 1;
 	}
 	.promo-game .promo-game-img{
 		position: absolute;

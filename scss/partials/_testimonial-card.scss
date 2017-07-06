@@ -54,8 +54,7 @@
 			}
 		}
 		p{
-			font-family: $font-Lusitana;
-			font-size: 2rem;
+			font-family: $font-palatino;
 		}
 	}
 	.button{
@@ -67,19 +66,19 @@
 		display: block;
 		position: absolute;
 		z-index: 9;
-		font-size: 170px;
+		font-size: 120px;
 		font-family: Georgia, serif;
 		color: $green-dark;
 	}
 	&:before {
 		content: "\201C";
 		left: 12px;
-		top: 38px;
+		top: 28px;
 	}
 	&:after {
 		content: "\201D";
 		right: 12px;
-		bottom:-52px;
+		bottom:-42px;
 	}
 	@media only screen and (max-width:500px) {
 		&:before, &:after {

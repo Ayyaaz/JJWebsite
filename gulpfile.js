@@ -72,7 +72,7 @@ var jsFiles = [
   'js/vendor/placeholder.js',
   'js/vendor/killercarousel.js',
   'js/live-feed.js',
-  'js/clock2.js?1492702292',
+  'js/clock2.js',//?1492702292',
   'js/script.js'
 ];
 

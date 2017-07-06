@@ -5,16 +5,17 @@
 
 // fonts
 
-@import url(https://fonts.googleapis.com/css?family=Lato|Lusitana);
-//Lato:300,500,600,700
-//Open+Sans:300,500,600,700
-//Cantata+One:300,500,600,700
+@import url(https://fonts.googleapis.com/css?family=Lato);
+// |Lato:300,500,600,700
+// |Open+Sans:300,500,600,700
+// |Cantata+One:300,500,600,700
+// |Lusitana
 
 $font-lato: 'Lato', sans-serif;
-$font-Lusitana: 'Lusitana', serif;
+$font-palatino: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+//$font-Lusitana: 'Lusitana', serif;
 //$font-cantata: 'Cantata One', serif;
 //$font-open: 'Open Sans', Helvetica, Arial, sans-serif;
-//$font-palatino: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
 
 // Bellaboo font stuff
 @font-face {
@@ -25,6 +26,7 @@ $font-Lusitana: 'Lusitana', serif;
          url('assets/font/BELLABOO-Regular.woff') format('woff'),     // Pretty Modern Browsers
          url('assets/font/BELLABOO-Regular.ttf')  format('truetype'), // Safari, Android, iOS
 }
+$font-bellaboo: bellaboo_font, impact, Charcoal, sans-serif;
 
 // colours
 

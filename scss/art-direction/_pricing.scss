@@ -21,12 +21,8 @@
 		margin-bottom:1.7em;
 	}
 	.hero {
+		padding-top: 4rem;
 		padding-bottom: 4rem;
-		h1{
-			font-size: 12rem;//34rem;
-			line-height: 13rem;//20rem;
-			@include transform(rotate(-10deg));
-		}
 		.parade{
 			position: absolute;
 			z-index: 2;

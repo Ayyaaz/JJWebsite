@@ -1,58 +1,53 @@
 
 .contact{
-	.hero {
-		h1{
-			margin-top:0px;
-		}
-		.wrapper{
-			position: relative;
-			z-index: 1;
-		}
-		.parade{
-			position: absolute;
-			@include transition(all 2s ease-out);
-			-webkit-transition-delay: 1s; /* Safari */
-			transition-delay: 1s;
+	.wrapper{
+		position: relative;
+		z-index: 1;
+	}
+	.parade{
+		position: absolute;
+		@include transition(all 2s ease-out);
+		-webkit-transition-delay: 1s; /* Safari */
+		transition-delay: 1s;
 
-			&.birds-L,
-			&.birds-R{
-				top:0;
-				max-height: 100%;
-			}
-			&.birds-L{
-				margin-left:-350px;
-			}
-			&.birds-R {
-				margin-left:100px;
-			}
+		&.birds-L,
+		&.birds-R{
+			top:0;
+			max-height: 100%;
+		}
+		&.birds-L{
+			margin-left:-350px;
+		}
+		&.birds-R {
+			margin-left:100px;
+		}
+		&.ele {
+			bottom:0;
+			right:0;
+			max-height: 100%;
+			max-width:80%;
+			margin-right:-100px;
+		}
+		&.confetti {
+			bottom:-60px;
+			left:50%;
+			margin-left:-720px;
+			transform-origin: 50% 100%;
+			@include transform(scale(.8,.8));
+		}
+		&.come-in,
+		&.already-visible {
 			&.ele {
-				bottom:0;
-				right:0;
-				max-height: 100%;
-				max-width:80%;
-				margin-right:-100px;
+				margin-right:0px;
 			}
 			&.confetti {
-				bottom:-60px;
-				left:50%;
-				margin-left:-720px;
-				transform-origin: 50% 100%;
-				@include transform(scale(.8,.8));
+				@include transform(scale(.9,.9));
 			}
-			&.come-in,
-			&.already-visible {
-				&.ele {
-					margin-right:0px;
-				}
-				&.confetti {
-					@include transform(scale(.9,.9));
-				}
-				&.birds-L{
-					margin-left:-400px;
-				}
-				&.birds-R {
-					margin-left:150px;
-				}
+			&.birds-L{
+				margin-left:-400px;
+			}
+			&.birds-R {
+				margin-left:150px;
 			}
 		}
 	}
