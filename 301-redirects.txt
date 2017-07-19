@@ -14,66 +14,66 @@
 301 Redirects
 =====================
 
-RewriteRule ^ecommerce-fulfilment/magento/?                                                         https://www.ecommercefulfilment.com/order-fulfilment/technology/integration/
-RewriteRule ^ecommerce-fulfilment/interspire-shopping-cart/?                                        https://www.ecommercefulfilment.com/order-fulfilment/technology/integration/
-RewriteRule ^ecommerce-fulfilment/actinic-catalog/?                                                 https://www.ecommercefulfilment.com/order-fulfilment/technology/integration/
-RewriteRule ^efulfilment-integration/online-fulfilment-carts/open-source-fulfilment/?               https://www.ecommercefulfilment.com/order-fulfilment/technology/integration/
-RewriteRule ^ecommerce-fulfilment/ekm-powershop/?                                                   https://www.ecommercefulfilment.com/order-fulfilment/technology/integration/
-RewriteRule ^efulfilment-integration/online-fulfilment-carts/hosted-cart-fulfilment/?               https://www.ecommercefulfilment.com/order-fulfilment/technology/integration/
+RewriteRule ^ecommerce-fulfilment/magento/?                                                         https://www.ecommercefulfilment.com/order-fulfilment/fulfilment-technology/integration/
+RewriteRule ^ecommerce-fulfilment/interspire-shopping-cart/?                                        https://www.ecommercefulfilment.com/order-fulfilment/fulfilment-technology/integration/
+RewriteRule ^ecommerce-fulfilment/actinic-catalog/?                                                 https://www.ecommercefulfilment.com/order-fulfilment/fulfilment-technology/integration/
+RewriteRule ^efulfilment-integration/online-fulfilment-carts/open-source-fulfilment/?               https://www.ecommercefulfilment.com/order-fulfilment/fulfilment-technology/integration/
+RewriteRule ^ecommerce-fulfilment/ekm-powershop/?                                                   https://www.ecommercefulfilment.com/order-fulfilment/fulfilment-technology/integration/
+RewriteRule ^efulfilment-integration/online-fulfilment-carts/hosted-cart-fulfilment/?               https://www.ecommercefulfilment.com/order-fulfilment/fulfilment-technology/integration/
 RewriteRule ^quote/?                                                                                https://www.ecommercefulfilment.com/contact/
 RewriteRule ^fulfilment-quote/?                                                                     https://www.ecommercefulfilment.com/contact/
-RewriteRule ^third-party-seller-fulfilment/?                                                        https://www.ecommercefulfilment.com/order-fulfilment/technology/integration/
-RewriteRule ^efulfilment-integration/marketplace-fulfilment/?                                       https://www.ecommercefulfilment.com/order-fulfilment/technology/integration/
+RewriteRule ^third-party-seller-fulfilment/?                                                        https://www.ecommercefulfilment.com/order-fulfilment/fulfilment-technology/integration/
+RewriteRule ^efulfilment-integration/marketplace-fulfilment/?                                       https://www.ecommercefulfilment.com/order-fulfilment/fulfilment-technology/integration/
 RewriteRule ^mail-order-and-response-handling/?                                                     https://www.ecommercefulfilment.com/order-fulfilment/visibility/
 RewriteRule ^order-fulfilment/outsourced-customer-service/response-handling/?                       https://www.ecommercefulfilment.com/order-fulfilment/visibility/
-RewriteRule ^nutraceutical-fulfilment/?                                                             https://www.ecommercefulfilment.com/order-fulfilment/how-it-works/pick-and-pack/
-RewriteRule ^order-fulfilment/products-handled/nutraceuticals-and-supplements/?                     https://www.ecommercefulfilment.com/order-fulfilment/how-it-works/pick-and-pack/
-RewriteRule ^privacy-policy/?                                                                       https://www.ecommercefulfilment.com/company/privacy-and-copyright/
-RewriteRule ^ecommerce-fulfilment/compatible-shopping-carts/?                                       https://www.ecommercefulfilment.com/order-fulfilment/technology/integration/
-RewriteRule ^efulfilment-integration/?                                                              https://www.ecommercefulfilment.com/order-fulfilment/technology/integration/
-RewriteRule ^fulfilment-by-amazon/?                                                                 https://www.ecommercefulfilment.com/order-fulfilment/technology/integration/
-RewriteRule ^efulfilment-integration/marketplace-fulfilment/amazon-fulfilment/?                     https://www.ecommercefulfilment.com/order-fulfilment/technology/integration/
+RewriteRule ^nutraceutical-fulfilment/?                                                             https://www.ecommercefulfilment.com/order-fulfilment/order-fulfilment-process/pick-and-pack/
+RewriteRule ^order-fulfilment/products-handled/nutraceuticals-and-supplements/?                     https://www.ecommercefulfilment.com/order-fulfilment/order-fulfilment-process/pick-and-pack/
+RewriteRule ^privacy-policy/?                                                                       https://www.ecommercefulfilment.com/privacy/
+RewriteRule ^ecommerce-fulfilment/compatible-shopping-carts/?                                       https://www.ecommercefulfilment.com/order-fulfilment/fulfilment-technology/integration/
+RewriteRule ^efulfilment-integration/?                                                              https://www.ecommercefulfilment.com/order-fulfilment/fulfilment-technology/integration/
+RewriteRule ^fulfilment-by-amazon/?                                                                 https://www.ecommercefulfilment.com/order-fulfilment/fulfilment-technology/integration/
+RewriteRule ^efulfilment-integration/marketplace-fulfilment/amazon-fulfilment/?                     https://www.ecommercefulfilment.com/order-fulfilment/fulfilment-technology/integration/
 RewriteRule ^contact-six/?                                                                          https://www.ecommercefulfilment.com/
-RewriteRule ^welcome-james-and-james/contacting-us/?
-RewriteRule ^guidelines/?                                                                           https://www.ecommercefulfilment.com/
-RewriteRule ^welcome-james-and-james/guidelines/?
+RewriteRule ^welcome-james-and-james/contacting-us/?                                                https://www.ecommercefulfilment.com/welcome/contacting-us/
+RewriteRule ^guidelines/?                                                                           https://www.ecommercefulfilment.com/welcome/goodsin-guidelines/
+RewriteRule ^welcome-james-and-james/guidelines/?                                                   https://www.ecommercefulfilment.com/welcome/goodsin-guidelines/
 RewriteRule ^contractual-terms/?                                                                    https://drive.google.com/a/jamesandjames.com/file/d/0B3Mo4LsXHBA6czVBSENEbk10Unc/view
 RewriteRule ^service-sla/?                                                                          https://drive.google.com/file/d/0B3Mo4LsXHBA6czEybXdQeWlSMnc/view
 
 # Small business quote, formerly: http://goo.gl/qz6Y5w
 RewriteRule ^sme-price-list/?                                                                       https://www.ecommercefulfilment.com/contact/
 
-RewriteRule ^warehouse-software/?                                                                   https://www.ecommercefulfilment.com/order-fulfilment/technology/warehouse-management-software/
-RewriteRule ^our-fulfilment-solution/efulfilment/?                                                  https://www.ecommercefulfilment.com/order-fulfilment/technology/e-fulfilment/
-RewriteRule ^order-fulfilment/order-picking-accuracy/?                                              https://www.ecommercefulfilment.com/order-fulfilment/technology/accuracy/
+RewriteRule ^warehouse-software/?                                                                   https://www.ecommercefulfilment.com/order-fulfilment/fulfilment-technology/warehouse-management-software/
+RewriteRule ^our-fulfilment-solution/efulfilment/?                                                  https://www.ecommercefulfilment.com/e-fulfilment/
+RewriteRule ^order-fulfilment/order-picking-accuracy/?                                              https://www.ecommercefulfilment.com/order-fulfilment/fulfilment-technology/accuracy/
 RewriteRule ^order-fulfilment/global-fulfilment/?                                                   https://www.ecommercefulfilment.com/order-fulfilment/global-fulfilment/
 RewriteRule ^order-fulfilment/fulfilment-centre-capabilities/?                                      https://www.ecommercefulfilment.com/order-fulfilment/global-fulfilment/capabilities/
-RewriteRule ^warehouse-software/system-features/?                                                   https://www.ecommercefulfilment.com/fulfilment-solutions/features/
+RewriteRule ^warehouse-software/system-features/?                                                   https://www.ecommercefulfilment.com/fulfilment-pricing/features/
 RewriteRule ^company/organic-warehouse/?                                                            https://www.ecommercefulfilment.com/fulfilment-solutions/organic-fulfilment/
 RewriteRule ^welcome-james-and-james/faqs/?                                                         https://www.ecommercefulfilment.com/fulfilment-solutions/frequently-asked-questions/
-RewriteRule ^company/about-us/?                                                                     https://www.ecommercefulfilment.com/who-we-are/
-RewriteRule ^company/meet-team/?                                                                    https://www.ecommercefulfilment.com/who-we-are/order-fulfilment-team/
-RewriteRule ^company/locations/?                                                                    https://www.ecommercefulfilment.com/contact/international-fulfilment-centres/
-RewriteRule ^company/locations/fulfilment-centre-northampton/?                                      https://www.ecommercefulfilment.com/contact/international-fulfilment-centres/uk/
-RewriteRule ^company/locations/usa-fulfilment-columbus-ohio/?                                       https://www.ecommercefulfilment.com/contact/international-fulfilment-centres/usa/
+RewriteRule ^company/about-us/?                                                                     https://www.ecommercefulfilment.com/who/
+RewriteRule ^company/meet-team/?                                                                    https://www.ecommercefulfilment.com/meet-team/
+RewriteRule ^company/locations/?                                                                    https://www.ecommercefulfilment.com/locations/
+RewriteRule ^company/locations/fulfilment-centre-northampton/?                                      https://www.ecommercefulfilment.com/locations/uk/
+RewriteRule ^company/locations/usa-fulfilment-columbus-ohio/?                                       https://www.ecommercefulfilment.com/locations/usa/
 RewriteRule ^ecommerce-fulfilment/?                                                                 https://www.ecommercefulfilment.com/order-fulfilment/
 RewriteRule ^fulfilment-services/?                                                                  https://www.ecommercefulfilment.com/order-fulfilment/
 RewriteRule ^order-fulfilment/?                                                                     https://www.ecommercefulfilment.com/order-fulfilment/
-RewriteRule ^technology-and-security/?                                                              https://www.ecommercefulfilment.com/order-fulfilment/technology/
-RewriteRule ^our-fulfilment-solution/cloud-fulfilment/?                                             https://www.ecommercefulfilment.com/order-fulfilment/technology/
+RewriteRule ^technology-and-security/?                                                              https://www.ecommercefulfilment.com/order-fulfilment/fulfilment-technology/
+RewriteRule ^our-fulfilment-solution/cloud-fulfilment/?                                             https://www.ecommercefulfilment.com/order-fulfilment/fulfilment-technology/
 RewriteRule ^reporting/?                                                                            https://www.ecommercefulfilment.com/order-fulfilment/visibility/
 RewriteRule ^inventory-alerts/?                                                                     https://www.ecommercefulfilment.com/order-fulfilment/visibility/
 RewriteRule ^customer-analysis/?                                                                    https://www.ecommercefulfilment.com/order-fulfilment/visibility/
 RewriteRule ^business-intelligence/?                                                                https://www.ecommercefulfilment.com/order-fulfilment/visibility/
-RewriteRule ^order-fulfilment/intelligent-reporting/?                                               https://www.ecommercefulfilment.com/order-fulfilment/visibility/
+RewriteRule ^order-fulfilment/intelligent-reporting/?                                               https://www.ecommercefulfilment.com/order-fulfilment/visibility/intelligent-reporting/
 RewriteRule ^customer-services/?                                                                    https://www.ecommercefulfilment.com/order-fulfilment/customer-experience/
 RewriteRule ^order-fulfilment/outsourced-customer-service/?                                         https://www.ecommercefulfilment.com/order-fulfilment/customer-experience/
-RewriteRule ^fulfilment-how-it-works/?                                                              https://www.ecommercefulfilment.com/order-fulfilment/how-it-works/
-RewriteRule ^order-fulfilment/order-fulfilment-process/?                                            https://www.ecommercefulfilment.com/order-fulfilment/how-it-works/
-RewriteRule ^returns-handling/?                                                                     https://www.ecommercefulfilment.com/order-fulfilment/how-it-works/returns-handeling/
-RewriteRule ^order-fulfilment/returns-handling/?                                                    https://www.ecommercefulfilment.com/order-fulfilment/how-it-works/returns-handeling/
-RewriteRule ^picking-and-packing/?                                                                  https://www.ecommercefulfilment.com/order-fulfilment/how-it-works/pick-and-pack/
-RewriteRule ^order-fulfilment/pick-and-pack-services/?                                              https://www.ecommercefulfilment.com/order-fulfilment/how-it-works/pick-and-pack/
+RewriteRule ^fulfilment-how-it-works/?                                                              https://www.ecommercefulfilment.com/order-fulfilment/order-fulfilment-process/
+RewriteRule ^order-fulfilment/order-fulfilment-process/?                                            https://www.ecommercefulfilment.com/order-fulfilment/order-fulfilment-process/
+RewriteRule ^returns-handling/?                                                                     https://www.ecommercefulfilment.com/order-fulfilment/order-fulfilment-process/returns-handeling/
+RewriteRule ^order-fulfilment/returns-handling/?                                                    https://www.ecommercefulfilment.com/order-fulfilment/order-fulfilment-process/returns-handeling/
+RewriteRule ^picking-and-packing/?                                                                  https://www.ecommercefulfilment.com/order-fulfilment/order-fulfilment-process/pick-and-pack/
+RewriteRule ^order-fulfilment/pick-and-pack-services/?                                              https://www.ecommercefulfilment.com/order-fulfilment/order-fulfilment-process/pick-and-pack/
 RewriteRule ^client-testimonials/?                                                                  https://www.ecommercefulfilment.com/fulfilment-solutions/success-stories/
 RewriteRule ^company/reviews/?                                                                      https://www.ecommercefulfilment.com/fulfilment-solutions/success-stories/
 RewriteRule ^fulfilment-pricing/?                                                                   https://www.ecommercefulfilment.com/fulfilment-pricing/
@@ -191,16 +191,16 @@ RewriteRule ^company/blog/why-outsourcing-order-fulfilment-increases-customer-sa
 RewriteRule ^blog(.*/)?                                                                             https://www.ecommercefulfilment.com/academy/
 RewriteRule ^company/blog(.*/)?                                                                     https://www.ecommercefulfilment.com/academy/
 
-RewriteRule ^company/meet-team/?                                                                    https://www.ecommercefulfilment.com/company/board/
-RewriteRule ^company/partners/?                                                                     https://www.ecommercefulfilment.com/company/fulfilment-partners/
-RewriteRule ^company/careers/?                                                                      https://www.ecommercefulfilment.com/company/fulfilment-careers/
-RewriteRule ^company/press/?                                                                        https://www.ecommercefulfilment.com/company/pr/
+RewriteRule ^company/meet-team/?                                                                    https://www.ecommercefulfilment.com/meet-team/
+RewriteRule ^company/partners/?                                                                     https://www.ecommercefulfilment.com/order-fulfilment/fulfilment-technology/integration/
+RewriteRule ^company/careers/?                                                                      https://www.ecommercefulfilment.com/careers/
+RewriteRule ^company/press/?                                                                        https://www.ecommercefulfilment.com/academy/category/pr/
 
 RewriteRule ^order-fulfilment/sell-europe/?                                                         https://www.ecommercefulfilment.com/european-fulfilment/
 RewriteRule ^order-fulfilment/interested-us-order-fulfilment/?                                      https://www.ecommercefulfilment.com/us-order-fulfilment/
-RewriteRule ^fulfilment-software-demo/?                                                             https://www.ecommercefulfilment.com/demo-sign-up/
-RewriteRule ^order-fulfilment/demo-thanks/?                                                         https://www.ecommercefulfilment.com/fulfilment-demo-thanks/
+RewriteRule ^fulfilment-software-demo/?                                                             https://www.ecommercefulfilment.com/order-fulfilment/fulfilment-technology/warehouse-management-software/
+RewriteRule ^order-fulfilment/demo-thanks/?                                                         https://www.ecommercefulfilment.com/
 RewriteRule ^order-fulfilment/thanks/?                                                              https://www.ecommercefulfilment.com/thanks-for-your-enquiry/
 RewriteRule ^order-fulfilment/hello-again/?                                                         https://www.ecommercefulfilment.com/hello-again/
-RewriteRule ^order-fulfilment/newsletter-thank-you/?                                                https://www.ecommercefulfilment.com/newsletter-thank-you/
+RewriteRule ^order-fulfilment/newsletter-thank-you/?                                                https://www.ecommercefulfilment.com/
 RewriteRule ^order-fulfilment/newsletter-confirmation/?                                             https://www.ecommercefulfilment.com/newsletter-confirmation/

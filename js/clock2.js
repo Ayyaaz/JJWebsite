@@ -137,7 +137,8 @@ jQuery.noConflict();
     dts = dt[2]+" "+dt[1]+" "+dt[3].substring(2,4);
     //return $('<div class="event" style="top:'+y+'px;left:'+x+'px;"><div class="ts">'+tm+'<br>'+dts+'</div>'+content+'</div>');
     //return $('<div class="event" style="top:'+y+'px;left:'+x+'px;"><div class="content">'+content+'</div><span class="ts">'+tm+' - '+dts+'</div></div>');
-    return $('<div class="event" style="top:'+y+'px;left:'+x+'px;">'+content+', '+tm+' - '+dts+'</div>');
+    //return $('<div class="event" style="top:'+y+'px;left:'+x+'px;">'+content+', '+tm+' - '+dts+'</div>');
+    return $('<div class="event" style="left:'+x+'px;">'+content+', '+tm+' - '+dts+'</div>');
   }
 
   function animate() {

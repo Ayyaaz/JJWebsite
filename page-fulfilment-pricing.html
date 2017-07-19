@@ -126,15 +126,15 @@
 							Pay as you grow
 						</h2>
 						<div class="counter center-elem green"></div>
-						<h5 class="center-text center-elem narrow">
+						<h3 class="center-text center-elem narrow">
 							A flexible fulfilment service that’s priced simply and fairly. There’s nothing revolutionary here - but that’s the best part.
-						</h5>
+						</h3>
 						<a href="<?= get_site_url(); ?>/contact/" class="button primary">Join the revolution</a>
 					</div>
 				</section>
 			</section>
 
-
+<!--
 			<section class="what-you-get section-off-white center-text">
 				<div class="wrapper">
 					<img src="css/assets/img/big-bird-purple.png" class="pricing-bird" alt="" title="">
@@ -146,22 +146,22 @@
 	                <br>
 					<section class="cf-group">
 						<a href="<?= get_site_url(); ?>/fulfilment-services/visability/" class="icon-card">
-							<img src="css/assets/img/icon-eye.png">
+							<img src="css/assets/img/icon-eye-blue.png">
 							<h2 class="green">Visibility</h2>
                         	<p>Use real time data to delight customers and build on your awesome reputation</p>
 						</a>
 						<a href="<?= get_site_url(); ?>/fulfilment-services/technology/" class="icon-card">
-							<img src="css/assets/img/icon-laptop.png">
+							<img src="css/assets/img/icon-laptop-blue.png">
 							<h2 class="green">Technology</h2>
                         	<p>Access the kind of technology that will blow your competitors out of the water</p>
 						</a>
 						<a href="<?= get_site_url(); ?>/fulfilment-services/customer-experience/" class="icon-card">
-							<img src="css/assets/img/icon-user.png">
+							<img src="css/assets/img/icon-user-blue.png">
 							<h2 class="green">Customer Experience</h2>
                         	<p>Provide a reliable, fast, quality experience for your customers</p>
 						</a>
 						<a href="<?= get_site_url(); ?>/fulfilment-services/global-fulfilment/" class="icon-card">
-							<img src="css/assets/img/icon-scale.png">
+							<img src="css/assets/img/icon-scale-blue.png">
 							<h2 class="green">Scale</h2>
                         	<p>Be empowered to grow, reaching your customers wherever and whenever</p>
 						</a>
@@ -171,13 +171,67 @@
 					<a href="<?= get_site_url(); ?>/why-our-fulfilment-services/features/" class="button primary">Find out more</a>
 				</div>
 			</section>
+-->
+
+
+			<section class="what-you-get section-light">
+	            <div class="wrapper">
+
+					<img src="css/assets/img/big-bird-purple.png" class="pricing-bird" alt="" title="">
+					<h2 class="large center-text">
+						What do you get
+					</h2>
+					<div class="counter center-elem green"></div>
+	                <br>
+	                <br>
+
+					<ul class="tabs">
+						<li class="tab-link current" data-tab="tab-1">
+					        <img src="css/assets/img/icon-eye.png" alt="Visibility" title="">
+							<h2>Visibility</h2>
+						</li>
+						<li class="tab-link" data-tab="tab-2">
+					        <img src="css/assets/img/icon-laptop.png" alt="Technology" title="">
+							<h2>Technology</h2>
+						</li>
+						<li class="tab-link" data-tab="tab-3">
+						    <img src="css/assets/img/icon-user.png" alt="Customer Experience" title="">
+							<h2>Customer Experience</h2>
+						</li>
+						<li class="tab-link" data-tab="tab-4">
+					        <img src="css/assets/img/icon-scale.png" alt="Scale" title="">
+							<h2>Scale</h2>
+						</li>
+					</ul>
+
+					<div id="tab-1" class="tab-content current">
+				        <p>Use real time data to delight customers and build on your awesome reputation</p>
+						<p>Our system gives you unparalleled visibility on <a href="/order-fulfilment/technology/e-fulfilment/">your e-fulfilment operations</a>. We might be taking care of the order fulfilment ourselves, but our live reporting tools ensure you'll be in the know and in control.</p>
+				        <a href="<?= get_home_url(); ?>/order-fulfilment/visibility/"><strong>Read More</strong></a>
+					</div>
+					<div id="tab-2" class="tab-content">
+				        <p>Access the kind of technology that will blow your competitors out of the water</p>
+						<p>Our award-winning systems take the complexity out of fulfilment so that we can focus on delivering a service that's unforgettable for all the right reasons, and you can spend more time building your brand.</p>
+				        <a href="<?= get_home_url(); ?>/order-fulfilment/technology/"><strong>Read More</strong></a>
+					</div>
+					<div id="tab-3" class="tab-content">
+				        <p>Provide a reliable, fast, quality experience for your customers</p>
+						<p>Your customer experience is our priority, creating loyal customers and growing a stellar reputation. Our fulfilment accuracy never dip below 99.998% because we know that getting it right first time, every time.</p>
+				        <a href="<?= get_home_url(); ?>/order-fulfilment/customer-experience/"><strong>Read More</strong></a>
+					</div>
+					<div id="tab-4" class="tab-content">
+				        <p>Be empowered to grow, reaching your customers wherever and whenever</p>
+						<p>We're experts in peak demand - as your order volumes grow, our service grows with you. Our cloud-based order fulfilment system means you have the world at your fingertips to handle your needs.</p>
+				        <a href="<?= get_home_url(); ?>/order-fulfilment/global-fulfilment/"><strong>Read More</strong></a>
+					</div>
+
+				</div>
+			</section>
 
 
 			<div class="flag-hr">
 				<img src="css/assets/img/flag.png" alt="" title="">
 			</div>
-
-
 			<section class="how-pricing-works">
 				<section class="top-section">
 					<div class="wrapper">
@@ -192,159 +246,334 @@
 				</section>
 				<section class="bottom-section">
 					<div class="wrapper">
-						<ul class="pricing-table">
-							<li class="left">
-								<img src="css/assets/img/butterflies.png" class="butterflies" alt="" title="">
-								<header>
-									<h5>Lite</h5>
-									<div class="cost"><span class="currency">£</span>57</div>
-									<h5>per month</h5>
-								</header>
-								<hr>
-								<div>
-									<ul class="features">
-										<li><h5>Software</h5></li>
-										<li>-&ensp;Online live portal</li>
-										<li>-&ensp;API integration</li>
-										<li>-&ensp;Stock analysis</li>
-									</ul>
-								</div>
-								<section class="accordion">
-									<input type="checkbox" id="check-features-lite" />
-									<label for="check-features-lite" class="button primary">
-										View All Features
-									</label>
-									<article>
-										<ul class="features">
-											<li>-&ensp;Live Online Portal</li>
-											<li>-&ensp;Smart Shipping</li>
-											<li>-&ensp;Email Alerts</li>
-											<li>-&ensp;Chosen Despatch Date</li>
-											<li>-&ensp;Integration</li>
-											<li>-&ensp;Live Inventory Feed</li>
-											<li>-&ensp;Fraud Prevention</li>
-											<li>-&ensp;Tracking Updates</li>
-											<li>-&ensp;Free Fulfilment Support</li>
-											<li>-&ensp;Branded Live Tracking</li>
-											<li>-&ensp;Online Returns</li>
-										</ul>
-									</article>
-								</section>
-							</li><!--
-							--><li class="center">
-								<img src="css/assets/img/parrot-big.png" class="parrot responsive-show" alt="" title="">
-								<header>
-									<h5>Pro</h5>
-									<div class="cost"><span class="currency">£</span>196</div>
-									<h5>per month</h5>
-								</header>
-								<hr>
-								<div>
-									<ul class="features">
-										<li><h5>Software</h5></li>
-										<li>All Lite features, plus:</li>
-										<li>-&ensp;End customer tracking</li>
-										<li>-&ensp;Serial number tracking</li>
-										<li>-&ensp;International warehouses</li>
-									</ul>
-									<hr>
-									<ul class="features">
-										<li><h5>Services</h5></li>
-										<li>-&ensp;Branded packing slips and shipping labels</li>
-									</ul>
-								</div>
-								<section class="accordion">
-									<input type="checkbox" id="check-features-pro" />
-									<label for="check-features-pro" class="button primary">
-										View All Features
-									</label>
-									<article>
-										<ul class="features">
-											<li>-&ensp;Live Online Portal</li>
-											<li>-&ensp;Smart Shipping</li>
-											<li>-&ensp;Email Alerts</li>
-											<li>-&ensp;Chosen Despatch Date</li>
-											<li>-&ensp;Integration</li>
-											<li>-&ensp;Live Inventory Feed</li>
-											<li>-&ensp;Fraud Prevention</li>
-											<li>-&ensp;Tracking Updates</li>
-											<li>-&ensp;Free Fulfilment Support</li>
-											<li>-&ensp;Branded Live Tracking</li>
-											<li>-&ensp;Online Returns</li>
-											<li>-&ensp;Branded Packing Slips</li>
-											<li>-&ensp;Intelligent Analysis</li>
-											<li>-&ensp;Smart Stock Report</li>
-										</ul>
-									</article>
-								</section>
-								<!--<footer>
-									<a href="<?= get_site_url(); ?>/contact/" class="button primary">Enquire today</a>
-								</footer>-->
-							</li><!--
-							--><li class="right">
-								<header>
-									<h5>Advanced</h5>
-									<div class="cost"><span class="currency">£</span>417</div>
-									<h5>per month</h5>
-								</header>
-								<hr>
-								<div>
-									<ul class="features">
-										<li><h5>Software</h5></li>
-										<li>All Pro features, plus:</li>
-										<li>-&ensp;Stock feed</li>
-										<li>-&ensp;Filter tools</li>
-									</ul>
-									<hr>
-									<ul class="features">
-										<li><h5>Services</h5></li>
-										<li>All Pro features, plus:</li>
-										<li>-&ensp;Personalised notes</li>
-										<li>-&ensp;Custom packaging</li>
-									</ul>
-								</div>
-								<section class="accordion">
-									<input type="checkbox" id="check-features-advanced" />
-									<label for="check-features-advanced" class="button primary">
-										View All Features
-									</label>
-									<article>
-										<ul class="features">
-											<li>-&ensp;Live Online Portal</li>
-											<li>-&ensp;Smart Shipping</li>
-											<li>-&ensp;Email Alerts</li>
-											<li>-&ensp;Chosen Despatch Date</li>
-											<li>-&ensp;Integration</li>
-											<li>-&ensp;Live Inventory Feed</li>
-											<li>-&ensp;Fraud Prevention</li>
-											<li>-&ensp;Tracking Updates</li>
-											<li>-&ensp;Free Fulfilment Support</li>
-											<li>-&ensp;Branded Live Tracking</li>
-											<li>-&ensp;Online Returns</li>
-											<li>-&ensp;Branded Packing Slips</li>
-											<li>-&ensp;Intelligent Analysis</li>
-											<li>-&ensp;Smart Stock Report</li>
-											<li>-&ensp;Batch Management</li>
-											<li>-&ensp;Best Before Date Control</li>
-											<li>-&ensp;Serial Number Tracking</li>
-											<li>-&ensp;Custom Packaging</li>
-											<li>-&ensp;Custom Gift Message</li>
-											<li>-&ensp;Flyers and Leaflets</li>
-											<li>-&ensp;Billing Transparency</li>
-											<li>-&ensp;Global Shipping Made Easy</li>
-											<li>-&ensp;Organic Warehouses</li>
-											<li>-&ensp;Custom Reports</li>
-										</ul>
-									</article>
-								</section>
-								<!--<footer>
-									<a href="<?= get_site_url(); ?>/contact/" class="button secondary">Enquire today</a>
-								</footer>-->
-							</li>
-						</ul>
 
-						<h2 class="large">Need a Tailored Quote?</h2>
+		                <table class="standard-table full-width">
+		                    <thead>
+		                        <tr>
+		                            <th></th>
+		                            <th class="lite">
+										<h3>
+											Lite<br/>
+											<small>Up to 300 orders</small>
+										</h3>
+										<div class="cost"><span class="currency">£</span>57<small class="pcm">pcm</small></div>
+										<small>Excludes order processing charges</small>
+		                            </th>
+		                            <th class="pro">
+										<h3>
+											Pro<br/>
+											<small>Up to 5000 orders</small>
+										</h3>
+										<div class="cost"><span class="currency">£</span>196<small class="pcm">pcm</small></div>
+										<small>Excludes order processing charges</small>
+		                            </th>
+		                            <th class="adv">
+										<h3>
+											Advanced<br/>
+											<small>Over 5000 orders</small>
+										</h3>
+										<div class="cost"><span class="currency">£</span>417<small class="pcm">pcm</small></div>
+										<small>Excludes order processing charges</small>
+		                            </th>
+		                        </tr>
+		                    </thead>
+
+		                    <tbody>
+
+
+		                        <tr class="title Warehouse">
+		                            <td>Warehouse <br/>Services</td>
+		                            <td></td>
+									<td>Branded packing slips and shipping labels</td>
+		                            <td><strong>All Pro features, plus:</strong></td>
+		                        </tr>
+		                        <tr>
+		                            <td></td>
+		                            <td></td>
+		                            <td></td>
+									<td>Personalised notes</td>
+		                        </tr>
+		                        <tr>
+		                            <td></td>
+		                            <td></td>
+		                            <td></td>
+									<td>Custom packaging</td>
+		                        </tr>
+
+
+		                        <tr class="title online">
+		                            <td>Online <br/>Services</td>
+		                            <td>Live Online Portal</td>
+		                            <td><strong>All Lite features, plus:</strong></td>
+		                            <td><strong>All Pro features, plus:</strong></td>
+		                        </tr>
+		                        <tr>
+		                            <td></td>
+									<td>API integration</td>
+									<td>End customer tracking</td>
+									<td>Stock feed</td>
+		                        </tr>
+		                        <tr>
+		                            <td></td>
+									<td>Stock analysis</td>
+									<td>Serial number tracking</td>
+									<td>Filter tools</td>
+		                        </tr>
+		                        <tr>
+		                            <td></td>
+		                            <td></td>
+									<td>International warehouses</td>
+		                            <td></td>
+		                        </tr>
+
+
+
+		                    </tbody>
+
+		                    <tbody class="hide all-features">
+		                    	<tr class="close-table"></tr>
+		                        <tr>
+		                            <td>Live Online Portal</td>
+		                            <td class="in"><i class="icon material-icons">&#xE5CA;</i></td><!-- tick -->
+		                            <td class="in"><i class="icon material-icons">&#xE5CA;</i></td><!-- tick -->
+		                            <td class="in"><i class="icon material-icons">&#xE5CA;</i></td><!-- tick  -->
+		                        </tr>
+		                        <tr>
+									<td>API integration</td>
+		                            <td class="in"><i class="icon material-icons">&#xE5CA;</i></td><!-- tick  -->
+		                            <td class="in"><i class="icon material-icons">&#xE5CA;</i></td><!-- tick  -->
+		                            <td class="in"><i class="icon material-icons">&#xE5CA;</i></td><!-- tick  -->
+		                        </tr>
+		                        <tr>
+									<td>Stock analysis</td>
+		                            <td class="in"><i class="icon material-icons">&#xE5CA;</i></td><!-- tick -->
+		                            <td class="in"><i class="icon material-icons">&#xE5CA;</i></td><!-- tick -->
+		                            <td class="in"><i class="icon material-icons">&#xE5CA;</i></td><!-- tick  -->
+		                        </tr>
+		                        <tr>
+									<td>End customer tracking</td>
+		                            <td class="out"><i class="icon material-icons">&#xE5CD;</i></td><!-- cross -->
+		                            <td class="in"><i class="icon material-icons">&#xE5CA;</i></td><!-- tick  -->
+		                            <td class="in"><i class="icon material-icons">&#xE5CA;</i></td><!-- tick  -->
+		                        </tr>
+		                        <tr>
+									<td>Serial number tracking</td>
+		                            <td class="out"><i class="icon material-icons">&#xE5CD;</i></td><!-- cross -->
+		                            <td class="in"><i class="icon material-icons">&#xE5CA;</i></td><!-- tick  -->
+		                            <td class="in"><i class="icon material-icons">&#xE5CA;</i></td><!-- tick  -->
+		                        </tr>
+		                        <tr>
+									<td>International warehouses</td>
+		                            <td class="out"><i class="icon material-icons">&#xE5CD;</i></td><!-- cross -->
+		                            <td class="in"><i class="icon material-icons">&#xE5CA;</i></td><!-- tick  -->
+		                            <td class="in"><i class="icon material-icons">&#xE5CA;</i></td><!-- tick  -->
+		                        </tr>
+		                        <tr>
+									<td>Branded packing slips and shipping labels</td>
+		                            <td class="out"><i class="icon material-icons">&#xE5CD;</i></td><!-- cross -->
+		                            <td class="in"><i class="icon material-icons">&#xE5CA;</i></td><!-- tick  -->
+		                            <td class="in"><i class="icon material-icons">&#xE5CA;</i></td><!-- tick  -->
+		                        </tr>
+		                        <tr>
+									<td>Stock feed</td>
+		                            <td class="out"><i class="icon material-icons">&#xE5CD;</i></td><!-- cross -->
+		                            <td class="out"><i class="icon material-icons">&#xE5CD;</i></td><!-- cross -->
+		                            <td class="in"><i class="icon material-icons">&#xE5CA;</i></td><!-- tick  -->
+		                        </tr>
+		                        <tr>
+									<td>Filter tools</td>
+		                            <td class="out"><i class="icon material-icons">&#xE5CD;</i></td><!-- cross -->
+		                            <td class="out"><i class="icon material-icons">&#xE5CD;</i></td><!-- cross -->
+		                            <td class="in"><i class="icon material-icons">&#xE5CA;</i></td><!-- tick  -->
+		                        </tr>
+		                        <tr>
+									<td>Personalised notes</td>
+		                            <td class="out"><i class="icon material-icons">&#xE5CD;</i></td><!-- cross -->
+		                            <td class="out"><i class="icon material-icons">&#xE5CD;</i></td><!-- cross -->
+		                            <td class="in"><i class="icon material-icons">&#xE5CA;</i></td><!-- tick  -->
+		                        </tr>
+		                        <tr>
+									<td>Custom packaging</td>
+		                            <td class="out"><i class="icon material-icons">&#xE5CD;</i></td><!-- cross -->
+		                            <td class="out"><i class="icon material-icons">&#xE5CD;</i></td><!-- cross -->
+		                            <td class="in"><i class="icon material-icons">&#xE5CA;</i></td><!-- tick  -->
+		                        </tr>
+		                        <tr class="">
+									<td>Smart Shipping</td>
+		                            <td class="out"><i class="icon material-icons">&#xE5CD;</i></td><!-- cross -->
+		                            <td class="out"><i class="icon material-icons">&#xE5CD;</i></td><!-- cross -->
+		                            <td class="in"><i class="icon material-icons">&#xE5CA;</i></td><!-- tick  -->
+		                        </tr>
+		                        <tr class="">
+									<td>Email Alerts</td>
+		                            <td class="out"><i class="icon material-icons">&#xE5CD;</i></td><!-- cross -->
+		                            <td class="out"><i class="icon material-icons">&#xE5CD;</i></td><!-- cross -->
+		                            <td class="in"><i class="icon material-icons">&#xE5CA;</i></td><!-- tick  -->
+		                        </tr>
+		                        <tr class="">
+									<td>Chosen Despatch Date</td>
+		                            <td class="out"><i class="icon material-icons">&#xE5CD;</i></td><!-- cross -->
+		                            <td class="out"><i class="icon material-icons">&#xE5CD;</i></td><!-- cross -->
+		                            <td class="in"><i class="icon material-icons">&#xE5CA;</i></td><!-- tick  -->
+		                        </tr>
+		                        <tr class="">
+									<td>Integration</td>
+		                            <td class="out"><i class="icon material-icons">&#xE5CD;</i></td><!-- cross -->
+		                            <td class="out"><i class="icon material-icons">&#xE5CD;</i></td><!-- cross -->
+		                            <td class="in"><i class="icon material-icons">&#xE5CA;</i></td><!-- tick  -->
+		                        </tr>
+		                        <tr class="">
+									<td>Live Inventory Feed</td>
+		                            <td class="out"><i class="icon material-icons">&#xE5CD;</i></td><!-- cross -->
+		                            <td class="out"><i class="icon material-icons">&#xE5CD;</i></td><!-- cross -->
+		                            <td class="in"><i class="icon material-icons">&#xE5CA;</i></td><!-- tick  -->
+		                        </tr>
+		                        <tr class="">
+									<td>Fraud Prevention</td>
+		                            <td class="out"><i class="icon material-icons">&#xE5CD;</i></td><!-- cross -->
+		                            <td class="out"><i class="icon material-icons">&#xE5CD;</i></td><!-- cross -->
+		                            <td class="in"><i class="icon material-icons">&#xE5CA;</i></td><!-- tick  -->
+		                        </tr>
+		                        <tr class="">
+									<td>Tracking Updates</td>
+		                            <td class="out"><i class="icon material-icons">&#xE5CD;</i></td><!-- cross -->
+		                            <td class="out"><i class="icon material-icons">&#xE5CD;</i></td><!-- cross -->
+		                            <td class="in"><i class="icon material-icons">&#xE5CA;</i></td><!-- tick  -->
+		                        </tr>
+		                        <tr class="">
+									<td>Free Fulfilment Support</td>
+		                            <td class="out"><i class="icon material-icons">&#xE5CD;</i></td><!-- cross -->
+		                            <td class="out"><i class="icon material-icons">&#xE5CD;</i></td><!-- cross -->
+		                            <td class="in"><i class="icon material-icons">&#xE5CA;</i></td><!-- tick  -->
+		                        </tr>
+		                        <tr class="">
+									<td>Branded Live Tracking</td>
+		                            <td class="out"><i class="icon material-icons">&#xE5CD;</i></td><!-- cross -->
+		                            <td class="out"><i class="icon material-icons">&#xE5CD;</i></td><!-- cross -->
+		                            <td class="in"><i class="icon material-icons">&#xE5CA;</i></td><!-- tick  -->
+		                        </tr>
+		                        <tr class="">
+									<td>Online Returns</td>
+		                            <td class="out"><i class="icon material-icons">&#xE5CD;</i></td><!-- cross -->
+		                            <td class="out"><i class="icon material-icons">&#xE5CD;</i></td><!-- cross -->
+		                            <td class="in"><i class="icon material-icons">&#xE5CA;</i></td><!-- tick  -->
+		                        </tr>
+		                        <tr class="">
+									<td>Branded Packing Slips</td>
+		                            <td class="out"><i class="icon material-icons">&#xE5CD;</i></td><!-- cross -->
+		                            <td class="out"><i class="icon material-icons">&#xE5CD;</i></td><!-- cross -->
+		                            <td class="in"><i class="icon material-icons">&#xE5CA;</i></td><!-- tick  -->
+		                        </tr>
+		                        <tr class="">
+									<td>Intelligent Analysis</td>
+		                            <td class="out"><i class="icon material-icons">&#xE5CD;</i></td><!-- cross -->
+		                            <td class="out"><i class="icon material-icons">&#xE5CD;</i></td><!-- cross -->
+		                            <td class="in"><i class="icon material-icons">&#xE5CA;</i></td><!-- tick  -->
+		                        </tr>
+		                        <tr class="">
+									<td>Smart Stock Report</td>
+		                            <td class="out"><i class="icon material-icons">&#xE5CD;</i></td><!-- cross -->
+		                            <td class="out"><i class="icon material-icons">&#xE5CD;</i></td><!-- cross -->
+		                            <td class="in"><i class="icon material-icons">&#xE5CA;</i></td><!-- tick  -->
+		                        </tr>
+		                        <tr class="">
+									<td>Batch Management</td>
+		                            <td class="out"><i class="icon material-icons">&#xE5CD;</i></td><!-- cross -->
+		                            <td class="out"><i class="icon material-icons">&#xE5CD;</i></td><!-- cross -->
+		                            <td class="in"><i class="icon material-icons">&#xE5CA;</i></td><!-- tick  -->
+		                        </tr>
+		                        <tr class="">
+									<td>Best Before Date Control</td>
+		                            <td class="out"><i class="icon material-icons">&#xE5CD;</i></td><!-- cross -->
+		                            <td class="out"><i class="icon material-icons">&#xE5CD;</i></td><!-- cross -->
+		                            <td class="in"><i class="icon material-icons">&#xE5CA;</i></td><!-- tick  -->
+		                        </tr>
+		                        <tr class="">
+									<td>Serial Number Tracking</td>
+		                            <td class="out"><i class="icon material-icons">&#xE5CD;</i></td><!-- cross -->
+		                            <td class="out"><i class="icon material-icons">&#xE5CD;</i></td><!-- cross -->
+		                            <td class="in"><i class="icon material-icons">&#xE5CA;</i></td><!-- tick  -->
+		                        </tr>
+		                        <tr class="">
+									<td>Custom Packaging</td>
+		                            <td class="out"><i class="icon material-icons">&#xE5CD;</i></td><!-- cross -->
+		                            <td class="out"><i class="icon material-icons">&#xE5CD;</i></td><!-- cross -->
+		                            <td class="in"><i class="icon material-icons">&#xE5CA;</i></td><!-- tick  -->
+		                        </tr>
+		                        <tr class="">
+									<td>Custom Gift Message</td>
+		                            <td class="out"><i class="icon material-icons">&#xE5CD;</i></td><!-- cross -->
+		                            <td class="out"><i class="icon material-icons">&#xE5CD;</i></td><!-- cross -->
+		                            <td class="in"><i class="icon material-icons">&#xE5CA;</i></td><!-- tick  -->
+		                        </tr>
+		                        <tr class="">
+									<td>Flyers and Leaflets</td>
+		                            <td class="out"><i class="icon material-icons">&#xE5CD;</i></td><!-- cross -->
+		                            <td class="out"><i class="icon material-icons">&#xE5CD;</i></td><!-- cross -->
+		                            <td class="in"><i class="icon material-icons">&#xE5CA;</i></td><!-- tick  -->
+		                        </tr>
+		                        <tr class="">
+									<td>Billing Transparency</td>
+		                            <td class="out"><i class="icon material-icons">&#xE5CD;</i></td><!-- cross -->
+		                            <td class="out"><i class="icon material-icons">&#xE5CD;</i></td><!-- cross -->
+		                            <td class="in"><i class="icon material-icons">&#xE5CA;</i></td><!-- tick  -->
+		                        </tr>
+		                        <tr class="">
+									<td>Global Shipping Made Easy</td>
+		                            <td class="out"><i class="icon material-icons">&#xE5CD;</i></td><!-- cross -->
+		                            <td class="out"><i class="icon material-icons">&#xE5CD;</i></td><!-- cross -->
+		                            <td class="in"><i class="icon material-icons">&#xE5CA;</i></td><!-- tick  -->
+		                        </tr>
+		                        <tr class="">
+									<td>Organic Warehouses</td>
+		                            <td class="out"><i class="icon material-icons">&#xE5CD;</i></td><!-- cross -->
+		                            <td class="out"><i class="icon material-icons">&#xE5CD;</i></td><!-- cross -->
+		                            <td class="in"><i class="icon material-icons">&#xE5CA;</i></td><!-- tick  -->
+		                        </tr>
+		                        <tr class="">
+									<td>Custom Reports</td>
+		                            <td class="out"><i class="icon material-icons">&#xE5CD;</i></td><!-- cross -->
+		                            <td class="out"><i class="icon material-icons">&#xE5CD;</i></td><!-- cross -->
+		                            <td class="in"><i class="icon material-icons">&#xE5CA;</i></td><!-- tick  -->
+		                        </tr>
+
+		                    </tbody>
+		                </table>
+
+		                <a href="javascript:void(0)" class="button primary show-features">Compare Features</a></td>
+
+
+						<h3 class="large">Need a Tailored Quote?</h3>
 						<a href="<?= get_site_url(); ?>/contact/" class="button primary">Get started today</a>
+
+
+						<section class="accordion">
+							<input type="checkbox" id="check-features-pro" />
+							<label for="check-features-pro" class="button primary">
+								Accordion
+							</label>
+							<article>
+								<ul class="features">
+									<li>-&ensp;Live Online Portal</li>
+									<li>-&ensp;Smart Shipping</li>
+									<li>-&ensp;Email Alerts</li>
+									<li>-&ensp;Chosen Despatch Date</li>
+									<li>-&ensp;Integration</li>
+									<li>-&ensp;Live Inventory Feed</li>
+									<li>-&ensp;Fraud Prevention</li>
+									<li>-&ensp;Tracking Updates</li>
+									<li>-&ensp;Free Fulfilment Support</li>
+									<li>-&ensp;Branded Live Tracking</li>
+									<li>-&ensp;Online Returns</li>
+									<li>-&ensp;Branded Packing Slips</li>
+									<li>-&ensp;Intelligent Analysis</li>
+									<li>-&ensp;Smart Stock Report</li>
+								</ul>
+							</article>
+						</section>
+
+
+
 					</div>
 				</section>
 				<img src="css/assets/img/pricing-ele.png" class="ele js-scroll-move" alt="" title="">
@@ -375,7 +604,7 @@
 
 			<div class="cf-group">
 				<div class="copy-block">
-					<h5>The Small Print</h5>
+					<h3>The Small Print</h3>
 					<p>
 						Cookie Law<br>
 						Terms &amp; Conditions<br>
@@ -389,7 +618,7 @@
 					</p>
 				</div>
 				<div class="copy-block">
-					<h5>Latest News</h5>
+					<h3>Latest News</h3>
 					<p>
 						Black Friday shopping habits are changing, but is it for the better?<br>
 						<a href="javascript:void(0)">3 November 2016</a>
@@ -400,7 +629,7 @@
 					</p>
 				</div>
 				<div class="copy-block">
-					<h5>Quick Links</h5>
+					<h3>Quick Links</h3>
 					<p>
 						<a href="javascript:void(0)">Why We Are Different</a><br>
 						<a href="javascript:void(0)">Order Fulfilment</a><br>

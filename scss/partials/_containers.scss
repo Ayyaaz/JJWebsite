@@ -111,13 +111,14 @@
 	h2{
 		font-size: 2.7rem;
 		margin: 0.8rem 0 1.2rem 0;
-		@include transition(all .3s ease-in-out);
 	}
 	p{
 		margin-top: 0;
 	}
 	img{
 		@include transition(all .3s ease-in-out);
+		display: block;
+		margin:0 auto;
 	}
 }
 a.icon-card:hover{
@@ -139,7 +140,26 @@ a.icon-card:hover{
 		width:100%;
 	}
 }
-
+.pillar-links{
+	text-align: center;
+	h2{
+		border-bottom: 2px solid transparent;
+	    display: inline-block;
+	    padding-bottom: 3px;
+	    white-space: nowrap;
+	}
+	a.icon-card:hover h2{
+		border-bottom: 2px solid $green;
+	    display: inline-block;
+	    padding-bottom: 3px;
+	}
+	&.v .v,
+	&.t .t,
+	&.c .c,
+	&.s .s{
+		border-bottom-color: $green;
+	}
+}
 .promo-section{
 	position: relative;
 	.promo-col{

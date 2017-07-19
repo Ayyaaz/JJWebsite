@@ -1,59 +1,112 @@
 
 .contact{
-	.wrapper{
-		position: relative;
-		z-index: 1;
-		padding: 5rem 1.6rem;
-	}
-	.parade{
-		position: absolute;
-		@include transition(all 2s ease-out);
-		-webkit-transition-delay: 1s; /* Safari */
-		transition-delay: 1s;
+    .wrapper{
+        position: relative;
+        z-index: 1;
+        padding: 2.5rem 1.6rem;
+    }
+    .hero .wrapper{
+        padding: 5rem 1.6rem;
+    }
+    .parade{
+        position: absolute;
+        @include transition(all 2s ease-out);
+        //-webkit-transition-delay: 1s; /* Safari */
+        //transition-delay: 1s;
 
-		&.birds-L,
-		&.birds-R{
-			top:0;
-			max-height: 100%;
-			z-index: 1;
-		}
-		&.birds-L{
-			margin-left:-350px;
-		}
-		&.birds-R {
-			margin-left:100px;
-		}
-		&.ele {
-			bottom:0;
-			right:0;
-			max-height: 100%;
-			max-width:80%;
-			margin-right:-100px;
-		}
-		&.confetti {
-			bottom:-60px;
-			left:50%;
-			margin-left:-720px;
-			transform-origin: 50% 100%;
-			@include transform(scale(.8,.8));
-		}
-		&.come-in,
-		&.already-visible {
-			&.ele {
-				margin-right:0px;
-			}
-			&.confetti {
-				@include transform(scale(.9,.9));
-			}
-			&.birds-L{
-				margin-left:-400px;
-			}
-			&.birds-R {
-				margin-left:150px;
-			}
-		}
-	}
-	.submitted-message{
-		text-align: center;
-	}
+        &.birds-L,
+        &.birds-R{
+            top:0;
+            max-height: 100%;
+            z-index: 1;
+        }
+        &.birds-L{
+            margin-left:-350px;
+//          -webkit-animation: float 36s linear infinite;
+//             -moz-animation: float 36s linear infinite;
+//               -o-animation: float 36s linear infinite;
+                animation: float 36s linear infinite;
+
+        }
+        &.birds-R {
+            margin-left:100px;
+//          -webkit-animation: float 30s linear infinite;
+//             -moz-animation: float 30s linear infinite;
+//               -o-animation: float 30s linear infinite;
+                animation: float 30s linear infinite;
+        }
+        &.ele {
+            bottom:0;
+            right:0;
+            max-height: 100%;
+            max-width:80%;
+            margin-right:-100px;
+
+            @media only screen and (max-width:1500px) {
+                position: absolute;
+                bottom:0;
+                left:50%;
+                margin-left: 150px;
+            }
+        }
+
+        &.confetti {
+            bottom:-60px;
+            left:50%;
+            margin-left:-720px;
+            transform-origin: 50% 100%;
+            @include transform(scale(.8,.8));
+        }
+        &.come-in,
+        &.already-visible {
+            &.ele {
+                margin-right:0px;
+            }
+            &.confetti {
+                @include transform(scale(.9,.9));
+            }
+            &.birds-L{
+                margin-left:-400px;
+            }
+            &.birds-R {
+                margin-left:150px;
+            }
+        }
+    }
+    .submitted-message{
+        text-align: center;
+    }
+    .map{
+        .outer,
+        .inner{
+            cursor: pointer;
+        }
+    }
+    .shake{
+                    animation-name: phone-ring;
+            -webkit-animation-name: phone-ring;
+                animation-duration: 2s;
+        -webkit-animation-duration: 2s;
+                  transform-origin: 50% 50%;
+          -webkit-transform-origin: 50% 50%;
+         animation-iteration-count: infinite;
+ -webkit-animation-iteration-count: infinite;
+         animation-timing-function: linear;
+ -webkit-animation-timing-function: linear;
+    }
+    @keyframes phone-ring {
+        0% { @include transform(rotate(-1deg)); } // 0% { @include transform(translate(2px, 1px) rotate(0deg)); }
+        5% { @include transform(rotate(-2deg)); }
+        10% { @include transform(rotate(0deg)); }
+        15% { @include transform(rotate(-1deg)); }
+        20% { @include transform(rotate(0deg)); }
+        25% { @include transform(rotate(-2deg)); }
+        30% { @include transform(rotate(-1deg)); }
+        35% { @include transform(rotate(-2deg)); }
+        40% { @include transform(rotate(0deg)); }
+        45% { @include transform(rotate(-1deg)); }
+        50% { @include transform(rotate(0deg)); }
+        55% { @include transform(rotate(-1deg)); }
+        100% { @include transform(rotate(-1deg)); }
+    }
 }

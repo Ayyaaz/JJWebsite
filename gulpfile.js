@@ -71,8 +71,8 @@ var jsFiles = [
   'js/vendor/slick.js',
   'js/vendor/placeholder.js',
   'js/vendor/killercarousel.js',
-  'js/live-feed.js',
-  'js/clock2.js',//?1492702292',
+  //'js/live-feed.js',
+  //'js/clock2.js',//?1492702292',
   'js/script.js'
 ];
 

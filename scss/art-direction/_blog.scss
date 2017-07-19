@@ -1,10 +1,53 @@
 
+$grey-4f:#4f4f4f;
+$grey-92:#929292;
+$grey-db:#dbdbdb;
+
 .blog{
-	.hero h1{
-	    transform: initial;
-        font-size: 7rem;
-		@include transform(initial);
+	.hero{
+		h1{
+		    font-size: 7rem;
+		}
+		.wrapper{
+			position: relative;
+		}
+		&.bg-scroll-img {
+		    background-color: $black;
+			background-image:url(assets/img/hero-imgs/returns-boxes.jpg);
+		    background-size: cover;
+			background-attachment: fixed;
+			opacity: .9;
+		    &:before{
+		    	content: '';
+				display: block;
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				background: rgba(30,30,30,0.8);
+		    }
+		}
 	}
+	.main-footer{
+		background:$grey-4f;
+		color: white;
+	}
+	.real-time-info,
+	#analogue .event{
+		background:$grey-4f;
+	}
+	.copyright-notice{
+		background:$grey-92;
+	}
+	.blog-posts{
+		background:$grey-db;
+	}
+	.main-footer .brand img{
+		-webkit-filter: invert(100%);
+		-moz-filter: invert(100%);
+		-o-filter: invert(100%);
+		filter: invert(100%);
+	}
+
 /*
 	.hero.bg-scroll-img{
 		background-image:url(assets/img/hero-imgs/hero-bg.jpg);
@@ -18,30 +61,65 @@
 			top: 0;
 			opacity: 0.3;
 		}
-		.wrapper{
-			position: relative;
-		}
-		section{
-			background:$grey;
-		}
 	}
-	.main-header{
-		.wrapper{
-			color: white;
-			background-color:darken($grey-dark,20%);
-		}
-		.real-time-info{
-			background:$grey-dark;
-		}
+	*/
+}
+
+.blog-nav {
+	background:$grey-4f;
+	display: inline-block;
+	width: 100%;
+	line-height: 40px;
+	text-transform: uppercase;
+	font-size:14px;
+	nav{
+		width:100%;
+		max-width:1000px;
+		margin-left: auto;
+		margin-right: auto;
+		padding-left: 1.6rem;
+		padding-right: 1.6rem;
 	}
-	.main-footer{
-		background-color:darken($grey-dark,20%);
-		.wrapper,
+	ul{
+		padding:0;
+		margin:0;
+	}
+	li{
+	    position: relative;
+	    display: inline-block;
+		cursor: pointer;
+		padding: 0 1.4rem;
+		color: white;
 		a{
 			color:white;
 		}
-		.copyright-notice{
-			background:$grey-dark;
+	}
+	.dropdown {
+
+		.dropdown-content {
+		    display: none;
+		    position: absolute;
+		    background-color: lighten($grey-4f,5%);
+		    @include shadow(2);
+		    z-index: 1;
+		    br{
+		    	display: none;
+		    }
+		    a{
+		    	line-height: 1.4em;
+	    	    display: block;
+			    min-width: 160px;
+			    padding: 8px 16px;
+			    border-top:1px solid $grey-4f;
+			    font-size: 13px;
+			    text-transform: none;
+			    &:hover{
+		    		background-color: $grey-4f;//darken($grey-4f,10%);
+			    }
+		    }
 		}
-	}*/
+		&:hover .dropdown-content {
+		    display: block;
+		}
+	}
 }

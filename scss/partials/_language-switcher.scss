@@ -1,0 +1,31 @@
+
+.language-switcher{
+	* {
+	    color:white;
+	    border:none;
+	}
+	.wpml-ls-legacy-dropdown{
+		a {
+		    text-align:left;
+		    background:$green;
+		    border:none;
+		}
+		a:hover,
+		a:focus,
+		.wpml-ls-current-language:hover>a {
+		    color: white;
+		    background: darken($green, 10%);//transparent
+		}
+		a.wpml-ls-item-toggle:after{
+		    border-top-color:darken($green, 20%);
+		}
+		.wpml-ls-sub-menu{
+		    border-top:1px solid $green-light;
+		    background:$green;
+		    a{
+			    border-bottom:1px solid $green-light;
+			    padding: 8px 10px 10px 10px;
+			}
+		}
+	}
+}

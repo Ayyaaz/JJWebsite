@@ -20,7 +20,7 @@
 	</script>
 </head>
 
-<body class="fixed-nav">
+<body class="fixed-nav blog">
 
 	<!-- page-header -->
 	<header class="main-header">
@@ -107,8 +107,42 @@
 					<h1>
 						Welcome to the Academy
 					</h1>
+		            <div class="counter center-elem green"></div>
+		            <h3>What would you like to learn today?</h3>
 				</div>
 			</section>
+		</section>
+
+
+		<section class="blog-nav">
+			<nav>
+				<ul>
+					<li class="dropdown">
+						<a href="javascript:void(0)">eCommerce</a>
+						<div class="dropdown-content">
+							<a href="javascript:void(0)">Technology, software and systems</a>
+							<a href="javascript:void(0)">Lorem ipsum</a>
+							<a href="javascript:void(0)">Lorem ipsum</a>
+						</div>
+					</li>
+					<li class="dropdown">
+						<a href="javascript:void(0)">Fulfilment</a>
+						<div class="dropdown-content">
+							<a href="javascript:void(0)">Lorem ipsum</a>
+							<a href="javascript:void(0)">Lorem ipsum</a>
+							<a href="javascript:void(0)">Lorem ipsum</a>
+						</div>
+					</li>
+					<li class="dropdown">
+						<a href="javascript:void(0)">Stock and inventory</a>
+						<div class="dropdown-content">
+							<a href="javascript:void(0)">Lorem ipsum</a>
+							<a href="javascript:void(0)">Lorem ipsum</a>
+							<a href="javascript:void(0)">Lorem ipsum</a>
+						</div>
+					</li>
+				</ul>
+			</nav>
 		</section>
 
 
@@ -126,6 +160,239 @@
 					</span>
 				</span>
 			</section>
+		</section>
+
+
+        <section class="hero-container section-spot">
+            <section class="hero bg-scroll-img">
+                <div class="wrapper">
+                    <h1 class="center-text">
+                        Storage Cost Calculator
+                    </h1>
+                </div>
+            </section>
+            <section class="section-spot-dark">
+                <div class="wrapper center-text">
+                    <h3 class="center-text center-elem narrow">
+                        Our storage charges are clear and fair; <br/>
+                        you only pay for the space you use.
+                    </h3>
+                </div>
+            </section>
+        </section>
+        <section class="what-you-get section-light">
+            <div class="wrapper">
+				<p>
+					We only charge storage for the exact space items take up in the warehouse. We charge it by the day, so clients pay for exactly what they use. It's great for clients and makes us use space more efficiently.
+				</p>
+				<h3>Calculate the storage fee for your products</h3>
+				<p>If you know the volume of your product, you can easily calculate our daily, weekly, monthly or yearly fee for its storage.</p>
+
+
+				<section class="storage-calculator cf-group">
+					<div class="col-1-2">
+						<h5>Item dimensions</h5>
+						&ensp;
+						<input type="tel" name="w" class="trigger-calc-storage">
+						&ensp;
+						<i class="icon material-icons">&#xE5CD;</i>
+						&ensp;
+						<input type="tel" name="d" class="trigger-calc-storage">
+						&ensp;
+						<i class="icon material-icons">&#xE5CD;</i>
+						&ensp;
+						<input type="tel" name="h" class="trigger-calc-storage">
+						&ensp;
+						in
+						&ensp;
+						<select class="unit trigger-calc-storage">
+							<option value="mm">Milimetres</option>
+							<option value="cm">Centimeters</option>
+							<option value="in">Inches</option>
+							<option value="ft">Feet</option>
+						</select>
+					</div>
+					<div class="col-1-2">
+						<h5>Cost</h5>
+						<span class="cost">
+							<small>&pound;</small>
+							<span class="rate">0</span>
+						</span>
+						<span class="lt-1p cost hide">
+							Less than 0.001p
+						</span>
+						&ensp;
+						<select class="period trigger-calc-storage">
+						  <option value="365">per year</option>
+						  <option value="30">per month</option>
+						  <option value="7">per week</option>
+						  <option value="1">per day</option>
+						</select>
+					</div>
+				</section>
+
+
+				<h3>Storage examples</h3>
+				<p>
+					As examples, here are some costs of common household items. The dimensions are based on a bounding box - every item is measure by the smallest cube shaped box it will fit in.
+				</p>
+				<p>
+					Remember, if you intend to sell your items within 2 months, then the average time on the shelf is only half of this - so on average you'll pay for 1 months storage.
+				</p>
+				<div class="cf-group center-text">
+					<div class="col-1-3">
+						<img src="css/assets/img/icon-scale-blue.png">
+						<br/>
+						2p per year
+					</div>
+					<div class="col-1-3">
+						<img src="css/assets/img/icon-scale-blue.png">
+						<br/>
+						1.5p per month
+					</div>
+					<div class="col-1-3">
+						<img src="css/assets/img/icon-scale-blue.png">
+						<br/>
+						18p per month
+					</div>
+				</div>
+            </div>
+        </section>
+
+
+		<section class="">
+			<div class="wrapper">
+				<section class="cf-group pillar-links s">
+					<a href="<?= get_site_url(); ?>/fulfilment-services/visability/" class="icon-card">
+						<img src="css/assets/img/icon-eye-blue.png">
+						<h2 class="green v">Visibility</h2>
+					</a>
+					<a href="<?= get_site_url(); ?>/fulfilment-services/technology/" class="icon-card">
+						<img src="css/assets/img/icon-laptop-blue.png">
+						<h2 class="green t">Technology</h2>
+					</a>
+					<a href="<?= get_site_url(); ?>/fulfilment-services/customer-experience/" class="icon-card">
+						<img src="css/assets/img/icon-user-blue.png">
+						<h2 class="green c">Customer Experience</h2>
+					</a>
+					<a href="<?= get_site_url(); ?>/fulfilment-services/global-fulfilment/" class="icon-card">
+						<img src="css/assets/img/icon-scale-blue.png">
+						<h2 class="green s">Scale</h2>
+					</a>
+				</section>
+			</div>
+		</section>
+
+
+		<section class="section-off-white">
+			<div class="wrapper center-text">
+				<h2 class="large">
+					Global Locations
+				</h2>
+				<div class="counter center-elem green"></div>
+				<h3>Select your location</h3>
+                <div class="map">
+                    <img src="css/assets/img/map.png" alt="Our global presence" title="Our global presence">
+                    <div class="map-location medium usa">
+                        <a href="javascript:void(0)" class="popover" data-location="us">
+                            <h2>North America</h2>
+                            <img src="css/assets/img/wh-us.jpg" alt="US fulfilment centre" title="US fulfilment centre">
+                        </a>
+                        <span class="outer"><span class="inner"></span></span>
+                    </div>
+                    <div class="map-location medium uk">
+                        <a href="javascript:void(0)" class="popover" data-location="uk">
+                            <h2>Europe</h2>
+                            <img src="css/assets/img/wh-uk.jpg" alt="UK fulfilment centre" title="UK fulfilment centre">
+                        </a>
+                        <span class="outer"><span class="inner"></span></span>
+                    </div>
+                    <div class="map-location medium nz">
+                        <a href="javascript:void(0)" class="popover right default-open" data-location="nz">
+                            <h2>Australasia</h2>
+                            <img src="css/assets/img/wh-nz.jpg" alt="New Zealand fulfilment centre" title="New Zealand fulfilment centre">
+                        </a>
+                        <span class="outer"><span class="inner"></span></span>
+                    </div>
+                </div>
+			</div>
+		</section>
+
+		<section class="map-scroll-js uk us nz">
+			<div class="wrapper">
+				<div class="center-text">
+					<h2 class="large">
+						Contact
+					</h2>
+					<div class="counter center-elem"></div>
+					<p class="serif">
+						Tel :&ensp;+44 (0) 1604 968 820<br>
+						Email :&ensp;<a href="mailto:hello@doublejames.com">hello@doublejames.com</a><br>
+						Customer support :&ensp;<a href="mailto:support@doublejames.com">support@doublejames.com</a><br>
+					</p>
+					<br />
+				</div>
+				<div class="narrow center-elem">
+					<!--[if lte IE 8]>
+					<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+					<![endif]-->
+					<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+					<script>
+						hbspt.forms.create({
+							css: '',
+							portalId: '2761790',
+							formId: '1e8fe65e-deef-4e79-a279-c496d203c19b'
+						});
+					</script>
+				</div>
+			</div>
+		</section>
+
+
+		<section>
+            <div class="wrapper">
+
+				<ul class="tabs">
+					<li class="tab-link current" data-tab="tab-1">
+				        <img src="css/assets/img/icon-eye-blue.png" alt="Visibility" title="Visibility">
+						<h2>Visibility</h2>
+					</li>
+					<li class="tab-link" data-tab="tab-2">
+				        <img src="css/assets/img/icon-laptop-blue.png" alt="Technology" title="Technology">
+						<h2>Technology</h2>
+					</li>
+					<li class="tab-link" data-tab="tab-3">
+					    <img src="css/assets/img/icon-user-blue.png" alt="Customer Experience" title="Customer Experience">
+						<h2>Customer Experience</h2>
+					</li>
+					<li class="tab-link" data-tab="tab-4">
+				        <img src="css/assets/img/icon-scale-blue.png" alt="Scale" title="Scale">
+						<h2>Scale</h2>
+					</li>
+				</ul>
+
+				<div id="tab-1" class="tab-content current">
+			        <p>Use real time data to delight customers and build on your awesome reputation</p>
+					<p>Our system gives you unparalleled visibility on <a href="/order-fulfilment/technology/e-fulfilment/">your e-fulfilment operations</a>. We might be taking care of the order fulfilment ourselves, but our live reporting tools ensure you'll be in the know and in control.</p>
+			        <a href="<?= get_home_url(); ?>/order-fulfilment/visibility/"><strong>Read More</strong></a>
+				</div>
+				<div id="tab-2" class="tab-content">
+			        <p>Access the kind of technology that will blow your competitors out of the water</p>
+					<p>Our award-winning systems take the complexity out of fulfilment so that we can focus on delivering a service that's unforgettable for all the right reasons, and you can spend more time building your brand.</p>
+			        <a href="<?= get_home_url(); ?>/order-fulfilment/technology/"><strong>Read More</strong></a>
+				</div>
+				<div id="tab-3" class="tab-content">
+			        <p>Provide a reliable, fast, quality experience for your customers</p>
+					<p>Your customer experience is our priority, creating loyal customers and growing a stellar reputation. Our fulfilment accuracy never dip below 99.998% because we know that getting it right first time, every time.</p>
+			        <a href="<?= get_home_url(); ?>/order-fulfilment/customer-experience/"><strong>Read More</strong></a>
+				</div>
+				<div id="tab-4" class="tab-content">
+			        <p>Be empowered to grow, reaching your customers wherever and whenever</p>
+					<p>We're experts in peak demand - as your order volumes grow, our service grows with you. Our cloud-based order fulfilment system means you have the world at your fingertips to handle your needs.</p>
+			        <a href="<?= get_home_url(); ?>/order-fulfilment/global-fulfilment/"><strong>Read More</strong></a>
+				</div>
+
+			</div>
 		</section>
 
 
@@ -273,11 +540,11 @@
 						</div>
 					</a>
 					<div class="excerpt">
-						<h5 id="post-<?php the_ID(); ?>">
+						<h3 id="post-<?php the_ID(); ?>">
 							<a href="<?php the_permalink() ?>" title="Permanent Link to <?php the_title_attribute(); ?>">
 								James and James Recognised Companies
 							</a>
-						</h5>
+						</h3>
 					</div>
 					<small class="post-info">December 2, 2004 by Mike Gandy</small>
 				</div>
@@ -288,11 +555,11 @@
 						</div>
 					</a>
 					<div class="excerpt">
-						<h5 id="post-<?php the_ID(); ?>">
+						<h3 id="post-<?php the_ID(); ?>">
 							<a href="<?php the_permalink() ?>" title="Permanent Link to <?php the_title_attribute(); ?>">
 								James and James Recognised as Europe's Fasting Growing Private Companies Europe's Fasting Growing Private Companies
 							</a>
-						</h5>
+						</h3>
 					</div>
 					<small class="post-info">December 2, 2004 by Mike Gandy</small>
 				</div>
@@ -303,11 +570,11 @@
 						</div>
 					</a>
 					<div class="excerpt">
-						<h5 id="post-<?php the_ID(); ?>">
+						<h3 id="post-<?php the_ID(); ?>">
 							<a href="<?php the_permalink() ?>" title="Permanent Link to <?php the_title_attribute(); ?>">
 								James and James Recognised as Europe's Fasting Growing Private Companies
 							</a>
-						</h5>
+						</h3>
 					</div>
 					<small class="post-info">December 2, 2004 by Mike Gandy</small>
 				</div>
@@ -317,11 +584,11 @@
 					<div class="thumbnail"  style="background-image: url('css/assets/img/placeholder.jpg');">
 					</div>
 					<div class="excerpt">
-						<h5 id="post-<?php the_ID(); ?>">
+						<h3 id="post-<?php the_ID(); ?>">
 							<a href="<?php the_permalink() ?>" title="Permanent Link to <?php the_title_attribute(); ?>">
 								James and James Recognised as Europe's Fasting Growing Private Companies
 							</a>
-						</h5>
+						</h3>
 						<p>
 							Inc. magazine today ranked eCommerce order fulfilment provider James and James Fulfilment NO.1688 on its annual Inc. 5000, the most prestigious ranking of the Europe's fastest-growing private companies. Europe's fastest-growing private companies.
 						</p>
@@ -333,11 +600,11 @@
 					<div class="thumbnail"  style="background-image: url('css/assets/img/350x150.png');">
 					</div>
 					<div class="excerpt">
-						<h5 id="post-<?php the_ID(); ?>">
+						<h3 id="post-<?php the_ID(); ?>">
 							<a href="<?php the_permalink() ?>" title="Permanent Link to <?php the_title_attribute(); ?>">
 								James and James Recognised as Europe's Fasting Growing Private Companies
 							</a>
-						</h5>
+						</h3>
 						<p>
 							Inc. magazine today ranked eCommerce order.
 						</p>
@@ -349,11 +616,11 @@
 					<div class="thumbnail"  style="background-image: url('css/assets/img/150x350.png');">
 					</div>
 					<div class="excerpt">
-						<h5 id="post-<?php the_ID(); ?>">
+						<h3 id="post-<?php the_ID(); ?>">
 							<a href="<?php the_permalink() ?>" title="Permanent Link to <?php the_title_attribute(); ?>">
 								James and James Private Companies
 							</a>
-						</h5>
+						</h3>
 						<p>
 							Inc. magazine today ranked eCommerce order fulfilment provider.
 						</p>
@@ -371,17 +638,11 @@
 					H2 Heading Unforgettable fulfilment for your customers
 				</h2>
 				<div class="counter"></div>
-				<h5>
-					H5 Heading We enable brands to build awesome reputations, blow their competitors out of the water and empower their products to reach new markets across the world through our unique, real time fulfilment technology.
-				</h5>
-				<h2 class="green">
-					H2 Returns Management
-				</h2>
-				<p>
-					Our mission is to revolutionise eCommerce fulfilment by eliminating errors, not just reducing them. We're proud and open about our fulfilment accuracy because every mistake creates an unhappy customer. Our mission is to revolutionise eCommerce fulfilment by eliminating errors, not just reducing them. We're proud and open about our fulfilment accuracy because every mistake creates an unhappy customer.
-				</p>
-				<h2 class="green">
-					H2 Heading Reverse Logistics
+				<h3>
+					H3 Heading We enable brands to build awesome reputations, blow their competitors out of the water and empower their products to reach new markets across the world through our unique, real time fulfilment technology.
+				</h3>
+				<h4>
+					H4 Heading Reverse Logistics
 				</h2>
 				<p>
 					Our mission is to revolutionise eCommerce fulfilment by eliminating errors, not just reducing them. We're proud and open about our fulfilment accuracy because every mistake creates an unhappy customer.
@@ -390,22 +651,15 @@
 					Our mission is to revolutionise eCommerce fulfilment by eliminating errors, not just reducing them. We're proud and open about our fulfilment accuracy because every mistake creates an unhappy customer. Our mission is to revolutionise eCommerce fulfilment by eliminating errors, not just reducing them. We're proud and open about our fulfilment accuracy because every mistake creates an unhappy customer.
 				</p>
 
-
-				<h3>
-					H3 Returns Management
-				</h3>
-				<p>
-					Our mission is to revolutionise eCommerce fulfilment by eliminating errors, not just reducing them. We're proud and open about our fulfilment accuracy because every mistake creates an unhappy customer. Our mission is to revolutionise eCommerce fulfilment by eliminating errors, not just reducing them. We're proud and open about our fulfilment accuracy because every mistake creates an unhappy customer.
-				</p>
-				<h4>
-					H4 Returns Management
-				</h4>
-				<p>
-					Our mission is to revolutionise eCommerce fulfilment by eliminating errors, not just reducing them. We're proud and open about our fulfilment accuracy because every mistake creates an unhappy customer. Our mission is to revolutionise eCommerce fulfilment by eliminating errors, not just reducing them. We're proud and open about our fulfilment accuracy because every mistake creates an unhappy customer.
-				</p>
 				<h5>
 					H5 Returns Management
 				</h5>
+				<p>
+					Our mission is to revolutionise eCommerce fulfilment by eliminating errors, not just reducing them. We're proud and open about our fulfilment accuracy because every mistake creates an unhappy customer. Our mission is to revolutionise eCommerce fulfilment by eliminating errors, not just reducing them. We're proud and open about our fulfilment accuracy because every mistake creates an unhappy customer.
+				</p>
+				<h6>
+					H6 Returns Management
+				</h6>
 				<p>
 					Our mission is to revolutionise eCommerce fulfilment by eliminating errors, not just reducing them. We're proud and open about our fulfilment accuracy because every mistake creates an unhappy customer. Our mission is to revolutionise eCommerce fulfilment by eliminating errors, not just reducing them. We're proud and open about our fulfilment accuracy because every mistake creates an unhappy customer.
 				</p>
@@ -425,30 +679,30 @@
 
 				<div class="cf-group">
 					<div class="col-1-2">
-						<h5 class="center-text">1/2</h5>
+						<h3 class="center-text">1/2</h3>
 						<p>Our mission is to revolutionise eCommerce fulfilment by eliminating errors, not just reducing them. We're proud about our fulfilment accuracy because every mistake creates an unhappy customer.</p>
 					</div>
 					<div class="col-1-4">
-						<h5 class="center-text">1/4</h5>
+						<h3 class="center-text">1/4</h3>
 						<p>Our mission is to revolutionise eCommerce fulfilment by eliminating errors, not just.</p>
 					</div>
 					<div class="col-1-8">
-						<h5 class="center-text">1/8</h5>
+						<h3 class="center-text">1/8</h3>
 						<p>Eliminating errors, not just reduce.</p>
 					</div>
 					<div class="col-1-8">
-						<h5 class="center-text">1/8</h5>
+						<h3 class="center-text">1/8</h3>
 						<p>Our mission is to revolutionise eCommerce.</p>
 					</div>
 				</div>
 
 				<div class="cf-group">
 					<div class="col-1-3">
-						<h5 class="center-text">1/3</h5>
+						<h3 class="center-text">1/3</h3>
 						<p>Our mission is to revolutionise eCommerce fulfilment by eliminating errors, not just reducing them. not just reducing them.</p>
 					</div>
 					<div class="col-2-3">
-						<h5 class="center-text">2/3</h5>
+						<h3 class="center-text">2/3</h3>
 						<p>Our mission is to revolutionise eCommerce fulfilment by eliminating errors, not just reducing them. We're proud and open about our fulfilment accuracy because every mistake creates an unhappy customer. Because every mistake creates an unhappy customer.</p>
 					</div>
 				</div>
@@ -487,6 +741,12 @@
 				<h5>
 					H5 Heading Reverse Logistics
 				</h5>
+				<p>
+					Our mission is to revolutionise eCommerce fulfilment by eliminating errors, not just reducing them. We're proud and open about our fulfilment accuracy because every mistake creates an unhappy customer.
+				</p>
+				<h6>
+					H6 Heading Reverse Logistics
+				</h6>
 				<p>
 					Our mission is to revolutionise eCommerce fulfilment by eliminating errors, not just reducing them. We're proud and open about our fulfilment accuracy because every mistake creates an unhappy customer.
 				</p>
@@ -561,7 +821,7 @@
 
 			<div class="cf-group">
 				<div class="copy-block">
-					<h5>The Small Print</h5>
+					<h3>The Small Print</h3>
 					<p>
 						Cookie Law<br>
 						Terms &amp; Conditions<br>
@@ -575,7 +835,7 @@
 					</p>
 				</div>
 				<div class="copy-block">
-					<h5>Latest News</h5>
+					<h3>Latest News</h3>
 					<p>
 						<a href="javascript:void(0)">Black Friday shopping habits are changing, but is it for the better?</a><br>
 						3 November 2016
@@ -586,7 +846,7 @@
 					</p>
 				</div>
 				<div class="copy-block">
-					<h5>Quick Links</h5>
+					<h3>Quick Links</h3>
 					<p>
 						<a href="javascript:void(0)">Why We Are Different</a><br>
 						<a href="javascript:void(0)">Order Fulfilment</a><br>

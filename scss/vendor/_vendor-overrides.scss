@@ -4,6 +4,17 @@
     text-align: center;
     margin-top:3rem;
 }
+.contact .hbspot-form{
+    br{
+        display: none;
+    }
+    fieldset.form-columns-2 .input{
+        margin-right: 30px;
+    }
+    .hs-form-field{
+        margin-bottom: 30px;
+    }
+}
 .hs-form{
     fieldset{
         max-width: 100% !important;

@@ -17,9 +17,6 @@
 		from { transform: rotate(0deg) translateX(20px) rotate(0deg); }
 		to   { transform: rotate(360deg) translateX(20px) rotate(-360deg); }
 	}
-	.hero-container h5{
-		margin-bottom:1.7em;
-	}
 	.hero {
 		padding-top: 4rem;
 		padding-bottom: 4rem;
@@ -125,16 +122,13 @@
 	.flag-hr{
 		position: relative;
     	z-index: 1;
-		background: linear-gradient(to bottom, $off-white 0%,$off-white 55%,$off-white 55%,transparent 55%,transparent 100%);
+		background: linear-gradient(to bottom, $grey-light 0%,$grey-light 55%,$grey-light 55%,transparent 55%,transparent 100%);
 		margin-bottom: -77px;
 		margin-top:-30px;
 	}
 
 	.how-pricing-works{
 		position: relative;
-		h5{
-			margin-bottom:1.7em;
-		}
 		.top-section{
 			text-align: center;
 			padding-top:3rem;
@@ -152,7 +146,7 @@
 				transition-delay: 1s;
 				position: absolute;
 				right:150px;
-				top: 120px;
+				top: 70px;
 				z-index: 1;
 
 				&.come-in,
@@ -174,15 +168,11 @@
 			position: relative;
 			background-color:$off-white;
 			.wrapper{
-				padding-bottom:12rem;
+				padding-bottom:14rem;
 			}
 			h3{
 				font-size: 3rem;
 				margin-top:8rem;
-				z-index: 1;
-				position: relative;
-				text-shadow: 1px 1px 1px $off-white,
-							 -1px -1px 1px $off-white;
 			}
 		}
 		.ele{
@@ -198,93 +188,134 @@
 				left:0;
 			}
 		}
-		.pricing-table{
+
+		.standard-table {
+			$feature-col-width: 20;//percentage
+			$col-width: ((100 - $feature-col-width) / 3) * 1%;
+
 			position: relative;
-			padding:0;
-			margin:0;
-			margin-top:-355px;
-			margin-bottom:5rem;
-			border-radius: 2.4rem;
-			box-shadow: 50px 50px 100px 20px rgba(0,0,0,0.12);
-			//overflow: hidden;
-			ul{
-				padding:0;
-				margin:0;
+		    margin-top: -355px;
+
+		    td, th {
+		    	border:none;
+		    }
+		    td{
+		        width: $col-width;
+				height: 50px;
+		    }
+		    td:first-child{
+		        text-align:left;
+		        width:$feature-col-width * 1%;
+		        padding-left:4rem;
+	    		background:white;
+		    }
+			tr:first-child td:first-child {
+				border-top-left-radius: 0;
 			}
-			hr{
-				margin:0;
-				background:$black;
-			}
-			header{
+			thead{
 				padding-bottom:3rem;
-				h5{
+		        tr{
+	            	background-color: initial;
+		        }
+		        th{
+	                font-weight:normal;
+		        }
+				h3{
 					margin:0;
+					font-size: 2.4rem;
 				}
 				.cost{
-					font-size: 10rem;
-					line-height: 10rem;
-					margin-top: -15px;
-					padding-bottom:10px;
+					font-size: 8rem;//10rem;
+					line-height: 5rem;
 				}
 				.currency{
-					font-size: 4rem;
+					font-size: 3rem;
 					vertical-align: text-top;
 				}
+				.pcm{
+					font-size:20px;
+				}
 			}
-			footer{
-				position: absolute;
-				bottom:3rem;
-				left:0;
-				width:100%;
-			}
-			.butterflies{
-				position: absolute;
-				left: -70px;
-				top:80px;
-			}
-			.left,
-			.center,
-			.right{
-				display: table-cell;
-				position: relative;
-				background: white;
-				padding:4rem 3rem 8rem 3rem;
-				width:33.33%;
-			}
-			.center,
-			.right{
+			tbody {
+				box-shadow: 50px 50px 100px 20px rgba(0,0,0,0.12);
+				background:white;
+				td:nth-child(2),
+				td:nth-child(4){
+					background:rgba($blue, .03);
+				}
+				tr:first-child td:first-child {
+					border-top-left-radius: 1em;
+    			}
+	        }
+			.lite,
+			.pro,
+			.adv{
+				padding: 3rem;
 				color: white;
-				hr{
-					background:white;
-				}
 			}
-			.left{
-				border-radius: 2.4rem 0 0 2.4rem;
-				background: #b9e140;
+			.lite{
+				border-top-left-radius: 2.4rem;
+				background-color:lighten($blue,10%);
+				background-color:$blue;
 			}
-			.center{
-				background: #8bbf12;
+			.pro{
+				background-color:$blue;
+				background-color:darken($blue,10%);
 			}
-			.right{
-				background-color:#547e16;
-				border-radius: 0 2.4rem 2.4rem 0;
+			.adv{
+				border-top-right-radius: 2.4rem;
+				background-color:darken($blue,10%);
+				background-color:darken($blue,20%);
 			}
-			.features{
-				padding-top:1.5rem;
-				padding-bottom:2rem;
-				li{
-					list-style-type:none;
-					line-height: 3rem;
-					&:first-of-type{
-						padding-bottom:0.8rem;
-						h5{
-							margin:0;
-						}
-					}
-				}
+		    .in{
+		        color:$green;
+		    }
+		    .out{
+		        color:tomato;
+		    }
+	    	.title{
+			    &.online{
+			    	border-top:1px solid $grey-dark;
+			    }
+				td:first-child{
+				    //border: 1px solid $grey-dark;
+				    position: absolute;
+				    text-align: center;
+				    padding: 0;
+				    font-size: 2rem;
+				    font-weight: 700;
+			    	padding-top: 58px;
+    			}
+			}
+			.all-features{
+				border-top:1px solid $grey-dark;
+	            tr:nth-child(even) {
+	               background-color: white;
+	            }
+	            tr:nth-child(odd) {
+	               background-color: $grey;
+	            }
+				td:first-child{
+		    		background: transparent;
+		    	}
+	            tr.close-table{
+	            	&:before{
+	            		content: '✖';
+	            	}
+	            	background: $green;
+	            	position: absolute;
+	            	border-radius: 0 8px 8px 0;
+	            	color: white;
+	            	padding:10px 16px;
+	            	top:749px;
+	            	right:-46px;
+	            	cursor: pointer;
+	            }
 			}
 		}
-
+		.show-features{
+			border-radius: 0px 0px 1em 1em;
+		}
 		@media only screen and (max-width:$promo-break-point) {
 			background-color:$green;
 			background-image:url(assets/img/hero-imgs/hero-light-bg.jpg);
@@ -303,10 +334,6 @@
 				background-color:transparent;
 				.wrapper{
 					padding-bottom:0px;
-				}
-				h3{
-					color:white;
-					text-shadow: none;
 				}
 			}
 			.ele{

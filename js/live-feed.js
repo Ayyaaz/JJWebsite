@@ -20,6 +20,9 @@ jQuery.noConflict();
 		displayItemStat($('#items-in-storage'), arr.items_in_storage, arr.fullness);
 	}
 	function formatNumber(yourNumber) {
+		if (isNaN(yourNumber)){
+			return 0;
+		}
 	    var n= yourNumber.toString().split("."); //Seperates the components of the number
 	    n[0] = n[0].replace(/\B(?=(\d{3})+(?!\d))/g, '<span class="stat-small">,</span>'); //Comma-fies the first part
 	    var num = n.join('<span class="stat-small">.</span>'); //Combines the two sections

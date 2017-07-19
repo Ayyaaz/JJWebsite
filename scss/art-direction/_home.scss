@@ -118,26 +118,27 @@ $parade-img-width:1550px;
 		background: $green-dark;
 		color: white;
 		h2{
+			font-family: $font-lato;
 			margin-top:1rem;
 			margin-bottom:2rem;
 			font-size: 5rem;
 		}
 		p {
-			font-size: 4rem;
+			font-size: 3.5rem;
 			margin-top:-6rem;
 			white-space: nowrap;
 			opacity: 0;
 		}
 		.wrapper{
 			display: block;
-			padding: 5rem 0;
+			padding: 5rem 0 0 0;
 		}
 		.stat{
 			@include transition(all 1s ease-out);
 			-webkit-transition-delay: 1.5s; /* Safari */
 			transition-delay: 1.5s;
 			text-shadow: 6px 6px 0px rgba(0, 0, 0, 0.3);
-			font-size: 10rem;
+			font-size: 8rem;
 			line-height:initial;
 			font-weight: 600;
 			font-family: $font-lato;
@@ -155,13 +156,28 @@ $parade-img-width:1550px;
 			opacity: 0.3;
 			font-size: 1.5rem;
 		}
-		.button{
-			width:270px;
-			margin-top:-200px;
-		}
+		@media only screen and (min-width:$nav-break-point) {
+			.slider {
+				width:50%;
+				margin-right:10%;
+				float:right;
+				padding-left:0;
+				padding-right:0;
+			}
+			h2{
+				width:40%;
+				float:left;
+				font-size: 45px;
+				text-align: right;
+				margin-top:36px;
+			}
+			.slick-dots{
+				margin-left: -60%;
+			}
 
+		}
 		.slick-slide{
-			min-height:180px;
+			min-height:160px;
 			&.slick-current{
 				.stat{
 					opacity: 1;
@@ -172,14 +188,14 @@ $parade-img-width:1550px;
 
 				@keyframes live-stat-label {
 					0% {
-						margin-top:-6rem;
+						margin-top:-4rem;
 						opacity: 0;
-						@include transform(scale(0));//font-size: 2.5rem;
+						//@include transform(scale(0));//font-size: 2.5rem;
 					}
 					25% {
-						margin-top:-6rem;
+						margin-top:-4rem;
 						opacity: 1;
-						@include transform(scale(1));//font-size: 4rem;
+						//@include transform(scale(1));//font-size: 4rem;
 					}
 					50% {
 						margin-top:1rem;
@@ -194,7 +210,6 @@ $parade-img-width:1550px;
 					}
 				}
 			}
-
 			@media only screen and (max-width:$promo-break-point) {
 				min-height: initial;
 				height: 150px;
@@ -213,18 +228,13 @@ $parade-img-width:1550px;
 			h2{
 				font-size: 4rem;
 			}
-
-
 			.button{
 				display: block;
 				float:none;
 				margin:16px auto;
-
 			}
-
 		}
 	}
-
 
 	.four-pillars{
 		h2{
@@ -483,6 +493,19 @@ $parade-img-width:1550px;
 				margin-left: auto;
 				margin-right: auto;
 			}
+		}
+	}
+
+	.who-we-are{
+		.wrapper{
+			padding-bottom:0;
+		}
+		img{
+			max-width:50%;
+		}
+		.copy{
+			margin-top:3rem;
+			margin-bottom:3rem;
 		}
 	}
 

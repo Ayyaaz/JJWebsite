@@ -23,6 +23,7 @@
 	display: block !important;
 }
 
+.wrapper .hide,
 .hide {
 	display:none;
 }
@@ -93,4 +94,8 @@ img.grayscale:hover {
 }
 .not-visible{
 	visibility:hidden;
+}
+.full-width{
+	width:100%;
+    max-width:100%;
 }

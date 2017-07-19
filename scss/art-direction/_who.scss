@@ -76,31 +76,6 @@
 			display: none;
 		}
 	}
-	.who-we-are{
-		.wrapper{
-			padding-bottom:0;
-		}
-		img{
-			max-width:50%;
-		}
-		.copy{
-			margin-top:3rem;
-			margin-bottom:3rem;
-		}
-		p{
-			font-family: $font-palatino;
-			font-size: 1.8rem;
-			float: left;
-			width:33.33%;
-			padding-left:1.6rem;
-			padding-right:1.6rem;
-
-			@media only screen and (max-width:$promo-break-point) {
-				float: none;
-				width:100%;
-			}
-		}
-	}
 
 	.testimonial-section{
 		position: relative;

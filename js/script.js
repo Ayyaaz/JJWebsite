@@ -143,8 +143,8 @@ jQuery.noConflict();
 			thisPopover.addClass('correct-pos');
 
 			var posFromTop = $('.correct-pos').offset().top - $(window).scrollTop();
-			var offset = -150;//20; //Offset of 20px
-			if(posFromTop < 150){
+			var offset = -180;//20; //Offset of 20px
+			if(posFromTop < 180){
 				$('html, body').animate({
 					scrollTop: $(".correct-pos").offset().top + offset
 				}, 100);
@@ -253,6 +253,32 @@ jQuery.noConflict();
 	// end: fast click
 
 
+	// Map: scroll to centre details
+	$('[data-location]').click(function(){
+		var location = '.' + $(this).data('location');
+		var form = '.map-scroll-js'
+		//$(form).addClass('hide');
+		//$(location).removeClass('hide');
+		var offset = -120; //Offset of 20px
+		$('html, body').animate({
+			scrollTop: $(form + location).offset().top + offset
+		}, 1200);
+	});
+	// end: Map: scroll to centre details
+
+
+
+	// TABS
+	$('ul.tabs li').click(function(){
+		var tab_id = $(this).attr('data-tab');
+
+		$('ul.tabs li').removeClass('current');
+		$('.tab-content').removeClass('current');
+
+		$(this).addClass('current');
+		$("#"+tab_id).addClass('current');
+	})
+	// END: TABS
 
 
 	// clock in top bar
@@ -285,6 +311,49 @@ jQuery.noConflict();
 	startTime();*/
 	// end: clock in top bar
 
+	// pricing table
+	$('.show-features').click(function(){
+		$('.all-features').removeClass('hide');
+		$(this).hide();
+	});
+	$('.close-table').click(function(){
+		$('.all-features').addClass('hide');
+		$('.show-features').show()
+	});
+	// end: pricing table
+
+	// storage calculator
+	//$('.calc-storage').click(function(){
+	$('.trigger-calc-storage').bind('keyup change', function(){
+		if(!isNaN($('input[name="w"]').val()) && !isNaN($('input[name="d"]').val()) && !isNaN($('input[name="h"]').val())){
+			var w = $('input[name="w"]').val();
+			var d = $('input[name="d"]').val();
+			var h = $('input[name="h"]').val();
+			var u = 0;
+			if($('.unit').val() == 'mm'){
+				u = 1000000000;
+			}else if($('.unit').val() == 'cm'){
+				u = 1000000;
+			}else if($('.unit').val() == 'in'){
+				u = 61023.7441;
+			}else if($('.unit').val() == 'ft'){
+				u = 35.3146667;
+			}
+			var day_rate = 0.89 * w * d * h / u;
+			var cost = day_rate * parseInt($('.period').val());
+			if(cost > 0 && cost < 0.001){
+				$('.lt-1p').removeClass('hide');
+				$('.cost:not(.lt-1p)').addClass('hide');
+			}else{
+				$('.lt-1p').addClass('hide');
+				$('.cost:not(.lt-1p)').removeClass('hide');
+				//cost = cost.toFixed(4);
+			}
+			cost = cost > 0 ? cost.toFixed(3) : 0;
+			$('.rate').text(cost);
+		}
+	});
+	// end: storage calculator
 
 
 //});

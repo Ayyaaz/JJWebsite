@@ -40,8 +40,11 @@
 		}
 		@media only screen and (max-width:400px) {
 			width:100%;
+		    text-align: left;
+			&:first-of-type,
 			&:last-of-type{
 				width:100%;
+		    	text-align: left;
 			}
 		}
 	}

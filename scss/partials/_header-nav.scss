@@ -118,7 +118,7 @@ $nav-line-height: 80px;
 				display: block;
 				width: 100%;
 				line-height: 45px;
-				padding: 0 1.8rem;
+				padding: 0 1.4rem;
 				text-decoration: none;
 				border-bottom: 1px solid rgba(0,0,0,0.1);
 				color: $black;
@@ -126,6 +126,10 @@ $nav-line-height: 80px;
 				font-size: 14px;
 				opacity: .6;
 
+				.icon{
+					vertical-align: text-top;
+					font-size: 18px;
+				}
 				@media only screen and (min-width:$nav-break-point) {
 					border: none;
 					line-height: $nav-line-height;
@@ -224,12 +228,13 @@ $nav-line-height: 80px;
 	}
 	.alignleft {
 		float: left;
-		width:150px;
+		width:190px;
 		text-align:left;
+		white-space:nowrap;
 	}
 	.aligncenter {
 		float: left;
-		width:calc(100% - 170px);//300px);
+		width:calc(100% - 351px);//300px);
 		text-align:center;
 		white-space: nowrap;
 		text-overflow: ellipsis;
@@ -237,9 +242,11 @@ $nav-line-height: 80px;
 	}
 	.alignright {
 		float: right;
-		width:150px;
+		width:161px;
 		text-align:right;
 		white-space:nowrap;
+		padding-left: 16px;
+		font-size: 12px;
 	}
 
 	// live feed
@@ -247,11 +254,13 @@ $nav-line-height: 80px;
 		position: relative;
 		height: 21px;
 		.event{
-			top:0 !important;
+			top:0;
 			opacity: 0;
 			position: absolute;
 			width:580px;
 			background: $spot-color;
+			text-overflow: ellipsis;
+			overflow: hidden;
 		}
 		canvas{
 			display: none;

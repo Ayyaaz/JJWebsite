@@ -21,11 +21,11 @@
 	}
 	.excerpt{
 		padding: 16px 16px 0 16px;
-		max-height: 255px;
+		height: 136px;
 		overflow: hidden;
-		h5{
+		h3{
 			margin:0;
-			max-height: 120px;
+			font-size: 2rem;
 		}
 		p{
 			margin-top:8px;
@@ -88,6 +88,7 @@
 	}
 	.excerpt{
 		padding:0px;
+		display: inline;
 	}
 }
 // end: stacked-posts WP recent posts sidebar
@@ -98,8 +99,7 @@
 	width: 100%;
 	max-width: 1000px;
 	margin: 0 auto;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	padding: 0.8rem 1.6rem 1rem 1.6rem;
 }
 // end: post bread-crumb-trail
 

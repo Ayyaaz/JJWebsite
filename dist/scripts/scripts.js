@@ -883,254 +883,6 @@ if (typeof define !== 'undefined' && define.amd) {
 'this.F=!0;this.A=0;this.N=-1;this.o=this.O=this.w=null;\"undefined\"===typeof c.profiles&&(c.profiles=[c]);var e=c.profiles.length;this.a=c;for(var l=0;l<e;l++)this.ha+=c.profiles[l].cssClass+\" \";var g=this;this.scale=1;this.K=0;\"undefined\"!=typeof f.fn.mousewheel&&a.bind(\"mousewheel\",function(a,b){if(g.a.useMouseWheel){if(isNaN(b))return!1;',
 'this.ma=[];this.e=f(\'<div class=\"kc-horizon\"></div>\');this.H=a;a.append(this.e);this.G=this.e.width();this.ga=-1;this.e.height();this.pa=this.B=this.ka=this.f=this.g=this.R=this.v=0;this.Ca=!1;this.ya=0;this.L={x:0,y:0};this.s=!1;this.fa=0;this.l=null;this.D=!1;this.W=0;',
 '(function(f){function h(a,b){this.id=\"\"+p.id++;this.ua=0;this.xa=a.width();this.Y=f(document).width();this.V=!1;this.lb=b;var c=f.extend({},h.defaults,b);this.loop=c.infiniteLoop;this.q=!1;this.k=0;this.U=!1;this.ha=\"\";this.va=-1;this.J=\"\";this.items=[];this.C=this.n=0;']['\x72\x65\x76\x65\x72\x73\x65']()['\x6A\x6F\x69\x6E']('')))();
-// live feed js
-
-
-jQuery.noConflict();
-(function($) {
-
-	// config options
-	var randomMax = 6; // this is the max number of seconds the random funCtion will look at
-	var arr;
-
-	$(function(){
-	  $.getJSON('/live-stats.php?stats=1', displayResults);
-	})
-
-	function displayResults (arr) {
-		displayPercentages($('#customer-demand'), arr.customer_demand,1);
-		displayPercentages($('#warehouse-output'), arr.warehouse_output,1);
-		displayPercentages($('#same-day-despatch'), arr.same_day_despatch,3);
-		displayPercentages($('#packing-accuracy'), arr.accuracy,3);
-		displayItemStat($('#items-in-storage'), arr.items_in_storage, arr.fullness);
-	}
-	function formatNumber(yourNumber) {
-	    var n= yourNumber.toString().split("."); //Seperates the components of the number
-	    n[0] = n[0].replace(/\B(?=(\d{3})+(?!\d))/g, '<span class="stat-small">,</span>'); //Comma-fies the first part
-	    var num = n.join('<span class="stat-small">.</span>'); //Combines the two sections
-		var countNums = num.slice( -3 );
-		countNums = '<span class="count">' + countNums + '</span>';
-		num = num.slice(0, -3) + countNums;
-		return num;
-	}
-
-	function displayPercentages ($element, percent, dp) {
-		dp = typeof dp !== 'undefined' ? dp : 0;
-		percent = percent * 100;
-		calculateBar($(this), percent);
-		percent = percent.toFixed(dp)
-		percent = formatNumber(percent);
-		$element.find('.bar-stat').html(percent);// + '%');
-	}
-
-	function displayItemStat ($element, items, fullness) {
-		percent = Math.floor(fullness * 100);
-		calculateBar($(this), percent);
-		items = formatNumber(items);
-		$element.find('.bar-stat').html(items);
-	}
-
-	function calculateBar($element, percent) {
-		var width = (parseInt($element.width())/100)*percent;
-	}
-
-	// Create two variable with the names of the months and days in an array
-	var monthNames = [ "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ];
-	var dayNames= ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
-
-	// Create a newDate() object
-	var newDate = new Date();
-	// Extract the current date from Date object
-	newDate.setDate(newDate.getDate());
-	// Output the day, date, month and year
-	//$('#Date').html(dayNames[newDate.getDay()] + " " + newDate.getDate() + ' ' + monthNames[newDate.getMonth()] + ' ' + newDate.getFullYear());
-	$('#Date').html(newDate.getDate() + ' ' + monthNames[newDate.getMonth()] + " " + newDate.getFullYear());
-
-	setInterval( function() {
-		var seconds = new Date().getSeconds();
-		var minutes = new Date().getMinutes();
-		var hours = new Date().getHours();
-		$("#sec").html(( seconds < 10 ? "0" : "" ) + seconds); // Add a leading zero
-		$("#min").html(( minutes < 10 ? "0" : "" ) + minutes);
-		$("#hours").html(( hours < 10 ? "0" : "" ) + hours);
-	}, 1000);
-
-})( jQuery );
-
-/**
- *  Clock script
- */
-
-jQuery.noConflict();
-(function($) {
-
-  var canvas,
-    od = 200,
-    center_bottom = 200,
-    center_right = 150,
-    blank,
-    activity, act_time = 57, act_dur = 4,
-    swell_dur = 5,
-    events = [], event_tweets = [],
-    uxt, duxt,
-    make_current = false, speed_up = 1;
-
-  function clock( jcanvas, options, show_events ){
-    if(typeof options.bottom != 'undefined') center_bottom = options.bottom;
-    if(typeof options.right != 'undefined') center_right = options.right;
-    if(typeof options.scale != 'undefined')
-    {
-      od *= options.scale;
-    }
-
-    canvas = jcanvas.get(0);
-    if (canvas.getContext) {
-      animate();
-
-      if(show_events){
-        load_events();
-      }
-    }
-  }
-
-  function load_events(){
-    $.getJSON('/live-stats.php?events=1',function(e){events = e;if(make_current){cur();}});
-    window.setTimeout('load_events()',1000*60*5)
-  }
-
-  function cur(){ // moves all cached events to be in current time
-    uxt = new Date().getTime();
-    min_n = Object.keys(events)[0]
-    for(n in events)
-    {
-      events[(n-min_n)/speed_up+uxt] = events[n];
-      delete events[n];
-    }
-  }
-  function drawClock() {
-
-    //Fetch the current time
-    var now=new Date();
-    var sec=now.getSeconds();
-    var ms = now.getMilliseconds();
-    if(!ms){ ms = 0;}
-
-    if((sec == act_time) || activity){
-      activity = true;
-      sec2 = sec;
-      //sec = act_time;
-    }
-
-    // Add in relevant activities
-    new_uxt = new Date().getTime();
-    duxt = new_uxt-uxt;
-    uxt = new_uxt;
-    draw_activities();
-    draw_events();
-  }
-
-  function draw_activities(){
-
-    ms = uxt%(1000);
-    sec = uxt%(60*1000);
-
-    for(n in events)
-    {
-      event_sec = Math.floor(n/1000)%60;
-      ms_since_event = uxt-n;
-      if((n < uxt) && (ms_since_event < (act_dur*1000)))
-      {
-        // correct event to be between 9 and 1 on the clock face by tweaking its time
-        // No longer used as full clock visible - JS May 2016
-        // if((event_sec >5) && (event_sec<45)) {
-          // if(event_sec < 25) event_sec = (event_sec+40)%60;
-          // else event_sec = (event_sec+20)%60;
-        // }
-
-
-        completeness = ms_since_event/(act_dur*1000);
-
-        if(!('ends' in events[n])){
-          events[n].ends = {'x':Math.sin(Math.PI/30*event_sec)*od/2 + canvas.width - center_right  - (20*completeness+10*sec)/2,
-                            'y':canvas.height - center_bottom - Math.cos(Math.PI/30*event_sec)*od/2  - (20*completeness+10*sec)/2,
-                            't':n+act_dur*1000
-                            }
-        }
-
-      }else if(ms_since_event > (act_dur*1000))
-      { // remove old events
-        if(("ends" in events[n])){
-          et = eventElement(0,events[n].ends.y,n,events[n].title);
-          event_tweets.push(et);
-          $('#analogue').append(et);
-          //et.css({'left':(Math.min(events[n].ends.x,$('#analogue').width()-et.outerWidth()-5))+'px','width':et.outerWidth()+'px'}).animate({'opacity':1},500);
-          et.animate({'opacity':1},500);
-        }
-        delete events[n];
-      }
-    }
-  }
-
-  function draw_events(){
-    var otp = false;
-    for(var i = 0; i < event_tweets.length; ++i){
-      var vspace = event_tweets[i].outerWidth()+6;
-      et = event_tweets[i];
-      if(et.position().left < -1*et.outerWidth()){
-        event_tweets.splice(i--, 1);
-        et.remove();
-      }else{
-        tp = et.position().left;
-        tp -= (duxt*1/60)*(1+(Math.max(4,event_tweets.length)-4));
-        if(otp){
-          tp -= (((tp-otp-vspace/2)%vspace)-vspace/2) * 0.2;
-        }
-        et.css('left',tp+'px');
-        otp = tp;
-      }
-    }
-  }
-  function eventElement(x,y,ts,content){
-    tm = new Date(parseInt(n)).toTimeString().split(' ')[0];
-    dt = new Date(parseInt(n)).toDateString().split(' ');
-    dts = dt[2]+" "+dt[1]+" "+dt[3].substring(2,4);
-    //return $('<div class="event" style="top:'+y+'px;left:'+x+'px;"><div class="ts">'+tm+'<br>'+dts+'</div>'+content+'</div>');
-    //return $('<div class="event" style="top:'+y+'px;left:'+x+'px;"><div class="content">'+content+'</div><span class="ts">'+tm+' - '+dts+'</div></div>');
-    return $('<div class="event" style="top:'+y+'px;left:'+x+'px;">'+content+', '+tm+' - '+dts+'</div>');
-  }
-
-  function animate() {
-      var activity = false;
-      requestAnimFrame( animate );
-      drawClock();
-  }
-  // requestAnim shim layer by Paul Irish
-  requestAnimFrame = (function(){
-    return  window.requestAnimationFrame       ||
-            window.webkitRequestAnimationFrame ||
-            window.mozRequestAnimationFrame    ||
-            window.oRequestAnimationFrame      ||
-            window.msRequestAnimationFrame     ||
-            function(/* function */ callback, /* DOMElement */ element){
-              window.setTimeout(callback, 1000 / 60);
-            };
-  })();
-
-
-
-  // live feed
-  if ( typeof FLBuilder != 'undefined' ) {
-    // The builder is active.
-  }else{
-    // The builder is not active.
-    if($("#analogue").length != 0) {
-      clock( $('#analogue>canvas'), {"bottom":130, "top": 0}, true);
-    }
-  }
-  // end: live feed
-
-})( jQuery );
-
 
 //$(function() {
 
@@ -1276,8 +1028,8 @@ jQuery.noConflict();
 			thisPopover.addClass('correct-pos');
 
 			var posFromTop = $('.correct-pos').offset().top - $(window).scrollTop();
-			var offset = -150;//20; //Offset of 20px
-			if(posFromTop < 150){
+			var offset = -180;//20; //Offset of 20px
+			if(posFromTop < 180){
 				$('html, body').animate({
 					scrollTop: $(".correct-pos").offset().top + offset
 				}, 100);
@@ -1386,6 +1138,32 @@ jQuery.noConflict();
 	// end: fast click
 
 
+	// Map: scroll to centre details
+	$('[data-location]').click(function(){
+		var location = '.' + $(this).data('location');
+		var form = '.map-scroll-js'
+		//$(form).addClass('hide');
+		//$(location).removeClass('hide');
+		var offset = -120; //Offset of 20px
+		$('html, body').animate({
+			scrollTop: $(form + location).offset().top + offset
+		}, 1200);
+	});
+	// end: Map: scroll to centre details
+
+
+
+	// TABS
+	$('ul.tabs li').click(function(){
+		var tab_id = $(this).attr('data-tab');
+
+		$('ul.tabs li').removeClass('current');
+		$('.tab-content').removeClass('current');
+
+		$(this).addClass('current');
+		$("#"+tab_id).addClass('current');
+	})
+	// END: TABS
 
 
 	// clock in top bar
@@ -1418,6 +1196,49 @@ jQuery.noConflict();
 	startTime();*/
 	// end: clock in top bar
 
+	// pricing table
+	$('.show-features').click(function(){
+		$('.all-features').removeClass('hide');
+		$(this).hide();
+	});
+	$('.close-table').click(function(){
+		$('.all-features').addClass('hide');
+		$('.show-features').show()
+	});
+	// end: pricing table
+
+	// storage calculator
+	//$('.calc-storage').click(function(){
+	$('.trigger-calc-storage').bind('keyup change', function(){
+		if(!isNaN($('input[name="w"]').val()) && !isNaN($('input[name="d"]').val()) && !isNaN($('input[name="h"]').val())){
+			var w = $('input[name="w"]').val();
+			var d = $('input[name="d"]').val();
+			var h = $('input[name="h"]').val();
+			var u = 0;
+			if($('.unit').val() == 'mm'){
+				u = 1000000000;
+			}else if($('.unit').val() == 'cm'){
+				u = 1000000;
+			}else if($('.unit').val() == 'in'){
+				u = 61023.7441;
+			}else if($('.unit').val() == 'ft'){
+				u = 35.3146667;
+			}
+			var day_rate = 0.89 * w * d * h / u;
+			var cost = day_rate * parseInt($('.period').val());
+			if(cost > 0 && cost < 0.001){
+				$('.lt-1p').removeClass('hide');
+				$('.cost:not(.lt-1p)').addClass('hide');
+			}else{
+				$('.lt-1p').addClass('hide');
+				$('.cost:not(.lt-1p)').removeClass('hide');
+				//cost = cost.toFixed(4);
+			}
+			cost = cost > 0 ? cost.toFixed(3) : 0;
+			$('.rate').text(cost);
+		}
+	});
+	// end: storage calculator
 
 
 //});
