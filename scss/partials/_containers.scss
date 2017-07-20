@@ -44,6 +44,9 @@
 	}
 	h2{
 		font-size: 6rem;
+		@media only screen and (max-width:$promo-break-point) {
+			font-size: 4rem;
+		}
 	}
 	.accordion input[type="checkbox"]:checked + .center-text{
 		display: none;

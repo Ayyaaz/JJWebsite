@@ -64,7 +64,7 @@
 				margin-left:10px;
 			}
 			@media only screen and (max-width:$promo-break-point) {
-				margin-left:-180px;
+				margin-left:-170px;
 				&:before{
 					margin-left:52px;
 				}
@@ -201,7 +201,8 @@
 		top: 79.6%;
 	}
 	@media only screen and (max-width:$promo-break-point) {
-		.popover{
+		.popover,
+		.popover.default-open{
 			@include transform(scale(0.65));
 		}
 		&.medium .popover{

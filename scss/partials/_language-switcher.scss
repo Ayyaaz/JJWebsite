@@ -11,13 +11,16 @@
 		    border:none;
 		}
 		a:hover,
-		a:focus,
+		a:focus{
+		    color: white;
+		    background: darken($green, 5%);//transparent
+		}
 		.wpml-ls-current-language:hover>a {
 		    color: white;
-		    background: darken($green, 10%);//transparent
+		    background: transparent
 		}
 		a.wpml-ls-item-toggle:after{
-		    border-top-color:darken($green, 20%);
+		    border-top-color:darken($green, 10%);
 		}
 		.wpml-ls-sub-menu{
 		    border-top:1px solid $green-light;

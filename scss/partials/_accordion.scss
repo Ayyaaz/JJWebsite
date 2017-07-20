@@ -1,5 +1,8 @@
 .accordion{
-    input[id^='check-']{
+    position: relative;
+    input[id^='cp-acc-'],
+    input[id^='acc-'],
+    input[name^='acc-']{
         display: none;
     }
     label {
@@ -10,7 +13,17 @@
         overflow:hidden;
         @include transition(all 1s ease-in-out);
     }
-    input:checked ~ article {
-        max-height: 1000px;
+    input:checked {
+        ~ article {
+            max-height: 800px;
+        }
+        ~ label .title .icon,
+        ~ .title .icon{
+            transform:rotate(90deg);
+        }
+    }
+    .title .icon{
+        vertical-align: middle;
+        @include transition(all .5s ease-in-out);
     }
 }

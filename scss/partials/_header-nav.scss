@@ -41,8 +41,8 @@ $nav-line-height: 80px;
 
 		@media only screen and (max-width:$nav-break-point) {
 			width: 150px;
-			height: 50px;
-			line-height: 50px;
+			height: 60px;
+			line-height: 60px;
 		}
 	}
 }
@@ -153,7 +153,7 @@ $nav-line-height: 80px;
 	height: 30px;
 	line-height: 30px;
 	float: right;
-	margin-top: 10px;
+	margin-top: 15px;
 	text-decoration: none;
 
 	.icon {
@@ -218,9 +218,6 @@ $nav-line-height: 80px;
 	padding:12px 0;
 	font-size: .9em;
 	letter-spacing: .5px;
-	.wrapper{
-		padding-bottom:0;
-	}
 	.icon{
 		vertical-align: bottom;
 		color: $yellow;
@@ -269,7 +266,7 @@ $nav-line-height: 80px;
 	// end: live feed
 
 	@media only screen and (max-width:$nav-break-point) {
-		padding:5px 0;
+		padding:4px 0;
 	}
 	@media only screen and (max-width:$promo-break-point+20) {
 		.wrapper{

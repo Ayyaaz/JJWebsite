@@ -90,6 +90,9 @@
 		padding:0px;
 		display: inline;
 	}
+	.hbspt-form h4{
+		margin-top: 0;
+	}
 }
 // end: stacked-posts WP recent posts sidebar
 
@@ -150,8 +153,9 @@ ul.wpp-list {
 	.wpp-post-title{
 		display: inline-block;
 		width:calc(100% - 80px);
-		max-height:40px;
+		max-height:44px;
 		overflow: hidden;
+	    line-height: 1.4em;
 
 		@media only screen and (max-width:$promo-break-point) {
 			max-height:36px;
@@ -183,6 +187,8 @@ ul.wpp-list {
 	li span.wpp-stats,
 	.wpp-views{
 		display: block;
+	    font-size: 14px;
+	    line-height: 14px;
 	}
 
 	li:nth-child(odd) {
@@ -212,6 +218,7 @@ ul.wpp-list {
 	}
 	.hs_email + .hs_submit{
 		display: block;
+		margin-bottom: 40px;
 	}
 }
 // end: signup to blog form

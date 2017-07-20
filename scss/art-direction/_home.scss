@@ -274,7 +274,8 @@ $parade-img-width:1550px;
 				position: relative;
 				top:0;
 			}
-			.copy-block{
+			.copy-block,
+			.copy-block:last-of-type{
 				margin-top:0;
 			}
 			.copy{
@@ -509,15 +510,22 @@ $parade-img-width:1550px;
 		}
 	}
 
-	@media only screen and (max-width:$promo-break-point) {
-		.flag-hr{
-			display: none;
-		}
-	}
 	.flag-hr{
 		background:transparent;
 		position: relative;
 		margin-bottom:-76px;
 		z-index: 1;
+		@media only screen and (max-width:$promo-break-point) {
+			display: none;
+		}
+	}
+
+	@media only screen and (max-width:$promo-break-point) {
+		.unforgettable h2,
+		.clients-panel h2,
+		.locations h2,
+		.who-we-are h2 {
+			font-size: 4rem;
+		}
 	}
 }

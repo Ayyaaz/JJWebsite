@@ -259,4 +259,11 @@
 			position: relative;
 		}
 	}
+
+	@media only screen and (max-width:$promo-break-point) {
+		h2.large {
+			font-size: 4rem;
+		}
+	}
+
 }

@@ -312,13 +312,23 @@ jQuery.noConflict();
 	// end: clock in top bar
 
 	// pricing table
-	$('.show-features').click(function(){
-		$('.all-features').removeClass('hide');
-		$(this).hide();
+	$('.standard-table + .show-features').click(function(){
+		var allFeatures = $(this).prev('.standard-table').find('.all-features');
+		if($(this).find('.close').hasClass('hide')){
+			allFeatures.removeClass('hide');
+			$(this).find('.open').addClass('hide');
+			$(this).find('.close').removeClass('hide');
+		}else{
+			allFeatures.addClass('hide');
+			$(this).find('.open').removeClass('hide');
+			$(this).find('.close').addClass('hide');
+		}
 	});
 	$('.close-table').click(function(){
-		$('.all-features').addClass('hide');
-		$('.show-features').show()
+		var showFeatureBtn = $(this).closest('.standard-table').next('.show-features');
+		showFeatureBtn.find('.open').removeClass('hide');
+		showFeatureBtn.find('.close').addClass('hide');
+		$(this).closest('.all-features').addClass('hide');
 	});
 	// end: pricing table
 

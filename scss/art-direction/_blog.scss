@@ -27,6 +27,21 @@ $grey-db:#dbdbdb;
 		    }
 		}
 	}
+/*
+	.hero.bg-scroll-img{
+		background-image:url(assets/img/hero-imgs/hero-bg.jpg);
+		&:before{
+			position: absolute;
+			height: 100%;
+			width: 100%;
+			background: black !important;
+			content: "";
+			left: 0;
+			top: 0;
+			opacity: 0.3;
+		}
+	}
+	*/
 	.main-footer{
 		background:$grey-4f;
 		color: white;
@@ -48,21 +63,28 @@ $grey-db:#dbdbdb;
 		filter: invert(100%);
 	}
 
-/*
-	.hero.bg-scroll-img{
-		background-image:url(assets/img/hero-imgs/hero-bg.jpg);
-		&:before{
-			position: absolute;
-			height: 100%;
-			width: 100%;
-			background: black !important;
-			content: "";
-			left: 0;
-			top: 0;
-			opacity: 0.3;
+	.language-switcher .wpml-ls-legacy-dropdown{
+		a {
+		    background:$grey-4f;
+		}
+		a:hover,
+		a:focus{
+		    background: darken($grey-4f, 10%);//transparent
+		}
+		.wpml-ls-current-language:hover>a {
+		    background: transparent
+		}
+		a.wpml-ls-item-toggle:after{
+		    border-top-color:darken($grey-4f, 20%);
+		}
+		.wpml-ls-sub-menu{
+		    border-top:1px solid lighten($grey-4f, 20%);
+		    background:$grey-4f;
+		    a{
+			    border-bottom:1px solid $grey-4f;
+			}
 		}
 	}
-	*/
 }
 
 .blog-nav {
