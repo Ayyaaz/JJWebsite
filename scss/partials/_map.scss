@@ -99,6 +99,7 @@
 		display: block;
 		border: 2px solid $blue;//$green-light;
 		border-radius: 50%;
+		position: relative;
 	}
 	.inner{
 		@include transition(all 0.25s ease-in-out);
@@ -202,14 +203,12 @@
 	}
 	@media only screen and (max-width:$promo-break-point) {
 		.popover,
-		.popover.default-open{
-			@include transform(scale(0.65));
+		.popover.default-open,
+		&:hover .popover{
+			@include transform(scale(0.75));
 		}
 		&.medium .popover{
 			bottom:10px;
-		}
-		&:hover .popover{
-			@include transform(scale(0.75));
 		}
 	}
 }

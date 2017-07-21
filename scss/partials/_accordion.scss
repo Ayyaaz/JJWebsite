@@ -11,11 +11,12 @@
     article {
         max-height:0px;
         overflow:hidden;
-        @include transition(all 1s ease-in-out);
+        @include transition(all .3s ease);//closing
     }
     input:checked {
         ~ article {
             max-height: 800px;
+            @include transition(all .6s ease);//opening
         }
         ~ label .title .icon,
         ~ .title .icon{

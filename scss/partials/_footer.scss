@@ -9,8 +9,8 @@
 	.copy-block{
 		width:40%;
 		float:left;
-		padding-right:16px;
-		padding-left:16px;
+		padding-right:8px;
+		padding-left:8px;
 		text-align: center;
 
 		&:first-of-type{
@@ -28,17 +28,7 @@
 		p{
 			font-size:14px;
 		}
-
-		@media only screen and (max-width:600px) {
-			width:50%;
-			&:last-of-type{
-				width:50%;
-			}
-			&:nth-child(even){
-				float: right;
-			}
-		}
-		@media only screen and (max-width:400px) {
+		@media only screen and (max-width:$mobile-break-point+100) {
 			width:100%;
 		    text-align: left;
 			&:first-of-type,
