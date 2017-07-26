@@ -73,6 +73,26 @@
             }
         }
     }
+    @media only screen and (max-width:500px) {
+        .hero{
+            .wrapper{
+                padding-top:3rem;
+                padding-bottom:3rem;
+            }
+            h1{
+            font-size: 8rem;
+            }
+            .parade{
+                &.ele{
+                    margin-left:50px;
+                }
+                &.already-visible.birds-L,
+                &.come-in.birds-L{
+                    margin-left:-160px;
+                }
+            }
+        }
+    }
     .submitted-message{
         text-align: center;
     }

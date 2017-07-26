@@ -1,5 +1,9 @@
 
 .why{
+	.hero {
+		padding-top: 7rem;
+		padding-bottom: 7rem;
+	}
 	.parade{
 		position: absolute;
 		left:50%;
@@ -44,12 +48,11 @@
 	@media only screen and (max-width:$promo-break-point) {
 		.parade{
 			&.man{
-				margin-left:-550px;
+				margin-left:-450px;
+				height: 90%
 			}
 			&.birds-L,
-			&.birds-R {
-				margin-left:-500px;
-			}
+			&.birds-R,
 			&.come-in,
 			&.already-visible {
 				&.birds-L,
@@ -65,27 +68,21 @@
 			padding-top:0;
 		}
 		.parade{
-			&.man,
-			&.birds-L,
-			&.birds-R{
-				width:auto;
-				height: 300px;
-			}
 			&.man{
-				margin-left:-75%;
-			}
-			&.birds-L,
-			&.birds-R {
-				margin-left:-65%;
+				margin-left:-400px;
 			}
 			&.confetti {
 				@include transform(scale(0.5));
 			}
+			&.birds-L,
+			&.birds-R,
 			&.come-in,
 			&.already-visible {
 				&.birds-L,
 				&.birds-R {
-					margin-left:-65%;
+					width:auto;
+					height: 300px;
+					margin-left:-480px;
 				}
 				&.confetti {
 					@include transform(scale(0.6));
@@ -96,14 +93,39 @@
 	@media only screen and (max-width:490px) {
 		.wrapper{
 			padding-top:2rem;
+			position: relative;
+			z-index: 9;
 		}
-		.parade.man{
-			display: none;
+		.hero{
+			padding-top:0;
+			padding-bottom:0;
+			h1{
+				font-size: 8rem;
+			}
 		}
-	}
-	.hero {
-		padding-top: 7rem;
-		padding-bottom: 7rem;
+		.hero-container .section-spot-dark{
+			position: relative;
+		}
+		.parade{
+			&.man{
+				display: none;
+			}
+			&.birds-L,
+			&.birds-R,
+			&.come-in,
+			&.already-visible {
+				&.birds-L,
+				&.birds-R {
+				    margin-left: -200px;
+				    height: 140%;
+				    top:0;
+				    z-index: 1;
+				}
+				&.confetti {
+					bottom:-50px;
+				}
+			}
+		}
 	}
 	.testimonial-card{
 		margin-top:60px;

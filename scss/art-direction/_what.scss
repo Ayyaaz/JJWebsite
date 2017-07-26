@@ -1,6 +1,5 @@
 
 .what{
-
 	.parade{
 		position: absolute;
 		bottom:0;
@@ -9,9 +8,11 @@
 		&.afroman {
 			@include transition(all 1s ease-out);
 			z-index: 3;
-			margin-left:-620px;//-500px;
 			transform-origin: 100% 100%;
 			@include transform(scale(.95));
+			@media only screen and (min-width:$promo-break-point+1) {
+				margin-left:-620px;//-500px;
+			}
 		}
 		&.confetti {
 			@include transition(all 2s ease-out);
@@ -49,6 +50,27 @@
 		.parade.already-visible {
 			&.afroman {
 				margin-left:-500px;
+			}
+		}
+	}
+	@media only screen and (max-width:$mobile-break-point+100) {
+		.hero{
+			h1{
+				font-size:8rem;
+			}
+		}
+		.hero-container .section-spot-dark{
+			position: relative;
+		}
+		.parade {
+			&.already-visible.afroman {
+				margin-left:-350px;
+			}
+			&.confetti {
+				bottom: -70px;
+			}
+			&.butterfly{
+			    bottom: -280px;
 			}
 		}
 	}

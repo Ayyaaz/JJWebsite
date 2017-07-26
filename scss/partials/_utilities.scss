@@ -75,14 +75,16 @@
 	.responsive-show{display:block;}
 }
 
-img.grayscale {
+img.grayscale,
+.grayscale img {
 	filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 3.5+ */
 	filter: gray; /* IE6-9 */
 	-webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
 	@include transition(all .5s ease-out);
 }
 
-img.grayscale:hover {
+img.grayscale:hover,
+.grayscale img:hover {
 	filter: none;
 	-webkit-filter: grayscale(0%);
 }
@@ -98,4 +100,7 @@ img.grayscale:hover {
 .full-width{
 	width:100%;
     max-width:100%;
+}
+.wonky{
+	@include transform(rotate(-2deg));
 }

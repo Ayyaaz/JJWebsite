@@ -72,4 +72,20 @@
 .ssba img{
     max-width: 100% !important;
 }
+@media only screen and (max-width:$nav-break-point) {
+    .ssba-wrap{
+        position: relative;
+        z-index: 0;
+        margin-bottom: 16px;
+        margin-top: -34px;
+        a{
+            display: inline-block;
+        }
+    }
+}
+@media only screen and (max-width:$promo-break-point) {
+    .ssba-wrap{
+        margin-top: -28px;
+    }
+}
 // End: WP "Simple Share Buttons" plugin css overrides

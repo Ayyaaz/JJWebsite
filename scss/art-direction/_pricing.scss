@@ -93,6 +93,23 @@
 			}
 
 		}
+		@media only screen and (max-width:600px) {
+			padding-top:6rem;
+			padding-bottom:6rem;
+			h1{
+				font-size: 10rem;
+			}
+			.parade.giraffe {
+			    height: 140%;
+			    bottom: 13px;
+			}
+		}
+		@media only screen and (max-width:600px) {
+			.parade.giraffe {
+			    height: 120%;
+			    bottom: 23px;
+			}
+		}
 	}
 
 	.what-you-get{

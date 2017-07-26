@@ -58,6 +58,10 @@
 		}
 	}
 	@media only screen and (max-width:$promo-break-point) {
+		.hero h1{
+		    position: relative;
+		    z-index: 9;
+		}
 		.parade.hand-stand {
 			height: 350px;
 			bottom: -45px;
@@ -70,10 +74,27 @@
 		    right: 55%;
 		}
 	}
+	@media only screen and (max-width:600px) {
+		.parade.already-visible.parrot-with-banner {
+    		left: -35px;
+    		margin-left: 0;
+		}
+	}
+
 	@media only screen and (max-width:500px) {
-		.parade.hand-stand,
-		.parade.parrot-with-banner {
-			display: none;
+		.hero h1{
+			font-size: 8rem;
+		}
+		.parade.hand-stand{
+			height: 110%;
+		    right: -130px;
+	        bottom: -32px;
+		}
+		.parade.confetti{
+			bottom:-50px;
+		}
+		.hero-container .section-spot-dark{
+			position: relative;
 		}
 	}
 

@@ -26,6 +26,21 @@ $parade-img-width:1550px;
 			}
 		}
 
+
+		.wrap{
+			position: relative;
+			img {
+
+			    max-width: 70%;
+			    max-height: 70%;
+
+			    margin: auto;
+			    position: absolute;
+			    top: 0; left: 0; bottom: 0; right: 0;
+			}
+		}
+
+
 		.parade{
 			position: absolute;
 			bottom:-170px;
@@ -36,6 +51,9 @@ $parade-img-width:1550px;
 			&.confetti {
 				right: -50px;
 				@include transition(all 1.2s ease-out);
+			}
+			&.giraffe {
+				bottom: -100px;
 			}
 			&.ele.come-in,
 			&.ele.already-visible {
@@ -100,15 +118,45 @@ $parade-img-width:1550px;
 					margin-left: 0;
 					left: -20%;
 				}
+			    &.giraffe.already-visible,
+			    &.giraffe.come-in {
+					bottom: 70px;
+				}
+				&.handstand.come-in,
+				&.handstand.already-visible {
+					display: none;
+				}
+			    &.band.already-visible,
+			    &.band.come-in {
+					margin-left: -460px;
+				}
 			}
 		}
 	}
-	@media only screen and (max-width:$mobile-break-point+50) {
+	@media only screen and (max-width:700px) {
 		.hero{
+			height:470px;
 			.parade{
-				&.afroman.come-in,
-				&.afroman.already-visible {
-					//right:-50px;
+			    &.band.already-visible,
+			    &.band.come-in {
+    				left: -90px;
+				}
+			    &.afroman.already-visible,
+			    &.afroman.come-in {
+					left: 260px;
+				}
+			}
+		}
+	}
+	@media only screen and (max-width:525px) {
+		.hero{
+			h1{
+				font-size: 4.5rem;
+			}
+			.parade{
+			    &.giraffe.already-visible,
+			    &.giraffe.come-in {
+					bottom: 90px;
 				}
 			}
 		}
@@ -506,6 +554,9 @@ $parade-img-width:1550px;
 		.copy{
 			margin-top:3rem;
 			margin-bottom:3rem;
+			p{
+				@extend .serif;
+			}
 		}
 	}
 
