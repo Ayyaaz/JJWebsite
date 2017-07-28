@@ -125,6 +125,7 @@
 					border-top:1px solid $grey;
 					margin-top:4rem;
 					padding-top:5rem;
+					padding-bottom:5rem;
 					min-height: 200px;
 				}
 			}
@@ -176,7 +177,7 @@
 	.flag-hr{
 		background: transparent;
 		position: relative;
-		margin-top: -94px;
+		margin-top: -95px;
 		margin-bottom: -76px;
 		z-index: 1;
 		&+section{

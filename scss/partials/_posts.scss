@@ -156,10 +156,6 @@ ul.wpp-list {
 		max-height:44px;
 		overflow: hidden;
 	    line-height: 1.4em;
-
-		@media only screen and (max-width:$promo-break-point) {
-			max-height:36px;
-		}
 	}
 	.wpp-thumbnail{
 		margin-right:1em;
