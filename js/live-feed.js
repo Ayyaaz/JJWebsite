@@ -13,11 +13,18 @@ jQuery.noConflict();
 	})
 
 	function displayResults (arr) {
-		displayPercentages($('#customer-demand'), arr.customer_demand,1);
-		displayPercentages($('#warehouse-output'), arr.warehouse_output,1);
-		displayPercentages($('#same-day-despatch'), arr.same_day_despatch,3);
-		displayPercentages($('#packing-accuracy'), arr.accuracy,3);
-		displayItemStat($('#items-in-storage'), arr.items_in_storage, arr.fullness);
+		var customer_demand = (arr.customer_demand != null) ? arr.customer_demand : 0.97352;
+		var warehouse_output = (arr.warehouse_output != null) ? arr.warehouse_output : 0.98573;
+		var same_day_despatch = (arr.same_day_despatch != null) ? arr.same_day_despatch : 0.95400;
+		var accuracy = (arr.accuracy != null) ? arr.accuracy : 0.99999;
+		var items_in_storage = (arr.items_in_storage != null) ? arr.items_in_storage : 3657931;
+		var fullness = (arr.fullness != null) ? arr.fullness : 0;
+
+		displayPercentages($('#customer-demand'), customer_demand,1);
+		displayPercentages($('#warehouse-output'), warehouse_output,1);
+		displayPercentages($('#same-day-despatch'), same_day_despatch,3);
+		displayPercentages($('#packing-accuracy'), accuracy,3);
+		displayItemStat($('#items-in-storage'), items_in_storage, fullness);
 	}
 	function formatNumber(yourNumber) {
 		if (isNaN(yourNumber)){

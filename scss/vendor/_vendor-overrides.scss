@@ -56,6 +56,17 @@
             width:auto !important;
         }
     }
+    input[type="radio"],
+    input[type="checkbox"]{
+        min-height:auto;
+        width:auto !important;
+        display:inline-block;
+        margin-right:8px;
+    }
+    ul{
+        list-style:none;
+        padding:0;
+    }
 }
 // end: HubSpot contact form
 

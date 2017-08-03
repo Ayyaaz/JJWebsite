@@ -2,6 +2,7 @@
 $parade-img-width:1550px;
 .home{
 
+
 	.hero {
 		//text-shadow: 0 2px 3px #555;
 		//padding-bottom: 6.4rem;
@@ -65,20 +66,10 @@ $parade-img-width:1550px;
 				left: 50%;
 				margin-left:-560px;
 			}
-			&.handstand.come-in,
-			&.handstand.already-visible {
-				left: 50%;
-				margin-left:-520px;
-			}
 			&.afroman.come-in,
 			&.afroman.already-visible {
 				left: 50%;
 				margin-left:-540px;
-			}
-			&.car-man.come-in,
-			&.car-man.already-visible {
-				left: 50%;
-				margin-left:-440px;
 			}
 			/* ANIIMATION REMOVED
 			&.ele {
@@ -89,6 +80,24 @@ $parade-img-width:1550px;
 			&.come-in,
 			&.already-visible {
 				right:0;
+			}
+			@media only screen and (min-width:$promo-break-point+1) {
+				&.handstand{
+					background:url(assets/img/parade-handstand.png) no-repeat center center;
+	    			background-size: contain;
+					left: 50%;
+					width: 1283px;
+					margin-left:-520px;
+				}
+			}
+			@media only screen and (min-width:$nav-break-point+1) {
+				&.car-man{
+					background:url(assets/img/car-man.png) no-repeat center center;
+	    			background-size: contain;
+					left: 50%;
+					width: 1283px;
+					margin-left:-440px;
+				}
 			}
 		}
 	}
@@ -101,6 +110,9 @@ $parade-img-width:1550px;
 			    &.ele.come-in {
     				margin-left: -600px;
 			    }
+				&.handstand{
+					width: 1166px;
+				}
 			}
 		}
 	}
@@ -122,13 +134,20 @@ $parade-img-width:1550px;
 			    &.giraffe.come-in {
 					bottom: 70px;
 				}
-				&.handstand.come-in,
-				&.handstand.already-visible {
-					display: none;
-				}
 			    &.band.already-visible,
 			    &.band.come-in {
-					margin-left: -460px;
+				    margin-bottom: -140px;
+				    margin-left: 0;
+				    left:-170px;
+				}
+				&.car-man{
+					background:url(assets/img/car-man.png) no-repeat center center;
+					background-size: contain;
+					left: 50%;
+					width: 860px;
+					height: 464px;
+					margin-left:0;
+					left:-170px;
 				}
 			}
 		}
@@ -137,13 +156,9 @@ $parade-img-width:1550px;
 		.hero{
 			height:470px;
 			.parade{
-			    &.band.already-visible,
-			    &.band.come-in {
-    				left: -90px;
-				}
-			    &.afroman.already-visible,
-			    &.afroman.come-in {
-					left: 260px;
+			    &.ele.already-visible,
+			    &.ele.come-in {
+					left: -150px;
 				}
 			}
 		}
@@ -157,6 +172,19 @@ $parade-img-width:1550px;
 			    &.giraffe.already-visible,
 			    &.giraffe.come-in {
 					bottom: 90px;
+				}
+			    &.band.already-visible,
+			    &.band.come-in {
+					left:-350px;
+				}
+				&.afroman.come-in,
+				&.afroman.already-visible {
+					margin-left:0;
+				    left:-430px;
+				}
+				&.car-man{
+					left: 0;
+					margin-left:-660px;
 				}
 			}
 		}

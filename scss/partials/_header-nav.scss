@@ -250,7 +250,8 @@ $nav-line-height: 80px;
 	#analogue{
 		position: relative;
 		height: 21px;
-		.event{
+		.event,
+		.new-event{
 			top:0;
 			opacity: 0;
 			position: absolute;
@@ -258,6 +259,14 @@ $nav-line-height: 80px;
 			background: $spot-color;
 			text-overflow: ellipsis;
 			overflow: hidden;
+		}
+		.new-event{
+			opacity:1;
+			left:650px;
+			@include transition(all 10s linear);
+			&.move {
+				left:-600px;
+			}
 		}
 		canvas{
 			display: none;

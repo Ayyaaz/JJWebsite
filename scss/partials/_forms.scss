@@ -1,6 +1,6 @@
 
-textarea, input {outline:none;} // remove webkit glow
-textarea, input {
+textarea, input:not([type=checkbox]):not([type=radio]) {outline:none;} // remove webkit glow
+textarea, input:not([type=checkbox]):not([type=radio]) {
 	-webkit-appearance: none; // careful if we want to use radio button or check-box!
 }
 textarea, input, select {
@@ -14,6 +14,7 @@ textarea, input, select {
 	border: 1px solid #ccc;
 	border-radius: 3px;
 	transition: border 0.3s;
+	min-height:45px;
 
 	&.error {
 	border-color: tomato;

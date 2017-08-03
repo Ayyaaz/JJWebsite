@@ -1,4 +1,4 @@
-.main button,
+.main button:not([class^="pika"]),
 .main input[type=submit],
 .main .button {
 	position: relative;
