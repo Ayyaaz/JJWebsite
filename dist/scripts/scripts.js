@@ -1141,18 +1141,7 @@ jQuery.noConflict();
 	// map tooltips
 	$('.map-location').hover(
 		function() { // mouse enter
-			$('.popover').removeClass('default-open');
-			$('.popover').removeClass('correct-pos');
-			var thisPopover = $(this).find('.popover');
-			thisPopover.addClass('correct-pos');
-
-			var posFromTop = $('.correct-pos').offset().top - $(window).scrollTop();
-			var offset = -180;//20; //Offset of 20px
-			if(posFromTop < 180){
-				$('html, body').animate({
-					scrollTop: $(".correct-pos").offset().top + offset
-				}, 100);
-			}
+			showMapTooltip($(this));
 		}, function() { // mouse leave
 			$(this).find('.popover').on('transitionend MSTransitionEnd webkitTransitionEnd oTransitionEnd', function() {
 					$(this).removeClass('correct-pos').off('transitionend MSTransitionEnd webkitTransitionEnd oTransitionEnd');
@@ -1160,6 +1149,23 @@ jQuery.noConflict();
 			);
 		}
 	);
+	$('.map-location').click(function(){
+		showMapTooltip($(this));
+	});
+	function showMapTooltip(elem){
+		$('.popover').removeClass('default-open');
+		$('.popover').removeClass('correct-pos');
+		var thisPopover = elem.find('.popover');
+		thisPopover.addClass('correct-pos');
+
+		var posFromTop = $('.correct-pos').offset().top - $(window).scrollTop();
+		var offset = -180;//20; //Offset of 20px
+		if(posFromTop < 180){
+			$('html, body').animate({
+				scrollTop: $(".correct-pos").offset().top + offset
+			}, 100);
+		}
+	}
 	// end: map tooltips
 
 

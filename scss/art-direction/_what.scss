@@ -47,6 +47,7 @@
 			height: 100%;
 		}
 
+		.parade.come-in,
 		.parade.already-visible {
 			&.afroman {
 				margin-left:-500px;
@@ -63,6 +64,7 @@
 			position: relative;
 		}
 		.parade {
+			&.come-in.afroman,
 			&.already-visible.afroman {
 				margin-left:-350px;
 			}

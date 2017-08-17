@@ -56,16 +56,19 @@ $parade-img-width:1550px;
 			&.giraffe {
 				bottom: -100px;
 			}
+			&.ele,
 			&.ele.come-in,
 			&.ele.already-visible {
 				left: 50%;
 				margin-left:-630px;
 			}
+			&.band,
 			&.band.come-in,
 			&.band.already-visible {
 				left: 50%;
 				margin-left:-560px;
 			}
+			&.afroman,
 			&.afroman.come-in,
 			&.afroman.already-visible {
 				left: 50%;
@@ -76,11 +79,11 @@ $parade-img-width:1550px;
 				@include transition(all 1s ease-out);
 				-webkit-transition-delay: 1s;
 				transition-delay: 1s;
-			} */
+			}
 			&.come-in,
 			&.already-visible {
 				right:0;
-			}
+			} */
 			@media only screen and (min-width:$promo-break-point+1) {
 				&.handstand{
 					background:url(assets/img/parade-handstand.png) no-repeat center center;
@@ -106,6 +109,7 @@ $parade-img-width:1550px;
 			height:500px;
 			.parade{
 			    bottom: -155px;
+			    &.ele,
 			    &.ele.already-visible,
 			    &.ele.come-in {
     				margin-left: -600px;
@@ -125,6 +129,7 @@ $parade-img-width:1550px;
 				max-width:initial;
 				width:960px;
 				margin-bottom: -127px;
+			    &.ele,
 			    &.ele.already-visible,
 			    &.ele.come-in {
 					margin-left: 0;
@@ -134,6 +139,7 @@ $parade-img-width:1550px;
 			    &.giraffe.come-in {
 					bottom: 70px;
 				}
+			    &.band,
 			    &.band.already-visible,
 			    &.band.come-in {
 				    margin-bottom: -140px;
@@ -156,6 +162,7 @@ $parade-img-width:1550px;
 		.hero{
 			height:470px;
 			.parade{
+			    &.ele,
 			    &.ele.already-visible,
 			    &.ele.come-in {
 					left: -150px;
@@ -173,10 +180,12 @@ $parade-img-width:1550px;
 			    &.giraffe.come-in {
 					bottom: 90px;
 				}
+			    &.band,
 			    &.band.already-visible,
 			    &.band.come-in {
 					left:-350px;
 				}
+				&.afroman,
 				&.afroman.come-in,
 				&.afroman.already-visible {
 					margin-left:0;
