@@ -224,20 +224,24 @@ $nav-line-height: 80px;
 		color: $yellow;
 		font-size: 2.1rem;
 	}
+	.alignleft,
+	.alignright {
+		width:50%;
+	}
 	.alignleft {
 		float: left;
 		width:190px;
 		text-align:left;
 		white-space:nowrap;
 	}
-	.aligncenter {
-		float: left;
-		width:calc(100% - 351px);//300px);
-		text-align:center;
-		white-space: nowrap;
-		text-overflow: ellipsis;
-  		overflow: hidden;
-	}
+	//.aligncenter {
+	//	float: left;
+	//	width:calc(100% - 351px);//300px);
+	//	text-align:center;
+	//	white-space: nowrap;
+	//	text-overflow: ellipsis;
+  	//	overflow: hidden;
+	//}
 	.alignright {
 		float: right;
 		width:161px;
@@ -277,19 +281,5 @@ $nav-line-height: 80px;
 
 	@media only screen and (max-width:$nav-break-point) {
 		padding:4px 0;
-	}
-	@media only screen and (max-width:$promo-break-point+20) {
-		.wrapper{
-			display: block;
-		}
-		.alignleft,
-		.alignright {
-			display: none;
-		}
-		.aligncenter {
-			display: block;
-			float: none;
-			width:100%;
-		}
 	}
 }
