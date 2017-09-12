@@ -1359,7 +1359,8 @@ jQuery.noConflict();
 			}else if($('.unit').val() == 'ft'){
 				u = 35.3146667;
 			}
-			var day_rate = 0.89 * w * d * h / u;
+			var cost = (window.location.href.indexOf('en-us') > -1) ? 0.8 : 0.89;
+			var day_rate = cost * w * d * h / u;
 			var cost = day_rate * parseInt($('.period').val());
 			if(cost > 0 && cost < 0.001){
 				$('.lt-1p').removeClass('hide');
