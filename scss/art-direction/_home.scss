@@ -204,9 +204,10 @@ $parade-img-width:1550px;
 		color: white;
 		h2{
 			font-family: $font-lato;
-			margin-top:1rem;
-			margin-bottom:2rem;
-			font-size: 5rem;
+			text-transform: uppercase;
+			margin-top:3rem;
+			margin-bottom:4rem;
+			font-size: 4rem;
 		}
 		p {
 			font-size: 3.5rem;
@@ -216,7 +217,7 @@ $parade-img-width:1550px;
 		}
 		.wrapper{
 			display: block;
-			padding: 5rem 0 0 0;
+			padding: 5rem 0 5rem 0;
 		}
 		.stat{
 			@include transition(all 1s ease-out);
@@ -248,13 +249,6 @@ $parade-img-width:1550px;
 				float:right;
 				padding-left:0;
 				padding-right:0;
-			}
-			h2{
-				width:40%;
-				float:left;
-				font-size: 45px;
-				text-align: right;
-				margin-top:36px;
 			}
 			.slick-dots{
 				margin-left: -60%;
