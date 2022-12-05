@@ -4041,7 +4041,7 @@ ul.tabs li.current h2{
 
 
 
- .kc-wrap div:last-child {
+ .kc-wrap > div:last-child {
      visibility: hidden !important;
 }
 .main-footer .cf-group {
