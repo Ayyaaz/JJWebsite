@@ -2781,8 +2781,8 @@ ul.tabs li.current h2{
 .home .clients-panel .awards li,.home .clients-panel .logos li{
     list-style-type:none;
     display:inline-block;
-    filter:grayscale(100%);
-    opacity:.8;
+    /* filter:grayscale(100%);
+    opacity:.8; */
     transition:all .3s ease-out
 }
 .home .clients-panel .awards li:hover,.home .clients-panel .logos li:hover{
