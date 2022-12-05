@@ -55,7 +55,7 @@ get_header(); ?>
 
         <section class="contact-panel">
             <div class="wrapper">
-                <h2>
+                <h2 class="center-text">
                     Interested? Of course you are!
                 </h2>
                 <div class="counter center-elem"></div>
