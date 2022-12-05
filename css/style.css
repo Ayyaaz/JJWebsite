@@ -16,9 +16,13 @@ Description: Designed by Blayney Partnership and built in-house at James and Jam
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  gap: 12px;
+}
+.main-footer .cf-group:after {
+  content: none;
 }
 .main-footer .copy-block {
-  width: auto !important;
+  width: 200px !important;
   padding-left: 0;
   padding-right: 0;
 }
